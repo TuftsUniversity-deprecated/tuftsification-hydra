@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN"
+"http://dca.tufts.edu/schema/tei/tei2.dtd" [
+<!ENTITY % TEI.corpus 'INCLUDE'>
+<!ENTITY % TEI.figures 'INCLUDE'>
+<!ENTITY % TEI.spoken 'INCLUDE'>
+<!ENTITY % TEI.linking 'INCLUDE'>
+<!ENTITY % TEI.XML 'INCLUDE'>
+]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>Interview with Alice Isaacs</title>
+	<author>Kenneth Cleary and Kristina Ceruzzi</author>
+      </titleStmt>
+      <extent>78331 bytes</extent>
+      <publicationStmt>
+	<distributor>Tufts University Digital Collections and Archives</distributor>
+	<address>
+	  <addrLine>Tufts University</addrLine>
+	  <addrLine>35 Professors Row</addrLine>
+	  <addrLine>Tisch Library Medford, MA 01255</addrLine>
+	</address>
+	<idno>tufts:central:dca:MS123:MS123.001.001.00001</idno>
+	<availability status="free">
+	  <p>This publication is freely available for scholarly or educational use.</p>
+	</availability>
+      </publicationStmt>
+      <sourceDesc>
+	<recordingStmt>
+	  <recording type="audio" dur="3832430ms">
+	    <date>2005-03-10</date>
+	    <respStmt>
+	      <resp>interview conducted by:</resp>
+	      <name>Kenneth Cleary and Kristina Ceruzzi</name>
+	    </respStmt>
+	  </recording>
+	</recordingStmt>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+	<stdVals>
+	  <p>Standard date values are given in ISO form: yyyy-mm-dd.</p>
+	</stdVals>
+      </editorialDecl>
+      <classDecl>
+	<taxonomy id="LCSH">
+	  <bibl>
+	    <title>Library of Congress Subject Headings</title>
+	  </bibl>
+	</taxonomy>
+	<taxonomy id="LC">
+	  <bibl>
+	    <title>Library of Congress</title>
+	  </bibl>
+	</taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <profileDesc>
+      <creation>
+	<date>2006-02-01</date>
+      </creation>
+      <langUsage>
+	<language id="EN" usage="100">English.</language>
+      </langUsage>
+      <particDesc>
+	<person id="AI"       role="interviewee" sex="f"><p>Alice Isaacs</p></person>
+	<person id="Cleary"   role="interviewer" sex="m"><p>Kenneth Cleary</p></person>
+	<person id="Ceruzzi"  role="interviewer" sex="f"><p>Kristian Ceruzzi</p></person>
+	<person id="Grandson"                    sex="m"><p>Grandson of Alice Isaacs</p></person>
+      </particDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <timeline id="transcript_timeline" unit="millisecond" origin="timepoint_begin">
+	<when id="timepoint_begin" absolute="Approximately 4:30PM"/>
+	<when id="timepoint_1" since="timepoint_begin" interval="0"/>
+	<when id="timepoint_2" since="timepoint_begin" interval="26100"/>
+	<when id="timepoint_3" since="timepoint_begin" interval="48500"/>
+	<when id="timepoint_4" since="timepoint_begin" interval="72400"/>
+	<when id="timepoint_5" since="timepoint_begin" interval="93800"/>
+	<when id="timepoint_6" since="timepoint_begin" interval="114800"/>
+	<when id="timepoint_7" since="timepoint_begin" interval="144200"/>
+	<when id="timepoint_8" since="timepoint_begin" interval="179200"/>
+	<when id="timepoint_9" since="timepoint_begin" interval="204800"/>
+	<when id="timepoint_10" since="timepoint_begin" interval="224500"/>
+	<when id="timepoint_11" since="timepoint_begin" interval="248600"/>
+	<when id="timepoint_12" since="timepoint_begin" interval="269300"/>
+	<when id="timepoint_13" since="timepoint_begin" interval="297100"/>
+	<when id="timepoint_14" since="timepoint_begin" interval="325500"/>
+	<when id="timepoint_15" since="timepoint_begin" interval="340100"/>
+	<when id="timepoint_16" since="timepoint_begin" interval="368200"/>
+	<when id="timepoint_17" since="timepoint_begin" interval="393500"/>
+	<when id="timepoint_18" since="timepoint_begin" interval="424000"/>
+	<when id="timepoint_19" since="timepoint_begin" interval="443800"/>
+	<when id="timepoint_20" since="timepoint_begin" interval="457100"/>
+	<when id="timepoint_21" since="timepoint_begin" interval="484700"/>
+	<when id="timepoint_22" since="timepoint_begin" interval="506000"/>
+	<when id="timepoint_23" since="timepoint_begin" interval="533500"/>
+	<when id="timepoint_24" since="timepoint_begin" interval="563900"/>
+	<when id="timepoint_25" since="timepoint_begin" interval="584400"/>
+	<when id="timepoint_26" since="timepoint_begin" interval="602100"/>
+	<when id="timepoint_27" since="timepoint_begin" interval="620800"/>
+	<when id="timepoint_28" since="timepoint_begin" interval="649600"/>
+	<when id="timepoint_29" since="timepoint_begin" interval="678200"/>
+	<when id="timepoint_30" since="timepoint_begin" interval="698600"/>
+	<when id="timepoint_31" since="timepoint_begin" interval="716000"/>
+	<when id="timepoint_32" since="timepoint_begin" interval="736700"/>
+	<when id="timepoint_33" since="timepoint_begin" interval="763800"/>
+	<when id="timepoint_34" since="timepoint_begin" interval="793100"/>
+	<when id="timepoint_35" since="timepoint_begin" interval="815600"/>
+	<when id="timepoint_36" since="timepoint_begin" interval="839100"/>
+	<when id="timepoint_37" since="timepoint_begin" interval="873700"/>
+	<when id="timepoint_38" since="timepoint_begin" interval="891200"/>
+	<when id="timepoint_39" since="timepoint_begin" interval="913600"/>
+	<when id="timepoint_40" since="timepoint_begin" interval="937700"/>
+	<when id="timepoint_41" since="timepoint_begin" interval="958200"/>
+	<when id="timepoint_42" since="timepoint_begin" interval="978100"/>
+	<when id="timepoint_43" since="timepoint_begin" interval="1000300"/>
+	<when id="timepoint_44" since="timepoint_begin" interval="1023000"/>
+	<when id="timepoint_45" since="timepoint_begin" interval="1035200"/>
+	<when id="timepoint_46" since="timepoint_begin" interval="1054500"/>
+	<when id="timepoint_47" since="timepoint_begin" interval="1076100"/>
+	<when id="timepoint_48" since="timepoint_begin" interval="1099300"/>
+	<when id="timepoint_49" since="timepoint_begin" interval="1119600"/>
+	<when id="timepoint_50" since="timepoint_begin" interval="1136300"/>
+	<when id="timepoint_51" since="timepoint_begin" interval="1159000"/>
+	<when id="timepoint_52" since="timepoint_begin" interval="1184700"/>
+	<when id="timepoint_53" since="timepoint_begin" interval="1208800"/>
+	<when id="timepoint_54" since="timepoint_begin" interval="1230300"/>
+	<when id="timepoint_55" since="timepoint_begin" interval="1249300"/>
+	<when id="timepoint_56" since="timepoint_begin" interval="1270500"/>
+	<when id="timepoint_57" since="timepoint_begin" interval="1286800"/>
+	<when id="timepoint_58" since="timepoint_begin" interval="1302300"/>
+	<when id="timepoint_59" since="timepoint_begin" interval="1325500"/>
+	<when id="timepoint_60" since="timepoint_begin" interval="1351100"/>
+	<when id="timepoint_61" since="timepoint_begin" interval="1367900"/>
+	<when id="timepoint_62" since="timepoint_begin" interval="1386500"/>
+	<when id="timepoint_63" since="timepoint_begin" interval="1410500"/>
+	<when id="timepoint_64" since="timepoint_begin" interval="1424600"/>
+	<when id="timepoint_65" since="timepoint_begin" interval="1443000"/>
+	<when id="timepoint_66" since="timepoint_begin" interval="1466600"/>
+	<when id="timepoint_67" since="timepoint_begin" interval="1488700"/>
+	<when id="timepoint_68" since="timepoint_begin" interval="1518900"/>
+	<when id="timepoint_69" since="timepoint_begin" interval="1544800"/>
+	<when id="timepoint_70" since="timepoint_begin" interval="1565700"/>
+	<when id="timepoint_71" since="timepoint_begin" interval="1586500"/>
+	<when id="timepoint_72" since="timepoint_begin" interval="1614200"/>
+	<when id="timepoint_73" since="timepoint_begin" interval="1636400"/>
+	<when id="timepoint_74" since="timepoint_begin" interval="1666600"/>
+	<when id="timepoint_75" since="timepoint_begin" interval="1694700"/>
+	<when id="timepoint_76" since="timepoint_begin" interval="1711200"/>
+	<when id="timepoint_77" since="timepoint_begin" interval="1728700"/>
+	<when id="timepoint_78" since="timepoint_begin" interval="1750900"/>
+	<when id="timepoint_79" since="timepoint_begin" interval="1776400"/>
+	<when id="timepoint_80" since="timepoint_begin" interval="1795200"/>
+	<when id="timepoint_81" since="timepoint_begin" interval="1817100"/>
+	<when id="timepoint_82" since="timepoint_begin" interval="1842100"/>
+	<when id="timepoint_83" since="timepoint_begin" interval="1849100"/>
+	<when id="timepoint_84" since="timepoint_begin" interval="1861600"/>
+	<when id="timepoint_85" since="timepoint_begin" interval="1881500"/>
+	<when id="timepoint_86" since="timepoint_begin" interval="1898800"/>
+	<when id="timepoint_87" since="timepoint_begin" interval="1922000"/>
+	<when id="timepoint_88" since="timepoint_begin" interval="1943900"/>
+	<when id="timepoint_89" since="timepoint_begin" interval="1964500"/>
+	<when id="timepoint_90" since="timepoint_begin" interval="1982900"/>
+	<when id="timepoint_91" since="timepoint_begin" interval="2010500"/>
+	<when id="timepoint_92" since="timepoint_begin" interval="2029900"/>
+	<when id="timepoint_93" since="timepoint_begin" interval="2055000"/>
+	<when id="timepoint_94" since="timepoint_begin" interval="2074600"/>
+	<when id="timepoint_95" since="timepoint_begin" interval="2099500"/>
+	<when id="timepoint_96" since="timepoint_begin" interval="2120300"/>
+	<when id="timepoint_97" since="timepoint_begin" interval="2138500"/>
+	<when id="timepoint_98" since="timepoint_begin" interval="2169200"/>
+	<when id="timepoint_99" since="timepoint_begin" interval="2192000"/>
+	<when id="timepoint_100" since="timepoint_begin" interval="2215300"/>
+	<when id="timepoint_101" since="timepoint_begin" interval="2241300"/>
+	<when id="timepoint_102" since="timepoint_begin" interval="2263100"/>
+	<when id="timepoint_103" since="timepoint_begin" interval="2286500"/>
+	<when id="timepoint_104" since="timepoint_begin" interval="2306700"/>
+	<when id="timepoint_105" since="timepoint_begin" interval="2330200"/>
+	<when id="timepoint_106" since="timepoint_begin" interval="2351800"/>
+	<when id="timepoint_107" since="timepoint_begin" interval="2378100"/>
+	<when id="timepoint_108" since="timepoint_begin" interval="2400600"/>
+	<when id="timepoint_109" since="timepoint_begin" interval="2424400"/>
+	<when id="timepoint_110" since="timepoint_begin" interval="2443700"/>
+	<when id="timepoint_111" since="timepoint_begin" interval="2470000"/>
+	<when id="timepoint_112" since="timepoint_begin" interval="2489800"/>
+	<when id="timepoint_113" since="timepoint_begin" interval="2508900"/>
+	<when id="timepoint_114" since="timepoint_begin" interval="2525800"/>
+	<when id="timepoint_115" since="timepoint_begin" interval="2546000"/>
+	<when id="timepoint_117" since="timepoint_begin" interval="2566300"/>
+	<when id="timepoint_118" since="timepoint_begin" interval="2586000"/>
+	<when id="timepoint_119" since="timepoint_begin" interval="2597300"/>
+	<when id="timepoint_120" since="timepoint_begin" interval="2621100"/>
+	<when id="timepoint_121" since="timepoint_begin" interval="2643800"/>
+	<when id="timepoint_122" since="timepoint_begin" interval="2658900"/>
+	<when id="timepoint_123" since="timepoint_begin" interval="2680800"/>
+	<when id="timepoint_124" since="timepoint_begin" interval="2703200"/>
+	<when id="timepoint_125" since="timepoint_begin" interval="2720600"/>
+	<when id="timepoint_127" since="timepoint_begin" interval="2746900"/>
+	<when id="timepoint_128" since="timepoint_begin" interval="2774900"/>
+	<when id="timepoint_129" since="timepoint_begin" interval="2791600"/>
+	<when id="timepoint_130" since="timepoint_begin" interval="2813800"/>
+	<when id="timepoint_131" since="timepoint_begin" interval="2833300"/>
+	<when id="timepoint_132" since="timepoint_begin" interval="2854200"/>
+	<when id="timepoint_133" since="timepoint_begin" interval="2871100"/>
+	<when id="timepoint_134" since="timepoint_begin" interval="2883500"/>
+	<when id="timepoint_135" since="timepoint_begin" interval="2900200"/>
+	<when id="timepoint_136" since="timepoint_begin" interval="2917500"/>
+	<when id="timepoint_137" since="timepoint_begin" interval="2937100"/>
+	<when id="timepoint_138" since="timepoint_begin" interval="2958600"/>
+	<when id="timepoint_139" since="timepoint_begin" interval="2978800"/>
+	<when id="timepoint_140" since="timepoint_begin" interval="2998700"/>
+	<when id="timepoint_141" since="timepoint_begin" interval="3021000"/>
+	<when id="timepoint_142" since="timepoint_begin" interval="3039400"/>
+	<when id="timepoint_143" since="timepoint_begin" interval="3068800"/>
+	<when id="timepoint_144" since="timepoint_begin" interval="3092200"/>
+	<when id="timepoint_145" since="timepoint_begin" interval="3107800"/>
+	<when id="timepoint_147" since="timepoint_begin" interval="3132000"/>
+	<when id="timepoint_148" since="timepoint_begin" interval="3152000"/>
+	<when id="timepoint_149" since="timepoint_begin" interval="3173800"/>
+	<when id="timepoint_150" since="timepoint_begin" interval="3199700"/>
+	<when id="timepoint_151" since="timepoint_begin" interval="3223500"/>
+	<when id="timepoint_152" since="timepoint_begin" interval="3249000"/>
+	<when id="timepoint_153" since="timepoint_begin" interval="3269900"/>
+	<when id="timepoint_154" since="timepoint_begin" interval="3292500"/>
+	<when id="timepoint_155" since="timepoint_begin" interval="3312800"/>
+	<when id="timepoint_156" since="timepoint_begin" interval="3335800"/>
+	<when id="timepoint_157" since="timepoint_begin" interval="3360300"/>
+	<when id="timepoint_158" since="timepoint_begin" interval="3382300"/>
+	<when id="timepoint_159" since="timepoint_begin" interval="3399600"/>
+	<when id="timepoint_160" since="timepoint_begin" interval="3422100"/>
+	<when id="timepoint_161" since="timepoint_begin" interval="3444900"/>
+	<when id="timepoint_162" since="timepoint_begin" interval="3468100"/>
+	<when id="timepoint_163" since="timepoint_begin" interval="3490100"/>
+	<when id="timepoint_164" since="timepoint_begin" interval="3511700"/>
+	<when id="timepoint_165" since="timepoint_begin" interval="3539800"/>
+	<when id="timepoint_166" since="timepoint_begin" interval="3567600"/>
+	<when id="timepoint_167" since="timepoint_begin" interval="3599100"/>
+	<when id="timepoint_168" since="timepoint_begin" interval="3619000"/>
+	<when id="timepoint_169" since="timepoint_begin" interval="3637100"/>
+	<when id="timepoint_170" since="timepoint_begin" interval="3657000"/>
+	<when id="timepoint_171" since="timepoint_begin" interval="3678500"/>
+	<when id="timepoint_172" since="timepoint_begin" interval="3689600"/>
+	<when id="timepoint_173" since="timepoint_begin" interval="3720800"/>
+	<when id="timepoint_174" since="timepoint_begin" interval="3741500"/>
+	<when id="timepoint_175" since="timepoint_begin" interval="3758800"/>
+	<when id="timepoint_176" since="timepoint_begin" interval="3779900"/>
+	<when id="timepoint_177" since="timepoint_begin" interval="3799000"/>
+	<when id="timepoint_end" since="timepoint_begin" interval="3832430"/>
+      </timeline>
+      <div1 id="transcript.1" n="Transcript">
+	<u rend="transcript_chunk" start="timepoint_1" n="1" end="timepoint_2">
+	  <u who="AI">So that shows how long I've been out here.</u>
+	  <u who="Cleary">So since, 1934 you first moved here?  </u>
+	  <u who="AI">Yeah we moved here in '34.</u>
+	  <u who="Cleary">And was that directly after your marriage? Or?</u>
+	  <u who="AI">We were having, we, a year to the day. We were married in June of '33 and we moved here June of '34 or May. It may not have been June, but I think it was, yeah.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_2" n="2" end="timepoint_3">
+	  <u who="Cleary">So about a year after?</u>
+	  <u who="AI">Yeah, it, it was a year yes.</u>
+	  <u who="Cleary">And where did you live in Cambridge?</u>
+	  <u who="AI">All over Cambridge.</u>
+	  <u who="Cleary">All over?</u>
+	  <u who="AI"><vocal desc="laughing"/> All over Cambridge. I was born near Harvard University. </u>
+	  <u who="Cleary">Oh really. </u>
+	  <u who="AI">Uhuh. Yeah.</u>
+	  <u who="Cleary">I, I live, I grew up in Harvard Square.</u>
+	  <u who="AI">You, you, you're, you did?  I lived, I was born on Bank Street. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_3" n="3" end="timepoint_4">
+	  <u who="Cleary">Bank Street, I know where that is.  I live right on, you know where Mount Auburn Street is?</u>
+	  <u who="AI">Yes.</u>
+	  <u who="Cleary">You know Gerry Street and Brewers Street?</u>
+	  <u who="AI">Yes.</u>
+	  <u who="Cleary">I live right on Gerry Street.</u>
+	  <u who="AI">Well.  Bank Street ran, runs from Mount Auburn Street <unclear>between</unclear> Flagg.</u>
+	  <u who="Cleary">Right.</u>
+	  <u who="AI">Well I was born there, on that street.  And I understand they have condominiums there now.</u>
+	  <u who="Cleary">Right.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_4" n="4" end="timepoint_5">
+	  <u who="AI">So I said, I had to <unclear>think</unclear>, I said "well with what my father was earning, he had, didn't even know what the word 'condominium' would have meant." Because well the word hadn't been coined.</u>
+	  <u who="Cleary">Right.</u>
+	  <u who="AI">Condominium. In 1911? <vocal desc="chuckles"/> Oh it's a long, long time ago.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_5" n="5" end="timepoint_6">
+	  <u who="Cleary">So did, did Mr. Isaacs, he also lived in Cambridge?</u>
+	  <u who="AI">He was born in Cambridge too.</u>
+	  <u who="Cleary">How did, how did you guys meet?</u>
+	  <u who="AI">I, I knew his family, when we were young. And lets see, I went to Cambridge High and Latin, he went to Rindge.  </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_6" n="6" end="timepoint_7">
+	  <u who="Cleary">Before you were married to him, what was like, the deciding factor, like this man I'm going to marry him.</u>
+	  <u who="AI">No, he, I hadn't seen much of him, you know, after I had...I used to see him at school, I lived near Cambridge High and Latin School.  He used to walk by my house going home.  But I never gave him any thought.  And he never gave me any thought.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_7" n="7" end="timepoint_8">
+	  <u who="AI">And so I met him, I just met him at this party, the Regents' or <gap desc="inaudible"/> at this party and he walked me home.  And then he asked me could he come to see me, and I said yes. And my mother was very, very strict with us.  And so he came to the house.  I'm about, let's see, I'm about 20 years old now, here. You know, I, I'm so amused today how things are.</u>
+	  <u who="Cleary">Right.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_8" n="8" end="timepoint_9">
+	  <u who="AI">See I'm still obeying my mother at 20 and I didn't tell her I wasn't going to do something, see.  It's not like that today. And so he came to the house and he took me off to <unclear>Blue Sands</unclear> and then he said to me one day "I'm gonna marry you." And that took me by surprise, he's, he was a quiet man.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_9" n="9" end="timepoint_10">
+	  <u who="AI">But, so we got married. We were married 61 years at the time that he passed away, which was 10 years ago. And we have two children; the drummer upstairs, he plays in a band and my daughter who... </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_10" n="10" end="timepoint_11">
+	  <u who="AI">No, no the drummer is my grandson, his mother.  And then I have this grown son in Connecticut.  So, so that's, so that's the story of my courtship.</u>
+	  <u who="Cleary">Meeting him and courting and what not.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_11" n="11" end="timepoint_12">
+	  <u who="Cleary">Can you tell me a little bit about the family life, like his role as a father in the family? Like in relation to like his son and his daughter and like what you noticed about that?</u>
+	  <u who="AI">In those days which, now that I look back on my childhood, my generation had a wonderful life and we didn't know it.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_12" n="12" end="timepoint_13">
+	  <u who="AI">Everybody was in the same, what do I wanna, how do I want to say it, everyone, we were poor but we didn't know that we were poor, see.  This was all, all nationalities.  Cambridge had every nationality in the world, we all lived together.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_13" n="13" end="timepoint_14">
+	  <u who="AI">And the only people who had automobiles were wealthy people, so for me to walk to, to Boston and back, it was nothing. Everybody walked, if you lived in Central Square, Cambridge, you walked to the high school.  If you lived in North Cambridge, almost to the Arlington line, you walked back and forth.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_14" n="14" end="timepoint_15">
+	  <u who="AI">And people, you just didn't have cars.  And then if a poor person gradually got a car it was a jalopy, you know it was about 40 years old when they bought it.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_15" n="15" end="timepoint_16">
+	  <u who="AI">But, I remember, the families, there were very few separations or divorces in those days, that was unheard of.  And no matter how poor people were they did their best.  The mothers stayed home, the only mothers who worked were those who really had to or were widows. <event desc="phone rings"/> That's for him not for me.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_16" n="16" end="timepoint_17">
+	  <u who="AI">And the mothers, you know, baked and sewed and scrubbed and worked hard, see. And neighbors helped each other and, and there, there was practically no scandal.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_17" n="17" end="timepoint_18">
+	  <u who="AI">The only time that you saw the paddy wagon, as we used to call it, patrol wagon see, is when a man had had a little bit too much to drink and they would pick him up and they'd take him to the police station and they'd keep him there overnight.  And his, his, his wife knew where he was and then they'd let him go out, go home the next day.  And they'd say "now's your <gap desc="inaudible"/> go on and behave yourself now."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_18" n="18" end="timepoint_19">
+	  <u who="AI">We didn't have, there was no. My daughter says I talk about what used to happen too much.  But life was different there's no comparison between how we're living today and years ago.  </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_19" n="19" end="timepoint_20">
+	  <u who="AI">And my uncle, my mother's brother, said my grandfather was a janitor, you know.  And he only, he worked, it was, you worked six days a week, there was no such thing as having Saturday off.</u>
+	  <u who="Cleary">Right.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_20" n="20" end="timepoint_21">
+	  <u who="AI">And my grandfather came home late at night and the children most likely were all in bed.  And my grandfather told them, "I'm only home on Sunday I want you to be around this dining room table", get it.  When I say around the table, they were oak, everybody had an oak, round, dining room table.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_21" n="21" end="timepoint_22">
+	  <u who="AI">And my uncle said "We were there."  Now these were teenaged children.  He said "unless you have some sort of a little job I want you here," and on Sundays there was my grand, grandmother, grandfather and I think there was five of them around that table.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_22" n="22" end="timepoint_23">
+	  <u who="AI">He said, "I want to be able to talk with you and find out what's going on during the week."  And of course every family then had one or two relatives living with them, you know.  I know we had an Aunt Ethel, we had an Aunt Wilson.  And, and you always had company for dinner, see.  Always had company for dinner, and there were two or three meats.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_23" n="23" end="timepoint_24">
+	  <u who="AI">And there, of course there was no Sunday baseball or, or football, none of those things. And you went to, regardless of what denomination you belonged to, you went to church or Sunday school on Sunday and no one had to tell the Jewish children to go to the...</u>
+	  <u who="Ceruzzi">Synagogue?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_24" n="24" end="timepoint_25">
+	  <u who="AI">What is it? The, what is it? Sometimes my memory leaves me.  What is it?</u>
+	  <u who="Ceruzzi">Synagogue or temple?</u>
+	  <u who="AI">The temple, on Saturda. They went.  And, and if you were Protestant or Catholic you knew that you had to go to church on Sunday.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_25" n="25" end="timepoint_26">
+	  <u who="AI">No one told you to, you just got up, you went to your church, and you, you did one of two things.  You either visited, you stayed home and you didn't ride bicycles, you couldn't even push a, a doll carriage.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_26" n="26" end="timepoint_27">
+	  <u who="AI">And you sat, you didn't change your clothes, and you sat on the front porch and, or you went to someone else's home for dinner.  And one of the big things in Cambridge when I <gap desc="inaudible"/> was to go to the museums at Harvard University.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_27" n="27" end="timepoint_28">
+	  <u who="AI">That was a wonderful thing on a Sunday afternoon and we, and we, we had an education that we didn't realize we were being educated. Or you went for a walk and you, and so, and if you had guests come from somewhere else you took them up to Harvard to show off the wonderful, the glass flowers from Germany and so forth.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_28" n="28" end="timepoint_29">
+	  <u who="AI">And the Protestant churches, a lot of them, had programs all day long.  So sometimes in the Protestant Church you were in church all day long. And if you said that you were going to somebody else's church, you had better go.  You had better go, because if you had, didn't show up your mother would know that you didn't go, that you weren't at so-and-so's church, that you went somewhere else. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_29" n="29" end="timepoint_30">
+	  <u who="AI">And a lot, many poor people didn't have telephones, they couldn't afford them.  But my stepfather worked for the city of Cambridge, he was a, a, a <unclear>crishy</unclear>. And so he had to have a telephone.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_30" n="30" end="timepoint_31">
+	  <u who="AI">And you know if anything happened, I don't know how my mother would know. 'Cause she, if we did, if any of us did anything that was wrong, 'cause there was four stepbrothers, my brother and me, my mother would hear about it.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_31" n="31" end="timepoint_32">
+	  <u who="AI">Now how did someone who didn't have a telephone get to her.  I don't know how. <vocal desc="laughing"/> I don't know how.  And now if you were living next door, or living in the neighborhood and you weren't behaving yourself, my mother would correct you saying, "young lady you know better than that."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_32" n="32" end="timepoint_33">
+	  <u who="AI">And you would, you would listen to her and we, they could correct each other's children. And we had one lady on our street and she, she was a dressmaker. She'd sit on the front porch in the Summertime and she'd go down and she'd look like this.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_33" n="33" end="timepoint_34">
+	  <u who="AI">So we got wise to her, when we got to her we stopped talking, 'cause she, she'd just give you a look.  And everyone knew each other, you see.  And that's another thing everyone knew each other, and really you might have in a school one boy or one girl who was, what you call, bad, and who really wasn't that bad.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_34" n="34" end="timepoint_35">
+	  <u who="AI">And lo and behold if your mother had to go out to the school, if you did something, if a note was sent.  If you were given a note and it was sent home to your mother you didn't throw it away, you gave it to your mother and she went up to the school to find out what you did.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_35" n="35" end="timepoint_36">
+	  <u who="AI">And so "Christ, here comes Alice's mother.  Hey kids, here comes Mrs. Willis." And, and, and if a father had to go up, now that meant he lost a day's pay.  If a father had to go up, see, it was too bad 'cause then he got the strap. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_36" n="36" end="timepoint_37">
+	  <u who="AI">You know, in those days, it was, it was punishment that, that they're, that they're against now. They don't, you're not supposed to spank your children. Well fathers and mothers used the strap in those days and so as I look back now and, and we often speak about it, the few of us who are left of my generation, that it really, life was wonderful when you come right down to it.  </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_37" n="37" end="timepoint_38">
+	  <u who="AI">And my husband was one of nine children.  And his mother could go off and leave him with a neighbor and she'd say "I'm going up to Central Square would you mind looking over the children? And tell me if they don't, if they do something that they shouldn't."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_38" n="38" end="timepoint_39">
+	  <u who="AI">So the neighbor would say "Now Mrs.Isaacs you know they're not going to do anything."  But she didn't just go off and leave them and when she came back, she'd come, she'd say, "Well did any of them behave, misbehave?"  They'd say, "No, Mrs. Isaacs."  But it was just that, that's how, that's how they looked out for each other.  And she would do the same for the neighbors' children, you see. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_39" n="39" end="timepoint_40">
+	  <u who="AI">And we, and I enjoy looking back now because there are only about four or five of us from my generation, that I can remember, who are living in Cambridge now. Cambridge has changed quite a bit. So you, you behaved.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_40" n="40" end="timepoint_41">
+	  <u who="AI">And this is one thing that I enjoy telling, and this was before my time, my mother was engaged to marry, to marry my father and there was a party across the street and parties then, of course, were started at eight and they were over at 10.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_41" n="41" end="timepoint_42">
+	  <u who="AI">And my father told, my grandfather told my father to have me home at, have my mother home at 10 o'clock.  And my father had my mother home at 10 o'clock and they were engaged to be married.  Can you, now the parties don't start 'til 10 or 11 and 12 at night.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_42" n="42" end="timepoint_43">
+	  <u who="AI">And I, can you imagine telling, telling any boy today to, to to bring your daughter home at a certain time?  You see I have, I have grandchildren who, in their twenties now, and my son has six children and he's got four at home.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_43" n="43" end="timepoint_44">
+	  <u who="AI">And he's got two graduating; there's one from college and one from high school this year. And three of them have their own cars, can you imagine?  But of course they live in rural Connecticut and you have to have a car where they are.  But three of them have their own cars.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_44" n="44" end="timepoint_45">
+	  <u who="Ceruzzi">Do you know where in Connecticut they live?  Sorry, I'm from Connecticut so I like....</u>
+	  <u who="AI">What?</u>
+	  <u who="Ceruzzi">I'm from Connecticut.</u>
+	  <u who="AI">You, from what?</u>
+	  <u who="Ceruzzi">West Hartford.</u>
+	  <u who="AI">Oh, they live in Danbury.</u>
+	  <u who="Ceruzzi">Oh, I don't really know where that is.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_45" n="45" end="timepoint_46">
+	  <u who="AI">So you know where Danbury is?</u>
+	  <u who="Ceruzzi">No, not really.</u>
+	  <u who="AI">Well it's almost to the New York border.</u>
+	  <u who="Ceruzzi">Okay. Yeah.</u>
+	  <u who="AI">It's right off 84.</u>
+	  <u who="Ceruzzi">Okay, so am I, okay.  Sorry I always get like very into Connecticut.</u>
+	  <u who="AI">Well there used to be a young lady who lived next door here from West Hartford.</u>
+	  <u who="Ceruzzi">Oh, cool.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_46" n="46" end="timepoint_47">
+	  <u who="AI">I don't remember her maiden name, she lives up in Chelmsford now. And the, it's, life is, you know, it is quite different.  And we, we had nothing, you know, when we got married. We didn't have a penny, we just wanted to get married.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_47" n="47" end="timepoint_48">
+	  <u who="AI">And, but we managed, my husband always worked and he was a good husband and a good father.  He never raised his voice, he wasn't a cursing or swearing man.  He never raised his voice to the children. And he had a dry sense of humor.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_48" n="48" end="timepoint_49">
+	  <u who="AI">Of course there were six boys in the family.  And I can remember, you know, when we came along we didn't, we weren't given allowances; only wealthy children were given allowances.  And he gave, and he was giving my children $5 a week a piece.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_49" n="49" end="timepoint_50">
+	  <u who="AI">So one day my son came to him, it was on a Tuesday, my husband got paid on Thursday, and he says, "Dad, can I have my allowance early."  My husband said, "Why? What happened to the money I gave you last week?" "Oh," he says, "I spent it."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_50" n="50" end="timepoint_51">
+	  <u who="AI">So my husband said, "well," he said, "that's too bad.  You'll have to wait until Thursday."  So he says, "but Daddy I don't have any money."  So my husband in his low voice said, "well I don't have any either."  I didn't say anything.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_51" n="51" end="timepoint_52">
+	  <u who="AI">And so he said, "I tell you what Walter when Container..."  He worked for Container Corporation of America, that's what it was then, it's another name now.  "When Container gives me my allowance I'll give you yours."  And that was it, that was my son's first and last time to ask for an advance.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_52" n="52" end="timepoint_53">
+	  <u who="AI">And my daughter was over in the corner, she was older, she was, oh she was having a wonderful time laughing at him, she was just very oh tee-hee-hee and all that, you see.  But that was it.  So, whenever either one of us would disagree with the children say, "you can't do this," or "you can't do other."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_53" n="53" end="timepoint_54">
+	  <u who="AI">They would be, my husband was, they'd say to my husband, "your wife, your wife won't let us do so and so."  Or it was "your husband" it was never "Daddy" or "Mother."  Or "your, your husband won't let us do so and so." </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_54" n="54" end="timepoint_55">
+	  <u who="AI">And if they wanted to go somewhere and I said, "no you can't go," well they'd ask him.  He'd say, "well did you ask your mother?"  They'd say, "yes."  "What did Momma say?" "Momma said no."  "Well if Momma said no that's it, there's no playing, you don't come and ask me.  Momma said no."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_55" n="55" end="timepoint_56">
+	  <u who="AI">And, so, my daughter took his death quite hard, 'cause he had alzheimers, and it was, it was rough.  And she took, she took his death quite hard.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_56" n="56" end="timepoint_57">
+	  <u who="AI">She's never got over it because he didn't know, he didn't know her.  She'd go to the nursing home, he'd look at her.  She used to smoke and she stopped smoking and she put on weight. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_57" n="57" end="timepoint_58">
+	  <u who="AI">And I said, "Walter, this is your firstborn, this is Cynthia."   And he'd smile, and after a while she couldn't go to see him, because that's what alzheimers does, typical.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_58" n="58" end="timepoint_59">
+	  <u who="AI">And, but he was, he was, he loved young people.  And he came out here, and he was an athlete: basketball and baseball.  And he right off used to took those boys down to the park and started a baseball team.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_59" n="59" end="timepoint_60">
+	  <u who="Cleary">Mr, Mr, Works was actually telling me about how when they started the team they were, they were terrible.  They like lost 20 games or something but that didn't bother them...</u>
+	  <u who="AI">No it didn't bother him...</u>
+	  <u who="Cleary">He said it didn't bother him at all.  He said the fact that they eventually got better that was the thing he was building on.  Can you talk a little bit more about how he like, how was like, the fact that they were loosing but the fact that they were improving, was that really...</u>
+	  <u who="AI">Yes</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_60" n="60" end="timepoint_61">
+	  <u who="AI">They say he, he encouraged them and my daughter has a picture of the baseball team.  All they could afford was caps, they couldn't afford uniforms and my husband bought the caps, which was alright with me.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_61" n="61" end="timepoint_62">
+	  <u who="AI">And they would come to the house for meetings, we weren't living here then. And people would say you let those little grubby boys come into your home and I says, "What do you mean?"  And I said, "I'm glad that they can come."  "And they sit in your living room?"  </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_62" n="62" end="timepoint_63">
+	  <u who="AI">And I said, I said, "That's my husband's home, he told them to come to the house for a meeting.  I'm to tell him no they can't come?"  It didn't dawn on me and they just as nice.  And I still have a living room chair that those boys sat in and Wally Kountze was one of 'em.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_63" n="63" end="timepoint_64">
+	  <u who="AI">And Wally, we have a picture, a baseball picture, and Wally Kountze is standing beside my husband.  His a little bit taller then my husband, who's about 5'9"or 10", I guess.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_64" n="64" end="timepoint_65">
+	  <u who="AI">And my husband looked as young as the boys. He didn't look his age at all and in the nursing home they said to me, "We can tell this man has lived, has lived a good life by the condition of his body."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_65" n="65" end="timepoint_66">
+	  <u who="AI">Because he played baseball, basketball and he bowled.  Yes he did all of those things and he was a very good, he was a <gap desc="inaudible"/>, a forward.  And then, when he played baseball as a young man he as a first baseman, and a shortstop. And, but this is, this is what he loved.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_66" n="66" end="timepoint_67">
+	  <u who="Cleary">Did he, did he, did he, did he play baseball and basketball at Cambridge?</u>
+	  <u who="AI">Yes.</u>
+	  <u who="Cleary">Yes.</u>
+	  <u who="AI">He played, he played baseball and basketball in Cambridge and I don't know what happened to that picture.  But he was the captain of the basketball team and he used to call it the league of nations.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_67" n="67" end="timepoint_68">
+	  <u who="AI">There were a lot of Polish people who lived in the neighborhood and, and, here's what I say that everybody lived together and the mothers, the mothers would go to the games and...Excuse me.  He's sitting up there, there's a round place holding this basketball and I don't know what happened to that picture.  Unless my daughter has it, she has a lot the pictures, and I don't have anything of him.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_68" n="68" end="timepoint_69">
+	  <u who="AI">But, and he called it the league of nations basketball team because there was Polish and there was Irish, and he was the only, they were using the word 'colored' then, he was the only colored. Well I guess there was, gratious, oh there was some Portuguese also in East Cambridge.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_69" n="69" end="timepoint_70">
+	  <u who="AI">Cambridge had every nationality in the world: Greeks, Armenians and so as I said as I look back now life was wonderful.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_70" n="70" end="timepoint_71">
+	  <u who="AI">But I had to get to be an old lady, or to get older to realize it.  That, and, you, there was no, nothing that's going on today, I won't even go into details.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_71" n="71" end="timepoint_72">
+	  <u who="AI">And oh, once in a while somebody was caught smoking a reefer. Oh that was terrible, it was probably two kids in the whole city of, of Cambridge.  It's the only thing that we knew about drugs, was reefers. That's the only thing that I ever knew.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_72" n="72" end="timepoint_73">
+	  <u who="AI">I had, and now I'm older I'm learning, I had to learn all these things.  And, so as I said children were not bad they were mischevious; you had one or two, but...</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_73" n="73" end="timepoint_74">
+	  <u who="AI">And you respected the teachers, and the, and there was no such thing as parents going up and fighting a teacher like they do today. And.  You going out? </u>
+	  <u who="Grandson">Oh yeah. <gap desc="inaudible"/></u>
+	  <u who="AI">Okay.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_74" n="74" end="timepoint_75">
+	  <u who="Cleary">Lets change the pace a little bit.  I've heard alot about Mr. Isaacs ability with figures and finance and his involvement in the community finances.  Can you, can you talk a little bit about that?  </u>
+	  <u who="AI">Yes. He, my husband did not go to, he didn't even finish high school because his family was so large and he knew his mother was, was having a hard time finances, financially.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_75" n="75" end="timepoint_76">
+	  <u who="AI">So he left, he left school and went to work, but he was a whiz when it came to figures. Someone else was using an adding machine, do you know what an adding machine is?</u>
+	  <u who="Ceruzzi">A calculator?</u>
+	  <u who="AI"><vocal desc="laughing"/> No.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_76" n="76" end="timepoint_77">
+	  <u who="AI">I used one at work, they don't use them today.  And my husband can add up, and by the time that person got through with the figures, he had added them up in his head.  Yes he was, he worked on the finance committee at the church for years.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_77" n="77" end="timepoint_78">
+	  <u who="AI">And you know all of a sudden he decided that he didn't want to be on the finance committee any longer and so he and Mr. Works were very, very close and he resigned.  And now I'm beginning to think that he realized that he wasn't able to do it, see.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_78" n="78" end="timepoint_79">
+	  <u who="AI">I guess the alzheimers was saying that he wasn't able to do it and.  But, and there's nothing that he wouldn't do for anybody, nothing. </u>
+	  <u who="Cleary">Mr. Works actually told me about how he helped, that Mr. Isaacs helped him buy his first house.</u>
+	  <u who="AI">Yeah, that's right.</u>
+	  <u who="Cleary">In this area.</u>
+	  <u who="AI">Yes he did. He said he helped him buy this house over here.  </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_79" n="79" end="timepoint_80">
+	  <u who="Cleary">He said something about how there was a lot of like restrictions on like companies giving African-American's finance at that time.  And Mr., Mr. Isaacs kind of like helped him through that, encouraged him and...</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_80" n="80" end="timepoint_81">
+	  <u who="AI">Yeah he was on, yeah Mr. Works was very good on figures too.  He was on the, oh, businesses have them. <gap desc="inaudible"/> people.  Something that you join.</u>
+	  <u who="Cleary">The board?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_81" n="81" end="timepoint_82">
+	  <u who="AI">No, it won't come.  After you leave it will come to me.  We had one where I worked but I didn't join it.  Anyway people were, you were able to join, and then when you wanted money you could go and borrow it, it was your money that you were borrowing.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_82" n="82" end="timepoint_83">
+	  <u who="Ceruzzi">Like the budget committee? </u>
+	  <u who="AI">Hmm?</u>
+	  <u who="Ceruzzi">Budget committee?</u>
+	  <u who="AI">No, but it won't come to me now.</u>
+	  <u who="Ceruzzi">Treasury?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_83" n="83" end="timepoint_84">
+	  <u who="AI">But my husband, see my husband wasn't argumentative see.  I, I'm the fighter in the family, I was.  But my husband wasn't argumentative and he had a very quiet way.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_84" n="84" end="timepoint_85">
+	  <u who="AI">And the way, just the way he would speak to people if, if he were a young man now and alive he could, he could talk to George Bush and explain to him, tell him what to do, see.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_85" n="85" end="timepoint_86">
+	  <u who="AI">I mean he had that, he had that knack, you see.  And, and then he could laugh at things that make, that people would do and say that would make me furious, you see.  And he says, "you get too upset."</u>
+	  <u who="Cleary">What would be one of those things?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_86" n="86" end="timepoint_87">
+	  <u who="AI">Yeah. And he said, he, he would, I found out later, after he died, how he had loaned people money.  But that didn't bother me, he took care of me, he took care of me and I knew.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_87" n="87" end="timepoint_88">
+	  <u who="AI">I could sense that he was letting people have money 'cause we weren't wealthy by any means, we were comfortable.  But he never, made sure the children and I never suffered.  And he was wonderful to my mother, she lived with us, he was wonderful. And, and he was wonderful to his mother too.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_88" n="88" end="timepoint_89">
+	  <u who="AI">And I know that he, even after we were married, I know that, he helped her but that was alright that was his mother.  He didn't, we didn't have a <gap desc="inaudible"/> and I know that, I know that people took advantage of him.  But that was his way, you see, that was his way.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_89" n="89" end="timepoint_90">
+	  <u who="AI">And he was a very, you know, he was a quiet man and one of the things that I used to enjoy so much with him, you know every Sunday there's a baseball, a football game, he'd sit in this, not this chair but one similar to it.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_90" n="90" end="timepoint_91">
+	  <u who="AI">And he came home church he never changed his clothes, that white shirt and necktie stayed on.  After we'd had dinner, he'd sit here and he'd turn the TV on and I would sit over there and I knit for charity so I'd take out my knitting and after a while I'd hear him snoring, he had gone to sleep.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_91" n="91" end="timepoint_92">
+	  <u who="AI">Automatically he would wake up at the end of the first half and say, "Well what's the score?"  And I don't know, now I came from a football family, my stepfather and my stepbrothers played football and this boy was a whiz at football and his brother.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_92" n="92" end="timepoint_93">
+	  <u who="AI">But I'd go to the games, clear as mud.  So, if he'd explain it to me I'd understand. And I said, "Well Walter all I know is the man could say this is the end of the first half."  Then he'd become embarassed, he'd get red, he'd say, "well how about some ice cream and tea."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_93" n="93" end="timepoint_94">
+	  <u who="AI">We're ice cream family here, and I'd say, "well okay I'll get it."  "No, I'll get it."  He'd, he'd serve the ice cream and he'd pour the tea. Then he was all straight, he would sit here and then he'd look at that TV and then he'd tell me how the play.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_94" n="94" end="timepoint_95">
+	  <u who="AI">He'd never played football because he wasn't big enough, see, but he understood, he understood every game.  'Cause his father was from the Islands, so his father played cricket, he understood cricket.  Football, golf, I watch golf sometimes just, just because it comforts me, 'cause there's, there's no fighting and cursing and swearing and so forth. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_95" n="95" end="timepoint_96">
+	  <u who="AI">So sometimes on a Saturday I'll turn on, turn on, 'cause I love nature and to see all that greenery and everything and that it relaxes me.  But he could tell you what they were doing in golf and so forth, and he would tell them how to play that game, see.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_96" n="96" end="timepoint_97">
+	  <u who="AI">And if they won, "well" he says, "you listened to me."  But did you think he got mad if they lost?  He said, "Well, now you see you didn't listen to me,see.  Now if you had done as I told you about that play so forth," he said, "then you would have won that game."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_97" n="97" end="timepoint_98">
+	  <u who="AI">That happened Sunday after Sunday for years, that we were home.   And I often, I can see him sitting here now immaculately dressed see, and, and enjoying that, that football game and every, as clear as clockwork, going to sleep when it was half way through the first half and the same thing. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_98" n="98" end="timepoint_99">
+	  <u who="AI">But we'd have to have that ice cream and tea.  And that's something that I, it's a pleasant, to me it's very pleasant to think about sometimes.  And he was a quiet man, and he didn't, he didn't have much, he didn't talk a lot.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_99" n="99" end="timepoint_100">
+	  <u who="AI">But he, he was, he liked people and he would, they would, he had, you know, some very, very good qualities and he did everything for everybody in the neighborhood.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_100" n="100" end="timepoint_101">
+	  <u who="Cleary">What are, what are some of those more prominent qualities that he had that kind of distinquished him from...</u>
+	  <u who="AI">What</u>
+	  <u who="Cleary"><vocal desc="voice raised"/> What are some of the qualities that he had that allowed him to lead people, in your mind?</u>
+	  <u who="AI">To, to, to...</u>
+	  <u who="Cleary">To lead people, to be a leader.</u>
+	  <u who="AI">He, he wanted to, he liked to, he was, he was.  He liked to be a leader but he was low key. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_101" n="101" end="timepoint_102">
+	  <u who="Cleary">Right. Right.</u>
+	  <u who="AI">See there was nothing big shot about him, he just wanted, he wanted to do for other people.  And if he had been, had been able to go to college he would have been a very good president or vice president of an organization.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_102" n="102" end="timepoint_103">
+	  <u who="AI">Because he knew how to calm people down see, and sometimes he would... He came in one day and he said, he belonged to a bowling team here and someone else would have been furious and he said, "Alice" he said, "don't say anything," he said.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_103" n="103" end="timepoint_104">
+	  <u who="AI">There was a, a trophy, one of these, what was it called, tennis trophies, some of them, there not up there now.  He said, "there was a trophy that I should have received in bowling but some, so and so maneuvered it so that he got it. But he said, "I wasn't going to make any issue over a trophy."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_104" n="104" end="timepoint_105">
+	  <u who="AI">Somebody else would have been, you know, really angry, see, and he laughed it off, see. So that's, that's between him and me.  And he, he liked doing things for other people.  And he was always, that, that was his way.  And he liked to help people.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_105" n="105" end="timepoint_106">
+	  <u who="AI">And lady around the corner was, came here, her husband was in the service and the baby came.  And she was strange, didn't know anybody.  And she had ordered this baby carriage and it was crated and she didn't know what to do with this crate. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_106" n="106" end="timepoint_107">
+	  <u who="AI">And so someone said, "oh, there's Mr. Isaacs down the street."  My husband was, was home during the day and he worked afternoons.  "He'll take it apart."  So anyway this person went and got my husband, said, "Ike," they used to call him Ike, "Mrs. Greene needs to have this box opened."  So my husband came and put that baby carriage together.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_107" n="107" end="timepoint_108">
+	  <u who="AI">And she talked about that for years, that baby is now a practicing dentist <gap desc="inaudible"/>.  And, and he didn't do it for show, he was, he was helping his neighbor, see.  His neighbor needed, her husband was in the service.  Do you know Oscar Greene?  Did you met him?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_108" n="108" end="timepoint_109">
+	  <u who="Cleary">I haven't met him.</u>
+	  <u who="Ceruzzi">Oh we've heard about him.</u>
+	  <u who="Cleary">Yeah, we've heard about him.</u>
+	  <u who="Ceruzzi">Yeah.</u>
+	  <u who="AI">There was his, his, wife.  He lives just two streets away from here and it was his baby carriage, his boy.  Now Oscar, as I said Oscar Junior is now a practicing dentist.  And my husband was that type.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_109" n="109" end="timepoint_110">
+	  <u who="AI">So he had told my son never to throw stones and he threw a stone and broke the window of the house next door. <unclear>And I heard</unclear> the ladies "Oh, Mr. Isaacs that's alright." He said, "no it isn't alright, he disobeyed."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_110" n="110" end="timepoint_111">
+	  <u who="AI">He took my son's allowance and he took him to the store and he had him watch him buy the pane of glass and then he had him stand outside.  "Come over here next to me."   And watch him put that pane of glass in.  And that was the first and last time, that I know, that my son ever threw a stone. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_111" n="111" end="timepoint_112">
+	  <u who="Ceruzzi">How old was your son at that point?</u>
+	  <u who="AI">He was about eight or ten years old.  So you see, and there was no beating, there was no cursing or swearing.  He said, "this is what happens when you don't obey."  And he says, "when we older people don't obey we get into trouble."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_112" n="112" end="timepoint_113">
+	  <u who="AI">And, so the children, sometimes they tell me things that he did that I didn't know about.  They tell me about it, but just since they've been grown up.  And "Daddy did this" or "Daddy did the other."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_113" n="113" end="timepoint_114">
+	  <u who="AI">And then, then, then he was a good grandfather, see.  And he was the type that the children walked, walked all over him and, and so forth.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_114" n="114" end="timepoint_115">
+	  <u who="AI">And he told one of my third or fourth, I have six grandchildren.  He told one of them, he says, when we'd go there for dinner, he sits at the table and he'd say, "Garret, are you going to eat all that?"  He used to call him "Bumpa."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_115" n="115" end="timepoint_117">
+	  <u who="AI">But the oldest grandson, this boy's brother could not say "Grandpa" and he says "Bumpa."  And my husband was "Bumpa" to the kids in the neighborhood.  And he'd say, "Bumpa" he said, "you watch me," and Garret, Garret's, he's got a birthday tomorrow I think. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_117" n="117" end="timepoint_118">
+	  <u who="AI">He's, I think Garret's 22 or 23 now.  And he would eat, and then he'd go back for a second and my son, my husband would say, "I'm glad I don't have to feed you," and not crack a smile.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_118" n="118" end="timepoint_119">
+	  <u who="AI">And he would, that second plate would be as, as full as the first plate. But he, he loved, he loved children.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_119" n="119" end="timepoint_120">
+	  <u who="AI">And, the, by where he, and he played tennis very good, he taught tennis and my granddaughter, who lives in Georgia, she has a bench on the vineyard where my son has a home.  And it's at the tennis court and it's in his honor and mine. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_120" n="120" end="timepoint_121">
+	  <u who="AI">Cleary:  On, on the Vineyard?</u>
+	  <u who="AI">Memory of the two of us.  And I saw it last summer and they were, they were having this program of having benches in honor of people who played at that particular tennis court and all over the, the Vineyard.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_121" n="121" end="timepoint_122">
+	  <u who="AI">So I saw it, and I <gap desc="inaudible"/>.  And then she has a boy.  And she adopted him, he is a darling.  And she said, "Mum, wouldn't Bumpa love him, and be proud of him?"</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_122" n="122" end="timepoint_123">
+	  <u who="AI">And I said, "yes." And this boy, he is like our own blood, he is 100% athlete.  This great grandson.  And I said, "oh" I said, "yes, he would love him."  But he loved all, he loved all the children, see.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_123" n="123" end="timepoint_124">
+	  <u who="AI">And, and you know, it's nice because even Wally Kountze's generation, the few who are left, they're very respectful to me. And, so, they, Wally's very thoughtful of me, very considerate.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_124" n="124" end="timepoint_125">
+	  <u who="AI">And so that's, that's the way he was.  And then when he became ill he changed a lot, but you have to, you have to accept it, see.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_125" n="125" end="timepoint_127">
+	  <u who="AI">And I took him for better or worse.  And, it, it wasn't easy.  But he wouldn't talk to me and I, I'd go to see him at the nursing home.  So the day before our 61st wedding anniversary I said to him, "Walter, do you know we'll be married 61 years.  Aren't you glad you've had me all these years?" </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_127" n="127" end="timepoint_128">
+	  <u who="AI">He looked at me, I used to feed him, and then he started to laugh like he used to years ago, see.  And he, and he shook and he laughed, he, he realized what I said see, you know.  And it was just like nothing had ever happened, the way he laughed it's like the way...He used to tease me, you see <vocal desc="laughing"/>.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_128" n="128" end="timepoint_129">
+	  <u who="AI">And he looked <gap desc="inaudible"/> and it was cute and so the, and so the aide said, "61 years?"  And I said, "yes, we're married 61 years."  And he died, he died the next month.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_129" n="129" end="timepoint_130">
+	  <u who="AI">But, he's, so, and I guess Horace Works told you some things that I obviously don't know.   Has anyways?  Have either of you received information from my daughter?  She sent papers in to somebody.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_130" n="130" end="timepoint_131">
+	  <u who="Ceruzzi">Yeah. </u>
+	  <u who="Cleary">Yeah.</u>
+	  <u who="AI">You?</u>
+	  <u who="Cleary">I'm going to, she said Tuesdays worked well for her, right? Tuesdays?  Tuesdays?  </u>
+	  <u who="AI">I don't have my hearing aid in.  </u>
+	  <u who="Cleary">Oh okay. Tuesdays.  She said that...</u>
+	  <u who="AI">You, you want to come back again? </u>
+	  <u who="Cleary">Yes, on Tuesday to meet with her.  I'm going to call her.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_131" n="131" end="timepoint_132">
+	  <u who="AI">Such a busy lady, too busy.</u>
+	  <u who="Cleary">Oh no I mean to meet with your, to meet with your...</u>
+	  <u who="Ceruzzi">Daughter.</u>
+	  <u who="Cleary">Daughter.</u>
+	  <u who="AI">Oh you'll see to my daughter on Tuesday.  </u>
+	  <u who="Cleary">Yes</u>
+	  <u who="AI">Yes.  In the morning? </u>
+	  <u who="Cleary">Ahhm</u>
+	  <u who="AI">I imagine it will be in the morning 'cause she works in the afternoon.</u>
+	  <u who="Cleary">Yeah, she said after four I believe.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_132" n="132" end="timepoint_133">
+	  <u who="AI">Oh, after four yes.  Yeah that's alright.  Well she has, she has the picture of, I don't know if she'll loan it or not but she has the picture of my husband and Wally.  I don't know whether Horace, did Horace play baseball?   Did he say?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_133" n="133" end="timepoint_134">
+	  <u who="AI">Cleary:  He, he was, I think he was more into the bowling than...</u>
+	  <u who="AI">Oh yes. And course, unfortunately some of those young people have passed on.  And they were...</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_134" n="134" end="timepoint_135">
+	  <u who="AI">But yes, yes after four would be better for her yes, because I have to go to the hairdressers that morning and she takes me and picks me up.  But even if she didn't the morning is, isn't a good time for her.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_135" n="135" end="timepoint_136">
+	  <u who="AI">And, so, but she was his heart, yeah, yeah of the two children.  She was his heart and the children are quite different in make up.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_136" n="136" end="timepoint_137">
+	  <u who="AI">But she is here, and my son, you know of course, is living in Connecticut now.  But he was, but he, the children.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_137" n="137" end="timepoint_138">
+	  <u who="AI">Another thing that the children, all the young people of here, that generation, now my daughter is 66 and my son is 64 and all of them say, "we didn't know it but we had a wonderful childhood here in West Medford"</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_138" n="138" end="timepoint_139">
+	  <u who="AI">They all say it and I say, "yes" and I say, "we parents used to want to kill you and we realize now that you children were no..." They were no problem at all. </u>
+	  <u who="Cleary">What do you, what do you think some of the reasons why they attribute a great childhood to West Medford?</u>
+	  <u who="AI">Do I what?</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_139" n="139" end="timepoint_140">
+	  <u who="Cleary">Like what do you think some of the reasons are that they would say that they had a great childhood in West Medford?</u>
+	  <u who="AI">Well.</u>
+	  <u who="Cleary">I mean, even the obvious ones.</u>
+	  <u who="AI">It was the same thing, we, they were brought up the same way that I was.</u>
+	  <u who="Cleary">In Cambridge.</u>
+	  <u who="AI">In Cambridge.  Everyone out here at that time knew each other.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_140" n="140" end="timepoint_141">
+	  <u who="AI">Most ofthe mothers did not work, there were a few.  And most of them went to the Shiloh Baptist Church, a few of them went elsewhere.  And we could speak to the children the same way that they could speak to us when I came along.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_141" n="141" end="timepoint_142">
+	  <u who="AI">And we had, oh we had a good time out here, you know.  And parents worked, looked out, as I said, looked out for each other, and it was, this was a close-knit neighborhood.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_142" n="142" end="timepoint_143">
+	  <u who="AI">Now there, there are only about four or five of us who are my age now here.  And it was, it was, when they were coming along it was the same way, the way I came along, see.  And, we had, we used to have a lot of fun, and we sewed, the mothers sewed.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_143" n="143" end="timepoint_144">
+	  <u who="AI">And then we'd have little sales, booth sales and so forth.  And we'd have field days down at the park, my husband used to be in charge of that.  And I remember Kenneth Phillips, I used to rent a pony or something, and he'd get a big sombrero and he'd give the kids a ride around the park.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_144" n="144" end="timepoint_145">
+	  <u who="AI">And now he, now he's a grandfather.  And so that's, that's what they all say, 'cause many of them have left this area and living in other parts of the world.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_145" n="145" end="timepoint_147">
+	  <u who="AI">But those who are here, and we, you know, as I said I could speak to you if you weren't behaving yourself and you wouldn't give me any back talk. And I guess someone could, would tell, would tell your father and say, "your son" so forth and so on.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_147" n="147" end="timepoint_148">
+	  <u who="AI">So one day my brother who used to live out here told me that my son was rude to one of the senior citizens out here.  Walter was a good kid, not saying because he's mine, but he was pretty good and I couldn't imaging him. I said, "Walter, were you rude to Mr. Bird?" </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_148" n="148" end="timepoint_149">
+	  <u who="AI">Mr. Bird was a darling.  So I spoke to my son, I didn't say, "Oh, no not my son," no. We had one mother out here who's like that, not her son.  I said, "Uncle George said Mr. Bird told him that you were rude to him.  What did you say to Mr. Bird?"</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_149" n="149" end="timepoint_150">
+	  <u who="AI">So, he said, when I, Walter told me what had happened it wasn't, my son, my brother didn't know what my son had done. But when my son was talking to me apparently Mr. Bird had exagerated a little bit, but still he was such a wonderful gentleman that I couldn't imagine anybody being rude to him.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_150" n="150" end="timepoint_151">
+	  <u who="AI">So I punished my son, see, by not letting him go somewhere.  So another thing that my husband would do, see, now listen, my husband worked Saturdays for half a day.  He was not to go out until he had done his chores for the day, "now don't you holler and scream, he's not to go out," and he told me.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_151" n="151" end="timepoint_152">
+	  <u who="AI">My son loved to read and we were all readers and he would read.  And we had a cat and he played with the cat.  And so some of the kids would come over here to play baseball and they'd say, "Oh, Mrs. Isaacs, Walter will do it next week?" and I'd say, "no, Mr. Isaacs said he's not to go out." <vocal desc="clears throat"/> Excuse me. "Until his work is done."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_152" n="152" end="timepoint_153">
+	  <u who="AI">So one day my son, my husband came home and Walter was still in the house <gap desc="inaudible"/> "Well, I'm going out."  My husband said, "You're going out where?"  "Well I did my work."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_153" n="153" end="timepoint_154">
+	  <u who="AI">He said "you know, it's four o'clock, it's about, almost time for you to come in."  He said, "you should have been out, on your way home."  He said, "no, your not going out."  Just like that.  And you, you talk to any child like that today.  And so that's, that's when I hear about 'your husband'.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_154" n="154" end="timepoint_155">
+	  <u who="AI">And, but that's what, that's, that's how it was.  He said, my daughter would get up in the morning  and she would do her work.  She had a little bit of ironing to do and 12 o'clock she was all through and she was out with her friends and he's listening to the radio and playing with the cat, poor thing.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_155" n="155" end="timepoint_156">
+	  <u who="AI">And my husband, I didn't say anything.  So, the children, they loved him, they really loved, loved their father, see.  "Daddy this" and "Daddy the other" and so forth and so on.  I was the one that was, I'm a little, a little harder.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_156" n="156" end="timepoint_157">
+	  <u who="AI">And my daughter and I, now, kind of clash sometimes but she's good, she's good to me.  So this is how our family was, and there were a lot of families around here too. That they, we were good families.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_157" n="157" end="timepoint_158">
+	  <u who="AI">So that's, that's Mr. Isaacs, he was born in 1909 and he died in 19, he died in 1994.  Yeah. Died in 1994. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_158" n="158" end="timepoint_159">
+	  <u who="Cleary">My, my, my great grandmother was born in 1912 and she died of alzheimers, I think, in '94.</u>
+	  <u who="AI">In '94?</u>
+	  <u who="Cleary">Yeah.</u>
+	  <u who="AI">Yeah? I was...</u>
+	  <u who="Ceruzzi">That's about the same as mine as well.</u>
+	  <u who="AI">Is that so?</u>
+	  <u who="Cleary">Yip:</u>
+	  <u who="AI">Yeah.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_159" n="159" end="timepoint_160">
+	  <u who="Cleary">She, she really came <gap desc="inaudible"/> life as well. </u>
+	  <u who="AI">I was born in 1911 and I'm still here <vocal desc="chuckling"/>.  And I was a sickly child, the doctor told my mother that she made, he didn't think I might, would live to see womanhood.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_160" n="160" end="timepoint_161">
+	  <u who="AI">And soon as I reached puberty I, everything was wrong with me heart and everything, and I didn't become ill again.  Well I had a couple of surgeries but I didn't become ill again until 1991, not ill, but that's when I began to go down, you know, and taking care of my husband and so forth.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_161" n="161" end="timepoint_162">
+	  <u who="AI">But the only thing, the worst thing that's bothered me is my eyes and I, I don't wear the hearing aid like I should.  And I have arthritis but then who doesn't have it,so.</u>
+	  <u who="Ceruzzi">Yeah, even my dad thinks he has it.</u>
+	  <u who="AI">Your dad has arthritis?</u>
+	  <u who="Ceruzzi">Apparently, I don't really think so.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_162" n="162" end="timepoint_163">
+	  <u who="AI">I can't, I can't travel like I used to, three years, after three years ago I was going anywhere I wanted to go but I can't do it now. So I, but as long as I can read and do my knitting for charity, I knit for three charities, that, that makes me, that makes me happy.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_163" n="163" end="timepoint_164">
+	  <u who="AI">And when you get older you have to accept what comes to you and don't complain.  And don't, nobody wants to hear if you say, if you don't feel good say "I feel pretty good."  Nobody wants to hear that you've got this and you've got the other because they may be worse off than you.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_164" n="164" end="timepoint_165">
+	  <u who="AI">And, so, the, so that's about it and see now this is, see this is 2005. My mother's youngest brother died, if he had lived two more months he would have been 100.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_165" n="165" end="timepoint_166">
+	  <u who="AI">And that was in '99, he, he died in, just around Easter time.  His birthday was June and our Harold was very, pretty good spirits.  He was in a nursing home 'cause he couldn't walk.  But my mother died, she was 80, was 87.  And so maybe <gap desc="inaudible"/>.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_166" n="166" end="timepoint_167">
+	  <u who="AI">But you, I wish that I, the only thing that I wish I could do, I was a walker, see, and I see the young people out there jogging and walking along and I say from, I guess they're from Tufts, and I say, "that's right."  I'm talking to them now, they don't, of course they, they can't hear me. I said, "keep on, don't give it up, keep on walking. And if you don't walk you won't be able to."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_167" n="167" end="timepoint_168">
+	  <u who="AI">So, that's the only thing, if I could just get, go up here and get on the bus.  If I could get to Davis Square and down to Center, you know.  But this is the way it goes so.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_168" n="168" end="timepoint_169">
+	  <u who="AI">Then of course the family wants me to live for ever and when we get together, do this and do the other. I said, "listen I, you've got to realise that I've got to leave here someday."</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_169" n="169" end="timepoint_170">
+	  <u who="AI">"Oh no Grandma, you've got to."  I'm Grandma to some and Mum to others.  "We can't, we can't lose you." And I say, "but wait a minute," see.  But I have a great granddaughter and she constantly reminds me that I'm old.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_170" n="170" end="timepoint_171">
+	  <u who="AI">She says, "I'm not goin' to get old."  That's what she tells me, she's not goin' to get old, she's 12. <gap desc="inaudible"/>.</u>
+	  <u who="Cleary">Alright is there anything else you want to add?  You've told us a great deal. Great <gap desc="inaudible"/>.  Is there anything else you would like to add?</u>
+	  <u who="AI">Well.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_171" n="171" end="timepoint_172">
+	  <u who="Cleary">Before we close up here.</u>
+	  <u who="AI">Well. I, no there isn't much to say that, I didn't mean to talk about myself.</u>
+	  <u who="Cleary">No.  Well that's, that's, that's perfectly fine.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_172" n="172" end="timepoint_173">
+	  <u who="AI">But, except that this was interesting and it's nice to, to be, you know, to talk to intelligent young people and as I said that I've got all these, each, each one of my eight grandchildren are different and they're doing all right.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_173" n="173" end="timepoint_174">
+	  <u who="AI">This one here, this one here leaves, lives here, he's been with me ever since before his grandfather died.  So his been cleaning, and working and doing things for me and he tells me I keep the house too warm.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_174" n="174" end="timepoint_175">
+	  <u who="AI">I don't like a cold house so I say, "well you know Stephen, you don't have to stay here." I haven't see him leave.</u>
+	  <u who="Ceruzzi">How old is he?</u>
+	  <u who="AI">He's, gee I've got the heat on and he's got the window open upstairs.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_175" n="175" end="timepoint_176">
+	  <u who="AI">And of course he's a big man, he's huge and I say, "you know Stephen, I'm not begging you to stay, you don't have to stay."  And, so I had to laugh, where can you live where there's always something in the refrigerator.</u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_176" n="176" end="timepoint_177">
+	  <u who="AI">"Boy" he says, and then he comes downstairs, and he thinks I don't know it.  The thermostats in the living room and all of a sudden it gets cool in here, he's gone in there, gone around the corner and turned it down to 62. </u>
+	</u>
+	<u rend="transcript_chunk" start="timepoint_177" n="177" end="timepoint_end">
+	  <u who="AI">And it's too cold for me and it's obvious I  am buying oil and paying for it.  This is my house, it's goin' to be what I want <gap desc="inaudible"/> look out the window.  I say that's okay but he's not leaving.  So I hope I haven't bored you.  </u>
+	</u>
+      </div1>
+    </body>
+  </text>
+</TEI.2>

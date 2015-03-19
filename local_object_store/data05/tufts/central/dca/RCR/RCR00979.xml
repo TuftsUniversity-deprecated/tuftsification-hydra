@@ -1,0 +1,109 @@
+<export>
+    <eac-cpf xmlns="urn:isbn:1-931666-33-4"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+        <control>
+            <recordId>RCR00979</recordId>
+            <maintenanceStatus>new</maintenanceStatus>
+            <maintenanceAgency>
+                <agencyCode>MMeT-C</agencyCode>
+                <agencyName>Tufts University Digital Collections and Archives</agencyName>
+            </maintenanceAgency>
+            <languageDeclaration>
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+            </languageDeclaration>
+            <conventionDeclaration>
+                <abbreviation>DACS</abbreviation>
+                <citation>Describing Archives: a Content Standard, Society of American Archivists. 2004</citation>
+                <descriptiveNote><p>Locally using rules from chapter 10 and 11.</p></descriptiveNote>
+            </conventionDeclaration>
+            <conventionDeclaration>
+                <abbreviation>AACR2R</abbreviation>
+                <citation>Anglo-American Cataloging Rules, Revised.</citation>
+                <descriptiveNote><p>Locally used for their definition of a corporate body.</p></descriptiveNote>
+            </conventionDeclaration>
+            <maintenanceHistory>
+                <maintenanceEvent>
+                    <eventType>created</eventType>
+                    <eventDateTime standardDateTime="2013-08-28">2013-08-28</eventDateTime>
+                    <agentType>human</agentType>
+                    <agent>Faulder, Erin</agent>
+                </maintenanceEvent>
+                <maintenanceEvent>
+                    <eventType>revised</eventType>
+                    <eventDateTime standardDateTime="2013-12-27">2013-12-27</eventDateTime>
+                    <agentType>human</agentType>
+                    <agent>Faulder, Erin</agent>
+                </maintenanceEvent>
+                <maintenanceEvent>
+                    <eventType>revised</eventType>
+                    <eventDateTime standardDateTime="2013-12-27">2013-12-27</eventDateTime>
+                    <agentType>human</agentType>
+                    <agent>Faulder, Erin</agent>
+                </maintenanceEvent>
+            </maintenanceHistory>
+            <sources>
+                <source>
+                    <sourceEntry>Neha Erasmus African Union High-Level Implementation Panel papers. MS207. Tufts University. Digital Collections and Archives. Medford, MA.</sourceEntry>
+                </source>
+                <source>
+                    <sourceEntry>Justice Africa. "Board Members," Justice Africa. http://www.justiceafrica.org/about-us/ourteam/board-members/ (accessed December 27, 2013).</sourceEntry>
+                </source>
+            </sources>
+        </control>
+        
+        <cpfDescription>
+            
+            <identity>
+                <entityType>person</entityType>
+                <nameEntry>
+                    <part>Erasmus, Neha</part>
+                    <authorizedForm>local</authorizedForm>
+                </nameEntry>
+            </identity>
+            
+            <description>
+                
+                <existDates>
+                    <dateRange>
+                        <fromDate>1970</fromDate>
+                        <toDate></toDate>
+                    </dateRange>
+                </existDates>
+                
+                
+                <biogHist>
+                    <abstract>Neha Erasmus grew up in Kenya. She worked in Southern Sudan with the Institute for the Promotion of Civil Society. She is a Justice Africa board member and a Political Officer of the African Union High-Level Implementation Panel on Sudan. Her primary role as a political officer was to provide administrative support to the other members of the panel. She worked consistently on security issues and occasionally on oil issues. Erasmus worked closely with Chief of Staff, Abdul Mohammed.</abstract>
+                    <p>Neha Erasmus grew up in Kenya. She worked in Southern Sudan with the Institute for the Promotion of Civil Society. She is a Justice Africa board member and a Political Officer of the African Union High-Level Implementation Panel on Sudan. Her primary role as a political officer was to provide administrative support to the other members of the panel. She worked consistently on security issues and occasionally on oil issues. Erasmus worked closely with Chief of Staff, Abdul Mohammed.</p>
+                </biogHist>
+                
+            </description>	  
+            
+            <relations>
+                <cpfRelation cpfRelationType="hierarchical" xlink:type="simple" xlink:role="http://dca.lib.tufts.edu/ontology/rcr#corporateBody" xlink:arcrole="http://dca.lib.tufts.edu/ontology/rcr#isMemberOf">
+                    <relationEntry xml:id="RCR00971">African Union High-Level Implementation Panel for Sudan</relationEntry>
+                    <dateRange>
+                        <fromDate standardDate="2010">2010</fromDate>
+                        <toDate>present</toDate>
+                    </dateRange>
+                </cpfRelation>
+                
+                <resourceRelation resourceRelationType="creatorOf" xml:id="MS207">
+                    <relationEntry>Neha Erasmus African Union High Level Implementation Panel papers</relationEntry>
+                    <objectXMLWrap>
+                        <ead xmlns="urn:isbn:1-93166-22-9">
+                            <archdesc level="collection">
+                                <did>
+                                    <unittitle>Neha Erasmus African Union High Level Implementation Panel papers</unittitle>
+                                    <unitid>MS207</unitid>
+                                </did>
+                            </archdesc>
+                        </ead>
+                    </objectXMLWrap>
+                </resourceRelation>
+            </relations>
+        </cpfDescription>
+    </eac-cpf>
+</export>
