@@ -237,7 +237,6 @@ module Tufts
       if chapter.starts_with? "back"
         return show_tei_backpage(fedora_obj, chapter)
       end
-
       return show_tei_page(fedora_obj, chapter)
     end
 
@@ -267,10 +266,10 @@ module Tufts
       result
     end
 
-    def self.render_subject_terms(fedora_obj, chapter)
+    def self.render_subject_terms(tei_xml, chapter)
       result = '<tr><td>&nbsp;</td><td>'
       # at the end of the chapter/ look for subject terms list, print header.
-      node_sets = fedora_obj.datastreams["Archival.xml"].ng_xml.xpath('//body/div1[@id="' + chapter +'"]/list/head|//body/div1/div2[@id="' + chapter +'"]/list/head')
+      node_sets = tei_xml.xpath('//body/div1[@id="' + chapter +'"]/list/head|//body/div1/div2[@id="' + chapter +'"]/list/head')
 
       unless node_sets.nil?
         node_sets.each do |node|
@@ -280,7 +279,7 @@ module Tufts
       end
 
       # at the end of the chapter/ look for subject terms list, print actual list with subject searches.
-      node_sets = fedora_obj.datastreams["Archival.xml"].ng_xml.xpath('//body/div1[@id="' + chapter +'"]/list/item|//body/div1/div2[@id="' + chapter +'"]/list/item')
+      node_sets = tei_xml.xpath('//body/div1[@id="' + chapter +'"]/list/item|//body/div1/div2[@id="' + chapter +'"]/list/item')
 
       unless node_sets.nil?
         node_sets.each do |node|
@@ -446,11 +445,11 @@ module Tufts
       result
     end
 
-    def self.render_text_page(fedora_obj, chapter, footnotes)
+    def self.render_text_page(tei_xml, chapter, footnotes)
       result = self.show_tei_table_start
 #result += "<p>render_text_page</p>" 
 # get the chapter text.
-      node_sets = fedora_obj.datastreams["Archival.xml"].ng_xml.xpath('//body/div1[@id="' + chapter +'"]/p|//body/div1/div2[@id="' + chapter +'"]/p|//body/div1[@id="' + chapter +'"]/quote|//body/div1/div2[@id="' + chapter +'"]/quote|//body/div1/div2[@id="' + chapter + '"]|//body/div1[@id="' + chapter + '"]')
+      node_sets = tei_xml.xpath('//body/div1[@id="' + chapter +'"]/p|//body/div1/div2[@id="' + chapter +'"]/p|//body/div1[@id="' + chapter +'"]/quote|//body/div1/div2[@id="' + chapter +'"]/quote|//body/div1/div2[@id="' + chapter + '"]|//body/div1[@id="' + chapter + '"]')
       in_left_td = true
       unless node_sets.nil?
         if node_sets.first.name == "div1"
@@ -461,7 +460,7 @@ module Tufts
           unless node_text.nil? || node_text.empty?
             result += "<tr>"
             result += "<td class=pagenumber>"
-
+            logger.warn "node name #{node.name}"
             case node.name
               when "pb"
                 result += render_pb(node)
@@ -490,6 +489,23 @@ module Tufts
                 result += render_table(node, in_left_td)
               when "list"
                 result += "<p></p>"
+              when "div2"
+                if in_left_td
+                  result += switch_to_right
+                  in_left_td = false
+                end
+                if chapter.include? 'fig'
+                  result += self.ctext(node)
+                else
+                  begin
+                    ls = node.children
+                    ls.each do |l|
+                      result += "<p>" + l.text.to_s.strip + "</p>"
+                    end
+                  rescue
+                    logger.warn "error #{result}"
+                  end
+                end
               when "lg"
                 if in_left_td
                   result += switch_to_right
@@ -502,7 +518,7 @@ module Tufts
                   result += "<p>" + l.text.to_s.strip + "</p>"
                 end
                 rescue
-                  puts "error #{result}"
+                  logger.warn "error #{result}"
                 end
               when "head"
                 unless result.nil?
@@ -517,7 +533,7 @@ module Tufts
                   result += switch_to_right
                   in_left_td = false
                 end
-                puts "else"
+                logger.warn "#{node.name}"
             end
             if in_left_td
               result +="</td><td>&nbsp;</td>"
@@ -531,7 +547,7 @@ module Tufts
         end
       end
 
-      result += render_subject_terms(fedora_obj, chapter)
+      result += render_subject_terms(tei_xml, chapter)
       result += render_footnotes(footnotes)
       result += self.show_tei_table_end
       result
@@ -556,9 +572,8 @@ module Tufts
       # NOTE: should break this out into a method probably.
       result = ""
       footnotes =""
-
-      # get the header for the chapter
-      node_sets = fedora_obj.datastreams["Archival.xml"].ng_xml.xpath('//body/div1[@id="' + chapter +'"]/head|//body/div1/div2[@id="' + chapter +'"]/head')
+      tei_xml = fedora_obj.datastreams["Archival.xml"].ng_xml
+      node_sets = tei_xml.xpath('//body/div1[@id="' + chapter +'"]/head|//body/div1/div2[@id="' + chapter +'"]/head')
       unless node_sets.nil?
         node_sets.each do |node|
           result += "<h6>" + node + "</h6><br/>"
@@ -568,7 +583,7 @@ module Tufts
 
 
       # render the bibl
-      node_sets = fedora_obj.datastreams["Archival.xml"].ng_xml.xpath('//body/div1[@id="' + chapter +'"]/head|//body/div1/div2[@id="' + chapter +'"]/bibl')
+      node_sets = tei_xml.xpath('//body/div1[@id="' + chapter +'"]/head|//body/div1/div2[@id="' + chapter +'"]/bibl')
       unless node_sets.nil?
         node_sets.each do |node|
           result += "<p class=" + node.name + ">" + node + "</p>"
@@ -581,7 +596,7 @@ module Tufts
       if is_chapter_image_book(fedora_obj, chapter)
         result += render_image_page(fedora_obj, chapter)
       else
-        result += render_text_page(fedora_obj, chapter, footnotes)
+        result += render_text_page(tei_xml, chapter, footnotes)
       end
 
       return result
