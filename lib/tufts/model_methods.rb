@@ -491,13 +491,13 @@ module Tufts
 
     def insert_object_type(solr_doc, model)
       model_s = case model
-      when "info:fedora/cm:WP","info:fedora/afmodel:TuftsWP","info:fedora/afmodel:TuftsTeiFragmented","info:fedora/cm:Text.TEI-Fragmented","info:fedora/afmodel:TuftsVotingRecord","info:fedora/cm:VotingRecord"
+      when "info:fedora/afmodel:TuftsVotingRecord","info:fedora/cm:VotingRecord"
         "Datasets"
       when "info:fedora/cm:Text.EAD", "info:fedora/afmodel:TuftsEAD"
         "Collection Guides"
       when "info:fedora/cm:Audio", "info:fedora/afmodel:TuftsAudio","info:fedora/cm:Audio.OralHistory","info:fedora/afmodel:TuftsAudioText"
         "Audio"
-      when "info:fedora/cm:Image.4DS","info:fedora/cm:Image.3DS","info:fedora/afmodel:TuftsImage","info:fedora/cm:Image.HTML"
+      when "info:fedora/cm:Image.4DS","info:fedora/cm:Image.3DS","info:fedora/afmodel:TuftsImage"
         pid.starts_with?("tufts:MS115") ? "Datasets" : "Images"
       when "info:fedora/cm:Text.PDF","info:fedora/afmodel:TuftsPdf","info:fedora/afmodel:TuftsTEI","info:fedora/cm:Text.TEI","info:fedora/cm:Text.FacPub","info:fedora/afmodel:TuftsFacultyPublication"
         pid.starts_with?("tufts:UP") ? "Periodicals" : "Text"
@@ -516,7 +516,7 @@ module Tufts
       # Attribute two classifications to one object, now's the time to do that
       ##,"info:fedora/cm:Audio.OralHistory","info:fedora/afmodel:TuftsAudioText" -> needs text
       ##,"info:fedora/cm:Image.HTML" -->needs text
-      if ["info:fedora/cm:Audio.OralHistory","info:fedora/afmodel:TuftsAudioText","info:fedora/cm:Image.HTML"].include? model
+      if ["info:fedora/cm:Audio.OralHistory","info:fedora/afmodel:TuftsAudioText"].include? model
         Solrizer.insert_field(solr_doc, 'object_type', 'Text', :facetable) 
       end
     end
