@@ -505,6 +505,8 @@ module Tufts
         "Generic Objects"
       when "info:fedora/afmodel:TuftsVideo"
         "Videos"
+      when "info:fedora/cm:Text.RCR","info:fedora/afmodel:TuftsRCR"
+        "Collection Creators"
       else
        # COLLECTION_ERROR_LOG.error "Could not determine Format for : #{pid} with model #{model.inspect}"
       end
