@@ -66,12 +66,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
-<foxml:datastream ID="Access.xml" STATE="A" CONTROL_GROUP="E" VERSIONABLE="true">
-<foxml:datastreamVersion ID="Access.xml.0" LABEL="Index PDF of the Document Source" CREATED="2005-05-25T20:33:57.600Z" MIMETYPE="text/xml">
-<foxml:contentDigest TYPE="MD5" DIGEST="d3a3f60abc5bbc1a024e61171391c9be"/>
-<foxml:contentLocation TYPE="URL" REF="http://bucket01.lib.tufts.edu/data01/tufts/facpubs/mpokras-2007/access_xml/nriagu-1983.00007.access.xml"/>
-</foxml:datastreamVersion>
-</foxml:datastream>
 <foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Relationships to other objects" CREATED="2005-05-25T20:33:57.600Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="772">
 <foxml:contentDigest TYPE="MD5" DIGEST="10a3111f4989e30c6851fd65a62e7f54"/>
