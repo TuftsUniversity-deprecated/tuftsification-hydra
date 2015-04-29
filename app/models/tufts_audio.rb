@@ -6,6 +6,7 @@ class TuftsAudio < TuftsBase
 
   has_file_datastream 'ACCESS_MP3', control_group: 'E'
   has_file_datastream 'ARCHIVAL_SOUND', control_group: 'E', original: true
+  has_metadata "ARCHIVAL_XML", type: TuftsTeiMeta
 
 
   def create_derivatives
