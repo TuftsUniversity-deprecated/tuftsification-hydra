@@ -199,6 +199,17 @@ From file_assets/_new.html.haml
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsImageText"))
+        if @file_asset.datastreams.include?("Archival.tif")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Archival.tif"].dsLocation))
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
+        if @file_asset.datastreams.include?("Archival.tif")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Archival.tif"].dsLocation))
+        end
+      end
     end
   end
 
@@ -231,6 +242,17 @@ From file_assets/_new.html.haml
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsImageText"))
+        if @file_asset.datastreams.include?("Advanced.jpg")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Advanced.jpg"].dsLocation))
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
+        if @file_asset.datastreams.include?("Advanced.jpg")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Advanced.jpg"].dsLocation))
+        end
+      end
     end
   end
 
@@ -263,6 +285,17 @@ From file_assets/_new.html.haml
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsImageText"))
+        if @file_asset.datastreams.include?("Basic.jpg")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Basic.jpg"].dsLocation))
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
+        if @file_asset.datastreams.include?("Basic.jpg")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Basic.jpg"].dsLocation))
+        end
+      end
     end
   end
 
@@ -297,6 +330,17 @@ From file_assets/_new.html.haml
       end
 
       if (mapped_model_names.include?("info:fedora/afmodel:TuftsVideo"))
+        if @file_asset.datastreams.include?("Thumbnail.png")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Thumbnail.png"].dsLocation), :type => 'image/png', :disposition => 'inline')
+        end
+      end
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsImageText"))
+        if @file_asset.datastreams.include?("Thumbnail.png")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Thumbnail.png"].dsLocation), :type => 'image/png', :disposition => 'inline')
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
         if @file_asset.datastreams.include?("Thumbnail.png")
           send_file(convert_url_to_local_path(@file_asset.datastreams["Thumbnail.png"].dsLocation), :type => 'image/png', :disposition => 'inline')
         end
@@ -475,6 +519,19 @@ From file_assets/_new.html.haml
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsImageText"))
+        if @file_asset.datastreams.include?("Advanced.jpg")
+          imagesize = ImageSize.new File.open(convert_url_to_local_path(@file_asset.datastreams["Advanced.jpg"].dsLocation), "rb").read
+          render :json => {:height => imagesize.height, :width => imagesize.width}
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
+        if @file_asset.datastreams.include?("Basic.jpg")
+          imagesize = ImageSize.new File.open(convert_url_to_local_path(@file_asset.datastreams["Advanced.jpg"].dsLocation), "rb").read
+          render :json => {:height => imagesize.height, :width => imagesize.width}.to_s
+        end
+      end
     end
 
 
@@ -545,6 +602,21 @@ From file_assets/_new.html.haml
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsWP"))
+        if @file_asset.datastreams.include?("Basic.jpg")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Basic.jpg"].dsLocation))
+        end
+      end
+
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsPdf"))
+        if @file_asset.datastreams.include?("Archival.pdf")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["Archival.pdf"].dsLocation))
+        end
+      end
+      # else
+      #   flash[:retrieval]= "You do not have sufficient access privileges to download this document, which has been marked private."
+      #   redirect_to(:action => 'index', :q => nil , :f => nil)
+      # end
     end
   end
 
