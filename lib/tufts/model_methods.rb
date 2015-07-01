@@ -157,7 +157,10 @@ module Tufts
       titleize_and_index_single(solr_doc, 'corpora_collection', "Islam on the Indian Ocean Rim", :facetable)
       titleize_and_index_single(solr_doc, 'corpora_collection', "Islam on the Indian Ocean Rim", :stored_searchable)
     end
-
+    is_part_of_many = self.isPartOf
+    is_part_of_many.each do |part|
+      titleize_and_index_single(solr_doc, 'corpora_collection', part, :facetable)
+    end
     sources = self.source
     sources.each do |source|
       titleize_and_index_single(solr_doc, 'corpora_collection', 'This I Believe', :facetable) if source == 'MS025'
