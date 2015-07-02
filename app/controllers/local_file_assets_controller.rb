@@ -372,7 +372,7 @@ From file_assets/_new.html.haml
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
 
-      if (mapped_model_names.include?("info:fedora/afmodel:TuftsAudioText"))
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsAudio"))
         if @file_asset.datastreams.include?("ARCHIVAL_XML")
           send_file(convert_url_to_local_path(@file_asset.datastreams["ARCHIVAL_XML"].dsLocation))
         end
