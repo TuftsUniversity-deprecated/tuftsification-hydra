@@ -160,6 +160,7 @@ module Tufts
     is_part_of_many = self.isPartOf
     is_part_of_many.each do |part|
       titleize_and_index_single(solr_doc, 'corpora_collection', part, :facetable)
+      titleize_and_index_single(solr_doc, 'corpora_collection', part, :stored_searchable)
     end
     sources = self.source
     sources.each do |source|
