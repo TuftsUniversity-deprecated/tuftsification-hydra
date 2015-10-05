@@ -78,15 +78,17 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="320">
+<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2013-03-27T18:20:32.801Z" MIMETYPE="text/xml" SIZE="266">
 <foxml:xmlContent>
-<dca_admin:admin xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.fedora.info/definitions/">&gt;
-			</dca_admin:admin>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-<foxml:datastreamVersion ID="DCA-ADMIN.2" LABEL="DCA Administrative Metadata" CREATED="2013-03-27T18:20:32.801Z" MIMETYPE="text/xml" SIZE="266">
-<foxml:xmlContent>
-<dca_admin:admin xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xlink="http://www.w3.org/TR/xlink"></dca_admin:admin>
+<admin xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:ac="http://purl.org/dc/dcmitype/">
+<local:createdby>CIDER</local:createdby>
+<local:steward>dca</local:steward>
+<local:displays>dl</local:displays>
+<local:batchID>272</local:batchID>
+<local:editedAt>2015-07-26T20:19:50Z</local:editedAt>
+<local:batchID>273</local:batchID>
+<local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

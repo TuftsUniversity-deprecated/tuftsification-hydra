@@ -87,34 +87,12 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="1714">
 <foxml:xmlContent>
-<dca_admin:admin xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:xlink="http://www.w3.org/TR/xlink">
-				
-               <admin:status>current</admin:status>
-				
-               <admin:accessPoint>Tufts Digital Library</admin:accessPoint>
-				
-               <admin:los>Archival/Public</admin:los>
-				
-               <admin:responsibleParty>Digital Collections and Archives</admin:responsibleParty>
-				
-               <admin:contact>DCA</admin:contact>
-				
-               <admin:transferDate>2005-08-30</admin:transferDate>
-				
-               <admin:provenance>This text is from the Wriston Collection (MS134)</admin:provenance>
-				
-               <admin:subAgreement>n/a</admin:subAgreement>
-				
-               <admin:disposition>archival</admin:disposition>
-				
-               <admin:bdefSubscriptions>bdef:AssetDef, bdef:TuftsAccess, bdef:TuftsAccessRights, bdef:TuftsArchival, bdef:TuftsImage, bdef:TuftsMetadata, bdef:TuftsReference, bdef:TuftsType</admin:bdefSubscriptions>
-				
-               <admin:accessRights>This text is freely available for research or educational use. Use of the image for publication or redistribution is prohibited except by permission of the Digital Collections and Archives, Tufts University</admin:accessRights>
-				
-               <admin:checksum>null</admin:checksum>
-			
-            <admin:notes>On Wed May 20 16:40:06 2009 GMT-5, this file was modified to transform URNs from the Tufts naming service to point to CNRI Handles. Old URN: </admin:notes>
-</dca_admin:admin>
+<admin xmlns:ac="http://purl.org/dc/dcmitype/" xmlns:local="http://nils.lib.tufts.edu/dcaadmin/">
+<local:steward>dca</local:steward>
+<local:createdby>CIDER</local:createdby>
+<local:displays>dl</local:displays>
+<local:editedAt>2015-02-03T16:21:10Z</local:editedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

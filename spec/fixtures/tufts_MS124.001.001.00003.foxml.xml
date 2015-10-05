@@ -123,30 +123,14 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DCA-ADMIN.0" LABEL="DCA administrative metadata" CREATED="2006-03-09T18:11:51.657Z" MIMETYPE="text/xml" SIZE="1960">
+<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="1688">
 <foxml:xmlContent>
-<dca_admin:admin xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-				           <admin:status>current</admin:status>
-				           <admin:accessPoint>Tufts Digital Library</admin:accessPoint>
-				           <admin:los>Archival/Public</admin:los>
-				           <admin:responsibleParty>Digital Collections and Archives</admin:responsibleParty>
-				           <admin:contact>DCA</admin:contact>
-				           <admin:transferDate>2006-05-02</admin:transferDate>
-				           <admin:provenance>This oral history is from the Lost Theatres of Somerville collection (MS124)</admin:provenance>
-				           <admin:subAgreement>n/a</admin:subAgreement>
-				           <admin:disposition>archival</admin:disposition>
-				           <admin:bdefSubscriptions>bdef:AssetDef, bdef:TuftsAccess, bdef:TuftsAccessRights,
-                                    bdef:TuftsArchival, bdef:TuftsAudio, bdef:TuftsMetadata, bdef:TuftsPlainText,
-                                    bdef:TuftsPresentation, bdef:TuftsReference, bdef:TuftsStreamingAudio,
-                                    bdef:TuftsText, bdef:TuftsTranscript, bdef:TuftsType
-                                </admin:bdefSubscriptions>
-				           <admin:accessRights>This oral history is freely available for research or
-				   educational use. Use of this object for publication or redistribution is
-				   rohibited except by permission of the Digital Collections and Archives,
-				   Tufts University</admin:accessRights>
-				           <admin:checksum>null</admin:checksum>
-			         <admin:notes>On Wed May 20 16:40:06 2009 GMT-5, this file was modified to transform URNs from the Tufts naming service to point to CNRI Handles. Old URN: </admin:notes>
-</dca_admin:admin>
+<admin xmlns:ac="http://purl.org/dc/dcmitype/" xmlns:local="http://nils.lib.tufts.edu/dcaadmin/">
+<local:steward>dca</local:steward>
+<local:createdby>CIDER</local:createdby>
+<local:displays>dl</local:displays>
+<local:editedAt>2015-02-03T16:21:10Z</local:editedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

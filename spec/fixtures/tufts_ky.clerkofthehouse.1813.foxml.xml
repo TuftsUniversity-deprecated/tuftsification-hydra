@@ -341,17 +341,15 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="DCA-ADMIN.0" LABEL="DCA Adminstrative Metadata" CREATED="2006-06-23T20:08:15.351Z" MIMETYPE="text/xml" SIZE="312">
 <foxml:xmlContent>
-<dca_admin:admin xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns="http://www.fedora.info/definitions/" xmlns:xlink="http://www.w3.org/1999/xlink"></dca_admin:admin>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Adminstrative Metadata" CREATED="2011-04-28T19:27:58.638Z" MIMETYPE="text/xml" SIZE="367">
-<foxml:xmlContent>
-<dca_admin:admin xmlns="http://www.fedora.info/definitions/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin /" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></dca_admin:admin>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-<foxml:datastreamVersion ID="DCA-ADMIN.2" LABEL="DCA Adminstrative Metadata" CREATED="2011-11-30T20:12:50.890Z" MIMETYPE="text/xml" SIZE="367">
-<foxml:xmlContent>
-<dca_admin:admin xmlns="http://www.fedora.info/definitions/" xmlns:admin="http://nils.lib.tufts.edu/admin/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dca_admin="http://nils.lib.tufts.edu/dca_admin /" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></dca_admin:admin>
+<admin xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:ac="http://purl.org/dc/dcmitype/">
+<local:createdby>CIDER</local:createdby>
+<local:steward>dca</local:steward>
+<local:displays>dl</local:displays>
+<local:batchID>272</local:batchID>
+<local:editedAt>2015-07-26T20:19:50Z</local:editedAt>
+<local:batchID>273</local:batchID>
+<local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

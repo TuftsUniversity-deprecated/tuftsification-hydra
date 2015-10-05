@@ -59,13 +59,13 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastream>
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="391">
-<foxml:contentDigest TYPE="MD5" DIGEST="3f2d58cc2bc1e6fb4f59c5ef10910018"/>
 <foxml:xmlContent>
-<ac xmlns:ac="http://purl.org/dc/dcmitype/" xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.fedora.info/definitions/" version="0.1">
-                <local:createdby>CIDER</local:createdby>
-                <local:steward>dca</local:steward>
-                <local:displays>dl</local:displays>
-                            </ac>
+<admin xmlns:ac="http://purl.org/dc/dcmitype/" xmlns:local="http://nils.lib.tufts.edu/dcaadmin/">
+<local:steward>dca</local:steward>
+<local:createdby>CIDER</local:createdby>
+<local:displays>dl</local:displays>
+<local:editedAt>2015-02-03T16:21:10Z</local:editedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

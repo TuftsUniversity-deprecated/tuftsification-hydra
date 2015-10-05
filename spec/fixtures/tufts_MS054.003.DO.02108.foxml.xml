@@ -8,7 +8,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="114 Professors Row"/>
 <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
 <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2005-10-18T15:30:48.000Z"/>
-<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-09-03T18:10:35.664Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2015-02-01T03:34:17.977Z"/>
 </foxml:objectProperties>
 <foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
@@ -22,6 +22,38 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <audit:date>2010-09-03T18:10:35.664Z</audit:date>
 <audit:justification>Added itemID for OAI harvesting</audit:justification>
 </audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>DCA-META</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2013-03-22T16:51:48.171Z</audit:date>
+<audit:justification>purging bib citation</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2013-03-22T16:51:48.441Z</audit:date>
+<audit:justification>purging datastream</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC4">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2015-02-01T01:58:55.917Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC5">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2015-02-01T03:34:17.977Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
 </audit:auditTrail>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
@@ -32,29 +64,28 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Relationships to other objects" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="802">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Relationships to other objects" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="768">
 <foxml:xmlContent>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:rel="info:fedora/fedora-system:def/relations-external#">
-		            
+
                <rdf:Description rdf:about="info:fedora/tufts:MS054.003.DO.02108"><fedora-model:hasModel xmlns:fedora-model="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/cm:Image.4DS"></fedora-model:hasModel>
-		               
+
                   <rel:isMemberOfCollection rdf:resource="info:fedora/tufts:UA069.006.DO.MS054"></rel:isMemberOfCollection>
-		               
+
                   <rel:hasDescription rdf:resource="info:fedora/tufts:UA069.001.DO.MS054"></rel:hasDescription>
-		            
+
                </rdf:Description>
-		         
+
             </rdf:RDF>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
-<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="Relationships to other objects" CREATED="2010-09-03T18:10:35.664Z" MIMETYPE="text/xml" FORMAT_URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="Relationships to other objects" CREATED="2010-09-03T18:10:35.664Z" MIMETYPE="text/xml" FORMAT_URI="http://www.w3.org/1999/02/22-rdf-syntax-ns#" SIZE="724">
 <foxml:xmlContent>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rel="info:fedora/fedora-system:def/relations-external#" xmlns:xlink="http://www.w3.org/TR/xlink">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rel="info:fedora/fedora-system:def/relations-external#" xmlns:xlink="http://www.w3.org/TR/xlink">
   <rdf:Description rdf:about="info:fedora/tufts:MS054.003.DO.02108">
-    <fedora-model:hasModel rdf:resource="info:fedora/cm:Image.4DS" xmlns:fedora-model="info:fedora/fedora-system:def/model#"/>
-    <rel:isMemberOfCollection rdf:resource="info:fedora/tufts:UA069.006.DO.MS054"/>
-    <rel:hasDescription rdf:resource="info:fedora/tufts:UA069.001.DO.MS054"/>
+    <fedora-model:hasModel xmlns:fedora-model="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/cm:Image.4DS"></fedora-model:hasModel>
+    <rel:isMemberOfCollection rdf:resource="info:fedora/tufts:UA069.006.DO.MS054"></rel:isMemberOfCollection>
+    <rel:hasDescription rdf:resource="info:fedora/tufts:UA069.001.DO.MS054"></rel:hasDescription>
     <itemID xmlns="http://www.openarchives.org/OAI/2.0/">oai:tufts:MS054.003.DO.02108</itemID>
   </rdf:Description>
 </rdf:RDF>
@@ -67,7 +98,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DC.1" LABEL="Dublin Core Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="870">
+<foxml:datastreamVersion ID="DC.1" LABEL="Dublin Core Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="858">
 <foxml:xmlContent>
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <dc:title>114 Professors Row</dc:title>
@@ -89,61 +120,91 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" SIZE="1965">
+<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" SIZE="1931">
 <foxml:xmlContent>
-<ac xmlns:ac="http://purl.org/dc/dcmitype/" xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.fedora.info/definitions/" version="0.1">
-                <local:steward>dca</local:steward>
-                <local:displays>dl</local:displays>
-            </ac>
+<admin xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:ac="http://purl.org/dc/dcmitype/">
+<local:createdby>CIDER</local:createdby>
+<local:steward>dca</local:steward>
+<local:displays>dl</local:displays>
+<local:batchID>272</local:batchID>
+<local:editedAt>2015-07-26T20:19:50Z</local:editedAt>
+<local:batchID>273</local:batchID>
+<local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-META" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DCA-META.1" LABEL="DCA Descriptive Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" SIZE="2128">
+<foxml:datastreamVersion ID="DCA-META.1" LABEL="DCA Descriptive Metadata" CREATED="2005-10-18T15:30:48.000Z" MIMETYPE="text/xml" SIZE="2094">
 <foxml:xmlContent>
 <dca_dc:dc xmlns:dca_dc="http://nils.lib.tufts.edu/dca_dc/" xmlns:dcadesc="http://nils.lib.tufts.edu/dcadesc/" xmlns:xlink="http://www.w3.org/TR/xlink" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcatech="http://nils.lib.tufts.edu/dcatech/" xmlns:dc="http://purl.org/dc/elements/1.1/">
-				            
+
                <dc:title>114 Professors Row</dc:title>
-				            
+
                <dc:description>3x5, box:  &quot;Residences&quot;</dc:description>
-				            
+
                <dc:bibliographicCitation>114 Professors Row (Permanent URL: http://hdl.handle.net/10427/2550), image from the Edwin Rollins Collection, Digital Collections and Archives, Tufts University.</dc:bibliographicCitation>
-				            
+
                <dc:source>MS054</dc:source>
-				            
+
                <dc:temporal>1876</dc:temporal>
-				            
+
                <dc:creator>Rollins, Edwin B.</dc:creator>
-				            
+
                <dc:publisher>Digital Collections and Archives, Tufts University</dc:publisher>
-				            
+
                <dc:rights>http://dca.tufts.edu/ua/access/rights.html</dc:rights>
-				            
+
                <dc:identifier>http://hdl.handle.net/10427/2550</dc:identifier>
-				            
+
                <dcterms:isPartOf>MS054</dcterms:isPartOf>
-				            
+
                <dcterms:created>06/21/2001</dcterms:created>
-				            
+
                <dcterms:available>04/13/2005</dcterms:available>
-				            
+
                <dc:type>image</dc:type>
-				            
+
                <dc:format>image/tiff</dc:format>
-				            
+
                <dcatech:resolution>600</dcatech:resolution>
-				            
+
                <dcatech:bitDepth>8</dcatech:bitDepth>
-				            
+
                <dcatech:colorSpace>grayscale</dcatech:colorSpace>
-				            
+
                <dcadesc:geogname>Medford (Mass.)</dcadesc:geogname>
-				            
+
                <dcadesc:subject>Houses</dcadesc:subject>
-				            
+
                <dcadesc:subject>Edwin B. Rollins, papers</dcadesc:subject>
-			         
+
             </dca_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-META.2" LABEL="DCA Descriptive Metadata" CREATED="2013-03-22T16:51:48.171Z" MIMETYPE="text/xml" SIZE="1251">
+<foxml:xmlContent>
+<dca_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dca_dc="http://nils.lib.tufts.edu/dca_dc/" xmlns:dcadesc="http://nils.lib.tufts.edu/dcadesc/" xmlns:dcatech="http://nils.lib.tufts.edu/dcatech/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xlink="http://www.w3.org/TR/xlink">
+  <dc:title>114 Professors Row</dc:title>
+  <dc:description>3x5, box:  &quot;Residences&quot;</dc:description>
+  <dc:source>MS054</dc:source>
+  <dc:temporal>1876</dc:temporal>
+  <dc:creator>Rollins, Edwin B.</dc:creator>
+  <dc:publisher>Digital Collections and Archives, Tufts University</dc:publisher>
+  <dc:rights>http://dca.tufts.edu/ua/access/rights.html</dc:rights>
+  <dc:identifier>http://hdl.handle.net/10427/2550</dc:identifier>
+  <dcterms:isPartOf>MS054</dcterms:isPartOf>
+  <dcterms:created>06/21/2001</dcterms:created>
+  <dcterms:available>04/13/2005</dcterms:available>
+  <dc:type>image</dc:type>
+  <dc:format>image/tiff</dc:format>
+  <dcatech:resolution>600</dcatech:resolution>
+  <dcatech:bitDepth>8</dcatech:bitDepth>
+  <dcatech:colorSpace>grayscale</dcatech:colorSpace>
+  <dcadesc:geogname>Medford (Mass.)</dcadesc:geogname>
+  <dcadesc:subject>Houses</dcadesc:subject>
+  <dcadesc:subject>Edwin B. Rollins, papers</dcadesc:subject>
+</dca_dc:dc>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

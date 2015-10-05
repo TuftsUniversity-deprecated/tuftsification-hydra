@@ -90,21 +90,16 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="1688">
 <foxml:xmlContent>
-<ac xmlns:ac="http://purl.org/dc/dcmitype/" xmlns="http://nils.lib.tufts.edu/dcaadmin/" version="0.1">
-    <steward/>
-    <ac:name/>
-    <ac:comment/>
-    <retentionPeriod/>
-    <steward>dca</steward>
-    <displays>dl</displays>
-    <embargo>2023-06-12</embargo>
-    <status/>
-    <startDate/>
-    <expDate/>
-    <qrStatus/>
-    <rejectionReason/>
-    <note/>
-</ac>
+ <admin xmlns:local="http://nils.lib.tufts.edu/dcaadmin/" xmlns:ac="http://purl.org/dc/dcmitype/">
+   <local:createdby>CIDER</local:createdby>
+   <local:steward>dca</local:steward>
+   <local:displays>dl</local:displays>
+   <local:batchID>272</local:batchID>
+   <local:embargo>2023-06-12</local:embargo>
+   <local:editedAt>2015-07-26T20:19:50Z</local:editedAt>
+   <local:batchID>273</local:batchID>
+   <local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
+</admin>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
