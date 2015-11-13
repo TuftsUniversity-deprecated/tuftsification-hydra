@@ -16,7 +16,7 @@ module Tufts
       "isParentOf" => "Parent of",
       "isCousinOf" => "Cousin of",
       "isSiblingOf" => "Sibling of",
-      "IsSpouseOf" => "Spouse of",
+      "isSpouseOf" => "Spouse of",
       "isGrandchildOf" => "Grandchild of",
       "isGrandparentOf" => "Grandparent of"}
 
