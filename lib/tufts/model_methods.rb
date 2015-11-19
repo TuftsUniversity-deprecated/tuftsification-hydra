@@ -12,6 +12,7 @@ module Tufts
 
   def self.get_metadata(fedora_obj)
        datastream = fedora_obj.datastreams["DCA-META"]
+       detailed_datastream = fedora_obj.datastreams["DC-DETAIL-META"]
 
        # create the union (ie, without duplicates) of subject, geogname, persname, and corpname
        subjects = []
@@ -33,6 +34,7 @@ module Tufts
            :types => datastream.type,
            :formats => datastream.format,
            :rights => datastream.rights,
+           :access_rights => detailed_datastream.access_rights,
            :subjects => subjects,
            :temporals => datastream.temporal
        }
