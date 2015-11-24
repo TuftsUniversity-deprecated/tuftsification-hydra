@@ -295,6 +295,10 @@
 
 $(document).ready(
 	function() {
-		jwplayer().onReady(apiReadyHandler);
+    try {
+  		jwplayer().onReady(apiReadyHandler);
+    } catch (err) {
+      console.log("No JWPlayer found on page.");
+    }
 	}
 );
