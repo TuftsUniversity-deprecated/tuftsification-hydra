@@ -57,6 +57,64 @@ module Tufts
       Solrizer.insert_field(solr_doc, 'title', title, :sortable) if title
     end
 
+  def get_ead_title(document, includeHtml=true)
+
+      begin
+        collections = document.relationships(:is_member_of_collection)
+        ead = document.relationships(:has_description)
+      rescue
+        Rails.logger.debug "Bad RDF " +  document.pid.to_s
+      end
+
+      pid = document.pid.to_s
+      ead_title = nil
+
+      if ead.first.nil?
+        # there is no hasDescription
+        ead_title = get_collection_from_pid(ead_title,pid)
+
+      else
+        ead = ead.first.gsub('info:fedora/', '')
+        ead_obj = nil
+        begin
+          ead_obj=TuftsEAD.find(ead)
+        rescue ActiveFedora::ObjectNotFoundError => e
+         logger.warn e.message
+        end
+        if ead_obj.nil?
+          Rails.logger.debug "EAD Nil " + ead
+        else
+          ead_title = ead_obj.datastreams["DCA-META"].get_values(:title).first
+          ead_title = Tufts::ModelUtilityMethods.clean_ead_title(ead_title)
+
+          #4 additional collections, unfortunately defined by regular expression parsing. If one of these has hasDescription PID takes precedence
+          #"Undergraduate scholarship": PID in tufts:UA005.*
+          #"Graduate scholarship": PID in tufts:UA015.012.*
+          #"Faculty scholarship": PID in tufts:PB.001.001* or tufts:ddennett*
+          #"Boston Streets": PID in tufts:UA069.005.DO.* should be merged with the facet hasDescription UA069.001.DO.MS102
+
+        end
+      end
+
+      if ead_title.blank?
+        return ""
+      else
+        ead_title = ead_title.class == Array ? ead_title.first : ead_title
+        ead = ead.class == Array ? ead.first : ead
+        unless ead.nil?
+          if (includeHtml)
+            result=""
+            result << "<dd>This object is in collection:</dd>"
+            result << "<dt>" + link_to(ead_title,"/catalog/" + ead) + "</dt>"
+          else
+            result = ead_title
+          end
+        end
+
+        raw result
+      end
+    end
+
   private
 
   def index_fulltext(fedora_object, solr_doc)
@@ -275,60 +333,6 @@ module Tufts
     # end
   end
 
-
-  def get_ead_title(document)
-
-      begin
-        collections = document.relationships(:is_member_of_collection)
-        ead = document.relationships(:has_description)
-      rescue
-        Rails.logger.debug "Bad RDF " +  document.pid.to_s
-      end
-
-      pid = document.pid.to_s
-      ead_title = nil
-
-      if ead.first.nil?
-        # there is no hasDescription
-        ead_title = get_collection_from_pid(ead_title,pid)
-
-      else
-        ead = ead.first.gsub('info:fedora/', '')
-        ead_obj = nil
-        begin
-          ead_obj=TuftsEAD.find(ead)
-        rescue ActiveFedora::ObjectNotFoundError => e
-         logger.warn e.message
-        end
-        if ead_obj.nil?
-          Rails.logger.debug "EAD Nil " + ead
-        else
-          ead_title = ead_obj.datastreams["DCA-META"].get_values(:title).first
-          ead_title = Tufts::ModelUtilityMethods.clean_ead_title(ead_title)
-
-          #4 additional collections, unfortunately defined by regular expression parsing. If one of these has hasDescription PID takes precedence
-          #"Undergraduate scholarship": PID in tufts:UA005.*
-          #"Graduate scholarship": PID in tufts:UA015.012.*
-          #"Faculty scholarship": PID in tufts:PB.001.001* or tufts:ddennett*
-          #"Boston Streets": PID in tufts:UA069.005.DO.* should be merged with the facet hasDescription UA069.001.DO.MS102
-
-        end
-      end
-
-      if ead_title.blank?
-        return ""
-      else
-        ead_title = ead_title.class == Array ? ead_title.first : ead_title
-        ead = ead.class == Array ? ead.first : ead
-        unless ead.nil?
-          result=""
-          result << "<dd>This object is in collection:</dd>"
-          result << "<dt>" + link_to(ead_title,"/catalog/" + ead) + "</dt>"
-        end
-
-        raw result
-      end
-    end
 
   def get_collection_from_pid(ead_title,pid)
     if pid.starts_with? "tufts:UA005"
