@@ -165,6 +165,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
   <local:batchID>272</local:batchID>
   <local:editedAt>2015-07-26T20:19:50Z</local:editedAt>
   <local:batchID>273</local:batchID>
+  <local:visibility>authenticated</local:visibility>
   <local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
 </admin>
 </foxml:xmlContent>
