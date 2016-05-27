@@ -146,14 +146,39 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-META" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DCA-META.0" LABEL="" CREATED="2014-07-11T15:10:24.773Z" MIMETYPE="text/xml" SIZE="926">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="http://repository01.lib.tufts.edu:8080/fedora/get/tufts:12423/DCA-META/2014-07-11T15:10:24.773Z"/>
-</foxml:datastreamVersion>
-</foxml:datastream>
-<foxml:datastream ID="DC-DETAIL-META" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
-<foxml:datastreamVersion ID="DC-DETAIL-META.0" LABEL="" CREATED="2014-07-11T15:10:24.849Z" MIMETYPE="text/xml" SIZE="294">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="http://repository01.lib.tufts.edu:8080/fedora/get/tufts:12423/DC-DETAIL-META/2014-07-11T15:10:24.849Z"/>
-</foxml:datastreamVersion>
+  <foxml:datastreamVersion ID="DCA-META.1" LABEL="DCA Descriptive Metadata" CREATED="2005-05-25T20:33:57.600Z" MIMETYPE="text/xml" SIZE="1723">
+    <foxml:xmlContent>
+      <dca_dc:dc xmlns:dca_dc="http://nils.lib.tufts.edu/dca_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcatech="http://nils.lib.tufts.edu/dcatech/" xmlns:dcadesc="http://nils.lib.tufts.edu/dcadesc/" xmlns:xlink="http://www.w3.org/TR/xlink">
+
+        <dc:title>A Draft Object</dc:title>
+
+        <dc:temporal>1982</dc:temporal>
+
+        <dcterms:isPartOf>UP029</dcterms:isPartOf>
+
+        <dc:publisher>Digital Collections and Archives, Tufts University</dc:publisher>
+
+        <dc:rights>http://dca.tufts.edu/ua/access/rights.html</dc:rights>
+
+        <dc:identifier>http://hdl.handle.net/10427/37928</dc:identifier>
+
+        <dcterms:extent>1467306 bytes</dcterms:extent>
+
+        <dcterms:created>07/19/2001</dcterms:created>
+
+        <dcterms:available>06/19/2008</dcterms:available>
+
+        <dc:type>text</dc:type>
+
+        <dc:format>application/pdf --publication</dc:format>
+
+        <dcatech:fileSize>1467306 bytes</dcatech:fileSize>
+
+        <dcadesc:funder>Office of the Provost</dcadesc:funder>
+
+      </dca_dc:dc>
+    </foxml:xmlContent>
+  </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="DCA Administrative Metadata" CREATED="2005-05-17T23:08:38.024Z" MIMETYPE="text/xml" SIZE="1688">
@@ -169,17 +194,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
   <local:publishedAt>2015-07-26T20:19:50Z</local:publishedAt>
 </admin>
 </foxml:xmlContent>
-</foxml:datastreamVersion>
-</foxml:datastream>
-<foxml:datastream ID="audit_log" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
-<foxml:datastreamVersion ID="audit_log.0" LABEL="" CREATED="2014-07-11T15:10:24.993Z" MIMETYPE="text/xml" SIZE="140">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="http://repository01.lib.tufts.edu:8080/fedora/get/tufts:12423/audit_log/2014-07-11T15:10:24.993Z"/>
-</foxml:datastreamVersion>
-<foxml:datastreamVersion ID="audit_log.1" LABEL="" CREATED="2014-07-11T15:10:25.925Z" MIMETYPE="text/xml" SIZE="117">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="http://repository01.lib.tufts.edu:8080/fedora/get/tufts:12423/audit_log/2014-07-11T15:10:25.925Z"/>
-</foxml:datastreamVersion>
-<foxml:datastreamVersion ID="audit_log.2" LABEL="" CREATED="2014-07-11T15:17:51.979Z" MIMETYPE="text/xml" SIZE="108">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="http://repository01.lib.tufts.edu:8080/fedora/get/tufts:12423/audit_log/2014-07-11T15:17:51.979Z"/>
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="Archival.pdf" STATE="A" CONTROL_GROUP="E" VERSIONABLE="true">
