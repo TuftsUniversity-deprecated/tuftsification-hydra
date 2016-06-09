@@ -43,6 +43,7 @@ class DcaAdmin < ActiveFedora::OmDatastream
     ensure_ac_namespace_exists!
     super
   end
+
   def under_embargo?
     unless self.embargo.empty? || self.embargo[0].blank?
       dt=self.embargo[0]
@@ -51,6 +52,7 @@ class DcaAdmin < ActiveFedora::OmDatastream
     end
     false
   end
+
   private
 
     # TDL staff decided to change from having a default namespace to a prefixed namespace.
