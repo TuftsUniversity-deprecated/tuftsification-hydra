@@ -8,23 +8,13 @@ class LocalFileAssetsController < ApplicationController
   include Tufts::MetadataMethods
   include VideoDeliveryHelper
 
-  #before_filter :require_fedora
-  #Remove any instance of:
-  #before_filter :require_solr
-  #This is no longer necessary, solr is automatically configured.
-  #before_filter :require_solr, :only => [:index, :create, :show, :destroy]
-  #prepend_before_filter :sanitize_update_params
-
-
   def index
 
-    if params[:layout] == "false"
-      # action = "index_embedded"
+    if params[:layout] == 'false'
       layout = false
     end
 
     if params[:asset_id].nil?
-      # @solr_result = ActiveFedora::SolrService.instance.conn.query('has_model_field:info\:fedora/afmodel\:FileAsset', @search_params)
       @solr_result = TuftsBase.find_by_solr(:all)
     else
       container_uri = "info:fedora/#{params[:asset_id]}"
@@ -47,11 +37,6 @@ class LocalFileAssetsController < ApplicationController
   end
 
   def new
-=begin
-From file_assets/_new.html.haml
-=render :partial=>"fluid_infusion/uploader"
-=render :partial=>"fluid_infusion/uploader_js"
-=end
     render :partial => "new", :layout => false
   end
 
@@ -92,33 +77,12 @@ From file_assets/_new.html.haml
 
   # Common destroy method for all AssetsControllers
   def destroy
-    # The correct implementation, with garbage collection:
-    # if params.has_key?(:container_id)
-    #   container = ActiveFedora::Base.load_instance(params[:container_id])
-    #   container.file_objects_remove(params[:id])
-    #   TuftsBase.garbage_collect(params[:id])
-    # else
-
     # The dirty implementation (leaves relationship in container object, deletes regardless of whether the file object has other containers)
-    ActiveFedora::Base.load_instance(params[:id]).delete
-    render :text => "Deleted #{params[:id]} from #{params[:asset_id]}."
+    #ActiveFedora::Base.load_instance(params[:id]).delete
+    #render :text => "Deleted #{params[:id]} from #{params[:asset_id]}."
   end
 
   def showGeneric
-    #  generic_content = get_values_from_datastream(@document_fedora, "GENERIC-CONTENT", [:item])
-    #  result = ""
-    #  generic_content.each_with_index do |page, index|
-    #    result+="<tr class=\"manifestRow\">"
-    #    file_name = get_values_from_datastream(@document_fedora, "GENERIC-CONTENT", [:item, :fileName])[index]
-    #    link = '/file_assets/generic/' + pid + "/" + String(index)
-    #    mime_type = get_values_from_datastream(@document_fedora, "GENERIC-CONTENT", [:item, :mimeType])[index]
-    #    result+="<td class=\"nameCol\"><a class=\"manifestLink\" href=\"#{link}\">#{file_name}</a></td>"
-    #    result+="<td class=\"mimeCol\">#{mime_type}</td>"
-    #    result+="</tr>"
-    #  end
-    #  return raw(result)
-    #end
-    #match '/file_assets/generic/:id/:index', :to => 'local_file_assets#showGeneric', :constraints => {:id => /.*/}, :as =>'file_asset'
 
     @file_asset = TuftsGenericObject.find(params[:id])
     if (@file_asset.nil?)
@@ -135,7 +99,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
 
@@ -187,7 +151,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -230,7 +194,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -273,7 +237,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -317,7 +281,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -367,21 +331,21 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
 
-      if (mapped_model_names.include?("info:fedora/afmodel:TuftsAudio"))
-        if @file_asset.datastreams.include?("ARCHIVAL_XML")
-          send_file(convert_url_to_local_path(@file_asset.datastreams["ARCHIVAL_XML"].dsLocation))
+      if (mapped_model_names.include?('info:fedora/afmodel:TuftsAudio'))
+        if @file_asset.datastreams.include?('ARCHIVAL_XML')
+          send_file(convert_url_to_local_path(@file_asset.datastreams['ARCHIVAL_XML'].dsLocation))
         end
       end
 
-      if (mapped_model_names.include?("info:fedora/afmodel:TuftsVideo"))
+      if (mapped_model_names.include?('info:fedora/afmodel:TuftsVideo'))
 
-        if @file_asset.datastreams.include?("ARCHIVAL_XML")
-          send_file(convert_url_to_local_path(@file_asset.datastreams["ARCHIVAL_XML"].dsLocation))
+        if @file_asset.datastreams.include?('ARCHIVAL_XML')
+          send_file(convert_url_to_local_path(@file_asset.datastreams['ARCHIVAL_XML'].dsLocation))
         end
       end
     end
@@ -406,7 +370,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -504,7 +468,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -556,7 +520,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -637,7 +601,7 @@ From file_assets/_new.html.haml
         @downloadable = true
       end
 
-      if isUnderEmbargo
+      if isUnderEmbargo || isMissingCommunityMemberRole
         redirect_to(:root, :q => nil, :f => nil) and return false
       end
       mapped_model_names = ModelNameHelper.map_model_names(@file_asset.relationships(:has_model))
@@ -655,6 +619,22 @@ From file_assets/_new.html.haml
       end
 
     end
+  end
+
+  private
+
+  def isMissingCommunityMemberRole
+
+    return unless  @file_asset.datastreams["DCA-ADMIN"].visibility.include? "authenticated"
+
+    if current_user.nil?
+      return true
+    end
+
+    if !current_user.nil? and !current_user.has_role? :community_member
+      return true
+    end
+
   end
 
   def isUnderEmbargo
