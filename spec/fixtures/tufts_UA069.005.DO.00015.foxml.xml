@@ -47,7 +47,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rel="info:fedora/fedora-system:def/relations-external#" xmlns:xlink="http://www.w3.org/TR/xlink">
   <rdf:Description rdf:about="info:fedora/tufts:UA069.005.DO.00015">
-    <fedora-model:hasModel rdf:resource="info:fedora/afmodel:TuftsTei" xmlns:fedora-model="info:fedora/fedora-system:def/model#"/>
+    <fedora-model:hasModel rdf:resource="info:fedora/afmodel:TuftsTEI" xmlns:fedora-model="info:fedora/fedora-system:def/model#"/>
     <rel:isMemberOfCollection rdf:resource="info:fedora/tufts:UA069.006.DO.MS102"/>
     <rel:isMemberOfCollection rdf:resource="info:fedora/tufts:UA069.006.DO.UA069"/>
     <itemID xmlns="http://www.openarchives.org/OAI/2.0/">oai:tufts:UA069.005.DO.00015</itemID>
