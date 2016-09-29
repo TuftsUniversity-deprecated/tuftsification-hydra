@@ -1,7 +1,10 @@
 class TuftsEADMeta < TuftsDatastream
 
   set_terminology do |t|
-    t.root(:path => "ead", :xmlns => "http://dca.tufts.edu/schema/ead", :schema => "http://dca.lib.tufts.edu/schema/ead/ead.xsd")
+    # Since our old EADs have xmlns="http://dca.tufts.edu/schema/ead" and our new
+    # ArchivesSpace-generated EADs have xmlns="urn:isbn:1-931666-22-9", do not
+    # specify a namespace so that either (or any future) namespace will work.
+    t.root(:path => "ead")
 
     t.eadheader(:path => "eadheader") {
       t.eadid(:path => "eadid")
@@ -107,6 +110,23 @@ class TuftsEADMeta < TuftsDatastream
             }
           }
         }
+
+        t.c(:path => "c") {
+          t.did(:path => "did")
+          t.arrangement(:path => "arrangement")
+          t.scopecontent(:path => "scopecontent") {
+            t.note(:path => "note") {
+              t.p(:path => "p")
+            }
+            t.p(:path => "p")
+          }
+
+          t.c(:path => "c") {
+            t.did(:path => "did") {
+              t.unittitle(:path => "unittitle")
+            }
+          }
+        }
       }
 
       t.separatedmaterial(:path => "separatedmaterial")
@@ -127,10 +147,14 @@ class TuftsEADMeta < TuftsDatastream
     t.famname(:proxy => [:archdesc, :did, :origination, :famname])
 
     # Contents
+    t.bioghistp(:proxy => [:archdesc, :bioghist, :p])
     t.scopecontentp(:proxy => [:archdesc, :scopecontent, :p])
 
     # Series Descriptions
     t.series(:proxy => [:archdesc, :dsc, :c01])
+
+    # Series Descriptions - new ArchivesSpace style
+    t.aspaceseries(:proxy => [:archdesc, :dsc, :c])
 
     # Names and Subjects
     t.controlaccess(:proxy => [:archdesc, :controlaccess])
