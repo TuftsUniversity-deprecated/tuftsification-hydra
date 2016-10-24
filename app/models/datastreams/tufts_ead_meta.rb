@@ -132,8 +132,14 @@ class TuftsEADMeta < TuftsDatastream
       t.separatedmaterial(:path => "separatedmaterial")
       t.relatedmaterial(:path => "relatedmaterial")
 
-      t.processinfo(:path => "processinfo")
-      t.acqinfo(:path => "acqinfo")
+      t.processinfo(:path => "processinfo") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+      t.acqinfo(:path => "acqinfo") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
     }
 
     # Overview
@@ -169,8 +175,8 @@ class TuftsEADMeta < TuftsDatastream
     t.prefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
 
     # Administrative Notes
-    t.processinfo(:proxy => [:archdesc, :processinfo])
-    t.acqinfo(:proxy => [:archdesc, :acqinfo])
+    t.processinfop(:proxy => [:archdesc, :processinfo, :p])
+    t.acqinfop(:proxy => [:archdesc, :acqinfo, :p])
 
   end
 
