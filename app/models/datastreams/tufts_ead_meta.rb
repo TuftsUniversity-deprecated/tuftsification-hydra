@@ -129,9 +129,14 @@ class TuftsEADMeta < TuftsDatastream
         }
       }
 
-      t.separatedmaterial(:path => "separatedmaterial")
-      t.relatedmaterial(:path => "relatedmaterial")
-
+      t.separatedmaterial(:path => "separatedmaterial") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+      t.relatedmaterial(:path => "relatedmaterial") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
       t.processinfo(:path => "processinfo") {
         t.head(:path => "head")
         t.p(:path => "p")
@@ -166,8 +171,8 @@ class TuftsEADMeta < TuftsDatastream
     t.controlaccess(:proxy => [:archdesc, :controlaccess])
 
     # Related Collections
-    t.separatedmaterial(:proxy => [:archdesc, :separatedmaterial])
-    t.relatedmaterial(:proxy => [:archdesc, :relatedmaterial])
+    t.separatedmaterialp(:proxy => [:archdesc, :separatedmaterial, :p])
+    t.relatedmaterialp(:proxy => [:archdesc, :relatedmaterial, :p])
 
     # Access and Use
     t.accessrestrictp(:proxy => [:archdesc, :descgrp, :accessrestrict, :p])
