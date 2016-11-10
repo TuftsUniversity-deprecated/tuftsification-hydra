@@ -1,0 +1,153 @@
+<foxml:digitalObject xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" VERSION="1.1" PID="draft:MS999" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE=""/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2016-10-24T19:27:00.875Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2016-10-24T19:28:27.746Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2016-10-24T19:27:00.875Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>RELS-EXT</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:01.209Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>DCA-META</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:01.309Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:01.339Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC4">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>Archival.xml</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:20.445Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC5">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:20.479Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC6">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:25.234Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC7">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>rightsMetadata</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:51.636Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC8">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DCA-META</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:51.664Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC9">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:27:51.690Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC10">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DCA-ADMIN</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2016-10-24T19:28:27.746Z</audit:date>
+<audit:justification/>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2016-10-24T19:27:00.875Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="340">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>draft:MS999</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Fedora Object-to-Object Relationship Metadata" CREATED="2016-10-24T19:27:01.209Z" MIMETYPE="application/rdf+xml" SIZE="371">
+<foxml:xmlContent>
+<rdf:RDF xmlns:ns0="info:fedora/fedora-system:def/model#" xmlns:ns1="http://www.openarchives.org/OAI/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="info:fedora/draft:MS999">
+<ns1:itemID>oai:draft:MS999</ns1:itemID>
+<ns0:hasModel rdf:resource="info:fedora/cm:Text.EAD"/>
+</rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DCA-META" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DCA-META.0" LABEL="" CREATED="2016-10-24T19:27:01.309Z" MIMETYPE="text/xml" SIZE="249">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-META+DCA-META.0"/>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-META.1" LABEL="" CREATED="2016-10-24T19:27:51.664Z" MIMETYPE="text/xml" SIZE="358">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-META+DCA-META.1"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DCA-ADMIN.0" LABEL="" CREATED="2016-10-24T19:27:01.339Z" MIMETYPE="text/xml" SIZE="200">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-ADMIN+DCA-ADMIN.0"/>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-ADMIN.1" LABEL="" CREATED="2016-10-24T19:27:20.479Z" MIMETYPE="text/xml" SIZE="200">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-ADMIN+DCA-ADMIN.1"/>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-ADMIN.2" LABEL="" CREATED="2016-10-24T19:27:25.234Z" MIMETYPE="text/xml" SIZE="200">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-ADMIN+DCA-ADMIN.2"/>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-ADMIN.3" LABEL="" CREATED="2016-10-24T19:27:51.690Z" MIMETYPE="text/xml" SIZE="238">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-ADMIN+DCA-ADMIN.3"/>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="DCA-ADMIN.4" LABEL="" CREATED="2016-10-24T19:28:27.746Z" MIMETYPE="text/xml" SIZE="297">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+DCA-ADMIN+DCA-ADMIN.4"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="Archival.xml" STATE="A" CONTROL_GROUP="E" VERSIONABLE="false">
+<foxml:datastreamVersion ID="Archival.xml.0" LABEL="MS999_ead.xml" CREATED="2016-10-24T19:27:20.445Z" MIMETYPE="text/xml">
+<foxml:contentLocation TYPE="URL" REF="http://bucket01.lib.tufts.edu/data01/tufts/central/dca/MS999/archival_xml/MS999.archival.xml"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="rightsMetadata" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+<foxml:datastreamVersion ID="rightsMetadata.0" LABEL="" CREATED="2016-10-24T19:27:51.636Z" MIMETYPE="text/xml" SIZE="558">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="draft:MS999+rightsMetadata+rightsMetadata.0"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>
