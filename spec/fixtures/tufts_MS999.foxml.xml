@@ -1,15 +1,21 @@
-<foxml:digitalObject PID="tufts:MS999" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="tufts:MS999"
+  xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
   <foxml:objectProperties>
     <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
     <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE=""/>
     <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
-    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2016-10-24T19:27:00.875Z"/>
-    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2016-10-24T19:28:27.541Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate"
+      VALUE="2016-10-24T19:36:11.426Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate"
+      VALUE="2016-10-24T19:37:17.911Z"/>
   </foxml:objectProperties>
-  <foxml:datastream CONTROL_GROUP="X" ID="AUDIT" STATE="A" VERSIONABLE="false">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:00.875Z"
-      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+  <foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+    <foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object"
+      CREATED="2016-10-24T19:36:11.426Z" MIMETYPE="text/xml"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
       <foxml:xmlContent>
         <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
           <audit:record ID="AUDREC1">
@@ -17,7 +23,7 @@
             <audit:action>addDatastream</audit:action>
             <audit:componentID>RELS-EXT</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:01.209Z</audit:date>
+            <audit:date>2016-10-24T19:36:11.633Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC2">
@@ -25,7 +31,7 @@
             <audit:action>addDatastream</audit:action>
             <audit:componentID>DCA-META</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:01.309Z</audit:date>
+            <audit:date>2016-10-24T19:36:11.742Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC3">
@@ -33,7 +39,7 @@
             <audit:action>addDatastream</audit:action>
             <audit:componentID>DCA-ADMIN</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:01.339Z</audit:date>
+            <audit:date>2016-10-24T19:36:11.807Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC4">
@@ -41,7 +47,7 @@
             <audit:action>addDatastream</audit:action>
             <audit:componentID>Archival.xml</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:20.445Z</audit:date>
+            <audit:date>2016-10-24T19:36:20.719Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC5">
@@ -49,7 +55,7 @@
             <audit:action>modifyDatastreamByReference</audit:action>
             <audit:componentID>DCA-ADMIN</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:20.479Z</audit:date>
+            <audit:date>2016-10-24T19:36:20.766Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC6">
@@ -57,7 +63,7 @@
             <audit:action>modifyDatastreamByReference</audit:action>
             <audit:componentID>DCA-ADMIN</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:25.234Z</audit:date>
+            <audit:date>2016-10-24T19:36:39.613Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC7">
@@ -65,23 +71,23 @@
             <audit:action>addDatastream</audit:action>
             <audit:componentID>rightsMetadata</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:51.636Z</audit:date>
+            <audit:date>2016-10-24T19:37:14.071Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC8">
             <audit:process type="Fedora API-M"/>
-            <audit:action>modifyDatastreamByReference</audit:action>
-            <audit:componentID>DCA-META</audit:componentID>
+            <audit:action>addDatastream</audit:action>
+            <audit:componentID>DC-DETAIL-META</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:51.664Z</audit:date>
+            <audit:date>2016-10-24T19:37:14.122Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC9">
             <audit:process type="Fedora API-M"/>
             <audit:action>modifyDatastreamByReference</audit:action>
-            <audit:componentID>DCA-ADMIN</audit:componentID>
+            <audit:componentID>DCA-META</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:27:51.690Z</audit:date>
+            <audit:date>2016-10-24T19:37:14.195Z</audit:date>
             <audit:justification/>
           </audit:record>
           <audit:record ID="AUDREC10">
@@ -89,30 +95,42 @@
             <audit:action>modifyDatastreamByReference</audit:action>
             <audit:componentID>DCA-ADMIN</audit:componentID>
             <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2016-10-24T19:28:27.541Z</audit:date>
+            <audit:date>2016-10-24T19:37:14.249Z</audit:date>
+            <audit:justification/>
+          </audit:record>
+          <audit:record ID="AUDREC11">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByReference</audit:action>
+            <audit:componentID>DCA-ADMIN</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2016-10-24T19:37:17.911Z</audit:date>
             <audit:justification/>
           </audit:record>
         </audit:auditTrail>
       </foxml:xmlContent>
     </foxml:datastreamVersion>
   </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:00.875Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
-      ID="DC1.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" SIZE="340">
+  <foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object"
+      CREATED="2016-10-24T19:36:11.426Z" MIMETYPE="text/xml"
+      FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="352">
       <foxml:xmlContent>
-        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
-          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+        <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
           <dc:identifier>tufts:MS999</dc:identifier>
         </oai_dc:dc>
       </foxml:xmlContent>
     </foxml:datastreamVersion>
   </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="X" ID="RELS-EXT" STATE="A" VERSIONABLE="true">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:01.209Z" ID="RELS-EXT.0"
-      LABEL="Fedora Object-to-Object Relationship Metadata" MIMETYPE="application/rdf+xml" SIZE="371">
+  <foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Fedora Object-to-Object Relationship Metadata"
+      CREATED="2016-10-24T19:36:11.633Z" MIMETYPE="application/rdf+xml" SIZE="395">
       <foxml:xmlContent>
-        <rdf:RDF xmlns:ns0="info:fedora/fedora-system:def/model#" xmlns:ns1="http://www.openarchives.org/OAI/2.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:RDF xmlns:ns0="info:fedora/fedora-system:def/model#"
+          xmlns:ns1="http://www.openarchives.org/OAI/2.0/"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <rdf:Description rdf:about="info:fedora/tufts:MS999">
             <ns1:itemID>oai:tufts:MS999</ns1:itemID>
             <ns0:hasModel rdf:resource="info:fedora/cm:Text.EAD"/>
@@ -121,40 +139,93 @@
       </foxml:xmlContent>
     </foxml:datastreamVersion>
   </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="M" ID="DCA-META" STATE="A" VERSIONABLE="true">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:01.309Z" ID="DCA-META.0" LABEL="" MIMETYPE="text/xml" SIZE="249">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-META/2016-10-24T19:27:01.309Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:51.664Z" ID="DCA-META.1" LABEL="" MIMETYPE="text/xml" SIZE="358">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-META/2016-10-24T19:27:51.664Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-  </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="M" ID="DCA-ADMIN" STATE="A" VERSIONABLE="true">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:01.339Z" ID="DCA-ADMIN.0" LABEL="" MIMETYPE="text/xml" SIZE="200">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-ADMIN/2016-10-24T19:27:01.339Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:20.479Z" ID="DCA-ADMIN.1" LABEL="" MIMETYPE="text/xml" SIZE="200">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-ADMIN/2016-10-24T19:27:20.479Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:25.234Z" ID="DCA-ADMIN.2" LABEL="" MIMETYPE="text/xml" SIZE="200">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-ADMIN/2016-10-24T19:27:25.234Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:51.690Z" ID="DCA-ADMIN.3" LABEL="" MIMETYPE="text/xml" SIZE="238">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-ADMIN/2016-10-24T19:27:51.690Z" TYPE="INTERNAL_ID"/>
-    </foxml:datastreamVersion>
-    <foxml:datastreamVersion CREATED="2016-10-24T19:28:27.541Z" ID="DCA-ADMIN.4" LABEL="" MIMETYPE="text/xml" SIZE="297">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/DCA-ADMIN/2016-10-24T19:28:27.541Z" TYPE="INTERNAL_ID"/>
+  <foxml:datastream ID="DCA-META" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="DCA-META.0" LABEL="" CREATED="2016-10-24T19:36:11.742Z"
+      MIMETYPE="text/xml" SIZE="266">
+      <foxml:xmlContent>
+        <dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:dcadesc="http://nils.lib.tufts.edu/dcadesc/"
+          xmlns:dcatech="http://nils.lib.tufts.edu/dcatech/"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="0.1">
+          <dc:title>Lorem Ipsum papers, 1897-1933</dc:title>
+          <dc:creator>Brian Goodmon</dc:creator>
+          <dc:date.created>2016</dc:date.created>
+        </dc>
+      </foxml:xmlContent>
     </foxml:datastreamVersion>
   </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="E" ID="Archival.xml" STATE="A" VERSIONABLE="false">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:20.445Z" ID="Archival.xml.0" LABEL="MS999_ead.xml" MIMETYPE="text/xml">
-      <foxml:contentLocation
-        REF="http://bucket01.lib.tufts.edu/data01/tufts/central/dca/MS999/archival_xml/MS999.archival.xml" TYPE="URL"/>
+  <foxml:datastream ID="DCA-ADMIN" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="DCA-ADMIN.0" LABEL="" CREATED="2016-10-24T19:36:11.807Z"
+      MIMETYPE="text/xml" SIZE="200">
+      <foxml:xmlContent>
+        <admin xmlns:local="http://nils.lib.tufts.edu/dcaadmin/"
+          xmlns:ac="http://purl.org/dc/dcmitype/">
+          <local:displays>dl</local:displays>
+          <local:editedAt>2016-10-24T19:37:17Z</local:editedAt>
+          <local:createdby/>
+          <local:creatordept/>
+          <local:publishedAt>2016-10-24T19:37:17Z</local:publishedAt>
+        </admin>
+      </foxml:xmlContent>
+      <foxml:contentLocation TYPE="INTERNAL_ID" REF="tufts:MS999+DCA-ADMIN+DCA-ADMIN.0"
+      />
     </foxml:datastreamVersion>
   </foxml:datastream>
-  <foxml:datastream CONTROL_GROUP="M" ID="rightsMetadata" STATE="A" VERSIONABLE="true">
-    <foxml:datastreamVersion CREATED="2016-10-24T19:27:51.636Z" ID="rightsMetadata.0" LABEL="" MIMETYPE="text/xml" SIZE="558">
-      <foxml:contentLocation REF="http://localhost:8983/fedora/get/tufts:MS999/rightsMetadata/2016-10-24T19:27:51.636Z" TYPE="INTERNAL_ID"/>
+  <foxml:datastream ID="Archival.xml" STATE="A" CONTROL_GROUP="E" VERSIONABLE="false">
+    <foxml:datastreamVersion ID="Archival.xml.0" LABEL="MS999.archival.xml"
+      CREATED="2016-10-24T19:36:20.719Z" MIMETYPE="text/xml">
+      <foxml:contentLocation TYPE="URL"
+        REF="http://bucket01.lib.tufts.edu/data01/tufts/central/dca/MS999/archival_xml/MS999.archival.xml"
+      />
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="rightsMetadata" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="rightsMetadata.0" LABEL="" CREATED="2016-10-24T19:37:14.071Z"
+      MIMETYPE="text/xml" SIZE="543">
+      <foxml:xmlContent>
+        <rightsMetadata xmlns="http://hydra-collab.stanford.edu/schemas/rightsMetadata/v1"
+          version="0.1">
+          <copyright>
+            <human type="title"/>
+            <human type="description"/>
+            <machine type="uri"/>
+          </copyright>
+          <access type="discover">
+            <human/>
+            <machine/>
+          </access>
+          <access type="read">
+            <human/>
+            <machine/>
+          </access>
+          <access type="edit">
+            <human/>
+            <machine>
+              <person>bgoodm01</person>
+            </machine>
+          </access>
+          <embargo>
+            <machine/>
+          </embargo>
+          <lease>
+            <machine/>
+          </lease>
+        </rightsMetadata>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream ID="DC-DETAIL-META" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+    <foxml:datastreamVersion ID="DC-DETAIL-META.0" LABEL="" CREATED="2016-10-24T19:37:14.122Z"
+      MIMETYPE="text/xml" SIZE="313">
+      <foxml:xmlContent>
+        <dc xmlns="http://purl.org/dc/elements/1.1/"
+          xmlns:dcadesc="http://nils.lib.tufts.edu/dcadesc/"
+          xmlns:dcatech="http://nils.lib.tufts.edu/dcatech/"
+          xmlns:dcterms="http://purl.org/d/terms/" xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="0.1">
+          <dcterms:alternative>Kitchen Sink EAD</dcterms:alternative>
+        </dc>
+      </foxml:xmlContent>
     </foxml:datastreamVersion>
   </foxml:datastream>
 </foxml:digitalObject>
