@@ -167,8 +167,6 @@
           <local:publishedAt>2016-10-24T19:37:17Z</local:publishedAt>
         </admin>
       </foxml:xmlContent>
-      <foxml:contentLocation TYPE="INTERNAL_ID" REF="tufts:MS999+DCA-ADMIN+DCA-ADMIN.0"
-      />
     </foxml:datastreamVersion>
   </foxml:datastream>
   <foxml:datastream ID="Archival.xml" STATE="A" CONTROL_GROUP="E" VERSIONABLE="false">
