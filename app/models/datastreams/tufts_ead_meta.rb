@@ -71,6 +71,21 @@ class TuftsEADMeta < TuftsDatastream
         t.p(:path => "p")
       }
 
+      t.accessrestrict(:path => "accessrestrict") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.userestrict(:path => "userestrict") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.prefercite(:path => "prefercite") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
       t.descgrp(:path => "descgrp") {
         t.accessrestrict(:path => "accessrestrict") {
           t.head(:path => "head")
@@ -175,9 +190,12 @@ class TuftsEADMeta < TuftsDatastream
     t.relatedmaterialp(:proxy => [:archdesc, :relatedmaterial, :p])
 
     # Access and Use
-    t.accessrestrictp(:proxy => [:archdesc, :descgrp, :accessrestrict, :p])
-    t.userestrictp(:proxy => [:archdesc, :descgrp, :userestrict, :p])
-    t.prefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
+    t.accessrestrictp(:proxy => [:archdesc, :accessrestrict, :p])
+    t.userestrictp(:proxy => [:archdesc, :userestrict, :p])
+    t.prefercitep(:proxy => [:archdesc, :prefercite, :p])
+    t.descgrpaccessrestrictp(:proxy => [:archdesc, :descgrp, :accessrestrict, :p])
+    t.descgrpuserestrictp(:proxy => [:archdesc, :descgrp, :userestrict, :p])
+    t.descgrpprefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
 
     # Administrative Notes
     t.processinfop(:proxy => [:archdesc, :processinfo, :p])
