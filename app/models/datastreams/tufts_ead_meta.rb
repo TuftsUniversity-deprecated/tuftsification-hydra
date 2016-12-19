@@ -161,6 +161,10 @@ class TuftsEADMeta < TuftsDatastream
         t.head(:path => "head")
         t.p(:path => "p")
       }
+      t.custodhist(:path => "custodhist") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
     }
 
     # Overview
@@ -202,6 +206,7 @@ class TuftsEADMeta < TuftsDatastream
     # Administrative Notes
     t.processinfop(:proxy => [:archdesc, :processinfo, :p])
     t.acqinfop(:proxy => [:archdesc, :acqinfo, :p])
+    t.custodhistp(:proxy => [:archdesc, :custodhist, :p])
 
   end
 
