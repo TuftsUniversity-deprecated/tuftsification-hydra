@@ -53,6 +53,7 @@ class TuftsEADMeta < TuftsDatastream
         t.physdesc(:path => "physdesc")
         t.unitid(:path => "unitid")
         t.abstract(:path => "abstract")
+        t.langmaterial(:path => "langmaterial")
       }
 
       t.bioghist(:path => "bioghist") {
@@ -168,6 +169,7 @@ class TuftsEADMeta < TuftsDatastream
     t.physdesc(:proxy => [:archdesc, :did, :physdesc])
     t.unitid(:proxy => [:archdesc, :did, :unitid])
     t.abstract(:proxy => [:archdesc, :did, :abstract])
+    t.langmaterial(:proxy => [:archdesc, :did, :langmaterial])
     t.persname(:proxy => [:archdesc, :did, :origination, :persname])
     t.corpname(:proxy => [:archdesc, :did, :origination, :corpname])
     t.famname(:proxy => [:archdesc, :did, :origination, :famname])
