@@ -72,6 +72,14 @@ class TuftsEADMeta < TuftsDatastream
         t.p(:path => "p")
       }
 
+      t.arrangement(:path => "arrangement") {
+        t.head(:path => "head")
+        t.note(:path => "note") {
+          t.p(:path => "p")
+        }
+        t.p(:path => "p")
+      }
+
       t.accessrestrict(:path => "accessrestrict") {
         t.head(:path => "head")
         t.p(:path => "p")
@@ -181,6 +189,7 @@ class TuftsEADMeta < TuftsDatastream
     # Contents
     t.bioghistp(:proxy => [:archdesc, :bioghist, :p])
     t.scopecontentp(:proxy => [:archdesc, :scopecontent, :p])
+    t.arrangementp(:proxy => [:archdesc, :arrangement, :p])
 
     # Series Descriptions
     t.series(:proxy => [:archdesc, :dsc, :c01])
