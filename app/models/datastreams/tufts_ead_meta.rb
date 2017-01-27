@@ -176,6 +176,7 @@ class TuftsEADMeta < TuftsDatastream
     }
 
     # Overview
+    t.eadid(:proxy => [:eadheader, :eadid])
     t.unittitle(:proxy => [:archdesc, :did, :unittitle])
     t.unitdate(:proxy => [:archdesc, :did, :unitdate])
     t.physdesc(:proxy => [:archdesc, :did, :physdesc])
