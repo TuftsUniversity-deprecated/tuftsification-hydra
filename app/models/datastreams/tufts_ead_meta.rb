@@ -186,6 +186,7 @@ class TuftsEADMeta < TuftsDatastream
     t.persname(:proxy => [:archdesc, :did, :origination, :persname])
     t.corpname(:proxy => [:archdesc, :did, :origination, :corpname])
     t.famname(:proxy => [:archdesc, :did, :origination, :famname])
+    t.repository(:proxy => [:archdesc, :did, :repository, :corpname])
 
     # Contents
     t.bioghistp(:proxy => [:archdesc, :bioghist, :p])
