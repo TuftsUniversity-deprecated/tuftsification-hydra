@@ -11,6 +11,7 @@ class TuftsEADMeta < TuftsDatastream
       t.filedesc(:path => "filedesc") {
         t.titlestmt(:path => "titlestmt") {
           t.titleproper(:path => "titleproper")
+          t.sponsor(:path => "sponsor")
         }
         t.publicationstmt(:path => "publicationstmt") {
           t.publisher(:path => "publisher")
@@ -90,6 +91,11 @@ class TuftsEADMeta < TuftsDatastream
         t.p(:path => "p")
       }
 
+      t.phystech(:path => "phystech") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
       t.prefercite(:path => "prefercite") {
         t.head(:path => "head")
         t.p(:path => "p")
@@ -106,6 +112,11 @@ class TuftsEADMeta < TuftsDatastream
           t.p(:path => "p")
         }
 
+        t.phystech(:path => "phystech") {
+          t.head(:path => "head")
+          t.p(:path => "p")
+        }
+
         t.prefercite(:path => "prefercite") {
           t.head(:path => "head")
           t.p(:path => "p")
@@ -115,6 +126,31 @@ class TuftsEADMeta < TuftsDatastream
       t.controlaccess(:path => "controlaccess") {
         t.head(:path => "head")
         t.controlaccess(:path => "controlaccess")
+      }
+
+      t.accruals(:path => "accruals") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.appraisal(:path => "appraisal") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.altformavail(:path => "altformavail") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.originalsloc(:path => "originalsloc") {
+        t.head(:path => "head")
+        t.p(:path => "p")
+      }
+
+      t.otherfindaid(:path => "otherfindaid") {
+        t.head(:path => "head")
+        t.p(:path => "p")
       }
 
       t.dsc(:path => "dsc") {
@@ -179,45 +215,53 @@ class TuftsEADMeta < TuftsDatastream
     t.eadid(:proxy => [:eadheader, :eadid])
     t.unittitle(:proxy => [:archdesc, :did, :unittitle])
     t.unitdate(:proxy => [:archdesc, :did, :unitdate])
-    t.physdesc(:proxy => [:archdesc, :did, :physdesc])
-    t.unitid(:proxy => [:archdesc, :did, :unitid])
-    t.abstract(:proxy => [:archdesc, :did, :abstract])
-    t.langmaterial(:proxy => [:archdesc, :did, :langmaterial])
     t.persname(:proxy => [:archdesc, :did, :origination, :persname])
     t.corpname(:proxy => [:archdesc, :did, :origination, :corpname])
     t.famname(:proxy => [:archdesc, :did, :origination, :famname])
+    t.unitid(:proxy => [:archdesc, :did, :unitid])
+    t.physdesc(:proxy => [:archdesc, :did, :physdesc])
+    t.abstract(:proxy => [:archdesc, :did, :abstract])
+    t.langmaterial(:proxy => [:archdesc, :did, :langmaterial])
     t.repository(:proxy => [:archdesc, :did, :repository, :corpname])
 
-    # Contents
-    t.bioghistp(:proxy => [:archdesc, :bioghist, :p])
+    # Description
     t.scopecontentp(:proxy => [:archdesc, :scopecontent, :p])
     t.arrangementp(:proxy => [:archdesc, :arrangement, :p])
+
+    # Biography/History
+    t.bioghistp(:proxy => [:archdesc, :bioghist, :p])
+
+    # Access and Use
+    t.accessrestrictp(:proxy => [:archdesc, :accessrestrict, :p])
+    t.descgrpaccessrestrictp(:proxy => [:archdesc, :descgrp, :accessrestrict, :p])
+    t.userestrictp(:proxy => [:archdesc, :userestrict, :p])
+    t.descgrpuserestrictp(:proxy => [:archdesc, :descgrp, :userestrict, :p])
+    t.phystechp(:proxy => [:archdesc, :phystech, :p])
+    t.descgrpphystech(:proxy => [:archdesc, :descgrp, :phystech])
+    t.prefercitep(:proxy => [:archdesc, :prefercite, :p])
+    t.descgrpprefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
+
+    # Collection History
+    t.processinfop(:proxy => [:archdesc, :processinfo, :p])
+    t.acqinfop(:proxy => [:archdesc, :acqinfo, :p])
+    t.custodhistp(:proxy => [:archdesc, :custodhist, :p])
+    t.accrualsp(:proxy => [:archdesc, :accruals, :p])
+    t.appraisalp(:proxy => [:archdesc, :appraisal, :p])
+    t.sponsor(:proxy => [:eadheader, :filedesc, :titlestmt, :sponsor])
+
+    # Related Resources
+    t.controlaccess(:proxy => [:archdesc, :controlaccess])
+    t.relatedmaterialp(:proxy => [:archdesc, :relatedmaterial, :p])
+    t.separatedmaterialp(:proxy => [:archdesc, :separatedmaterial, :p])
+    t.altformavailp(:proxy => [:archdesc, :altformavail, :p])
+    t.originalslocp(:proxy => [:archdesc, :originalsloc, :p])
+    t.otherfindaidp(:proxy => [:archdesc, :otherfindaid, :p])
 
     # Series Descriptions
     t.series(:proxy => [:archdesc, :dsc, :c01])
 
     # Series Descriptions - new ArchivesSpace style
     t.aspaceseries(:proxy => [:archdesc, :dsc, :c])
-
-    # Names and Subjects
-    t.controlaccess(:proxy => [:archdesc, :controlaccess])
-
-    # Related Collections
-    t.separatedmaterialp(:proxy => [:archdesc, :separatedmaterial, :p])
-    t.relatedmaterialp(:proxy => [:archdesc, :relatedmaterial, :p])
-
-    # Access and Use
-    t.accessrestrictp(:proxy => [:archdesc, :accessrestrict, :p])
-    t.userestrictp(:proxy => [:archdesc, :userestrict, :p])
-    t.prefercitep(:proxy => [:archdesc, :prefercite, :p])
-    t.descgrpaccessrestrictp(:proxy => [:archdesc, :descgrp, :accessrestrict, :p])
-    t.descgrpuserestrictp(:proxy => [:archdesc, :descgrp, :userestrict, :p])
-    t.descgrpprefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
-
-    # Administrative Notes
-    t.processinfop(:proxy => [:archdesc, :processinfo, :p])
-    t.acqinfop(:proxy => [:archdesc, :acqinfo, :p])
-    t.custodhistp(:proxy => [:archdesc, :custodhist, :p])
 
   end
 
