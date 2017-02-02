@@ -237,7 +237,7 @@ class TuftsEADMeta < TuftsDatastream
     t.userestrictp(:proxy => [:archdesc, :userestrict, :p])
     t.descgrpuserestrictp(:proxy => [:archdesc, :descgrp, :userestrict, :p])
     t.phystechp(:proxy => [:archdesc, :phystech, :p])
-    t.descgrpphystech(:proxy => [:archdesc, :descgrp, :phystech])
+    t.descgrpphystechp(:proxy => [:archdesc, :descgrp, :phystech, :p])
     t.prefercitep(:proxy => [:archdesc, :prefercite, :p])
     t.descgrpprefercitep(:proxy => [:archdesc, :descgrp, :prefercite, :p])
 
