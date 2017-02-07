@@ -213,6 +213,7 @@ class TuftsEADMeta < TuftsDatastream
 
     # Overview
     t.eadid(:proxy => [:eadheader, :eadid])
+    t.addresslines(:proxy => [:eadheader, :filedesc, :publicationstmt, :address, :addressline])
     t.unittitle(:proxy => [:archdesc, :did, :unittitle])
     t.unitdate(:proxy => [:archdesc, :did, :unitdate])
     t.persname(:proxy => [:archdesc, :did, :origination, :persname])
@@ -222,7 +223,6 @@ class TuftsEADMeta < TuftsDatastream
     t.physdesc(:proxy => [:archdesc, :did, :physdesc])
     t.abstract(:proxy => [:archdesc, :did, :abstract])
     t.langmaterial(:proxy => [:archdesc, :did, :langmaterial])
-    t.repository(:proxy => [:archdesc, :did, :repository, :corpname])
 
     # Description
     t.scopecontentp(:proxy => [:archdesc, :scopecontent, :p])
