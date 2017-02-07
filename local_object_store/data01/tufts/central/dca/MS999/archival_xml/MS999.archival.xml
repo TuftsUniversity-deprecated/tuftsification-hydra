@@ -16,7 +16,7 @@
       </publicationstmt>
     </filedesc>
     <profiledesc>
-      <creation>This finding aid was produced using ArchivesSpace on <date>2017-02-02 14:53:50
+      <creation>This finding aid was produced using ArchivesSpace on <date>2017-02-07 08:45:46
           -0500</date>.</creation>
     </profiledesc>
     <revisiondesc>
@@ -44,13 +44,13 @@
         <extent altrender="carrier">487 record cartons and 1 document case</extent>
       </physdesc>
       <physdesc altrender="part">
-        <extent altrender="materialtype spaceoccupied">197 digital_objects</extent>
+        <extent altrender="materialtype spaceoccupied">197 Gigabytes</extent>
       </physdesc>
       <physdesc altrender="part">
-        <extent altrender="materialtype spaceoccupied">95 audiovisual_media</extent>
+        <extent altrender="materialtype spaceoccupied">95 Cassettes</extent>
       </physdesc>
-      <unitdate normal="1897/1933" type="inclusive">1897-1933</unitdate>
-      <unitdate normal="1910/1933" type="bulk">bulk</unitdate>
+      <unitdate normal="1897/1933" type="inclusive">1897 -- 1933</unitdate>
+      <unitdate normal="1910/1933" type="bulk">1910 -- 1933</unitdate>
       <abstract id="aspace_c99dc695e2710ca92119efd1ff665299">The papers of Lorem Ipsum, noted
         scholar and salon host, consist of his personal and professional papers, including a wide
         range of correspondence with noted thinkers, scholars, and chorus girls of the 1910s and
@@ -107,6 +107,7 @@
         Brooks.</p>
 
       <p>Diaries cover the years 1910-1933 with a suspicious gap in 1922.</p>
+      <p>This is just a test.</p>
     </scopecontent>
     <accruals id="aspace_f1427389ff539cf34ea93dab9f3c04ec">
       <head>Accruals</head>
@@ -224,10 +225,10 @@
               <unittitle>Fitzgerald, Zelda</unittitle>
               <unitid>MS999.001.001.00001</unitid>
               <unitdate normal="1910/1923" type="inclusive">1910-1923</unitdate>
-              <container id="aspace_2aaa9ada139ee45fa2f014a5955b5eaa" label="Text (31236554645131)"
+              <container id="aspace_efa5451254ab015032c9afb06510507b" label="Text (31236554645131)"
                 type="box">1</container>
-              <container id="aspace_a1e114720d6e50461b6d3c532e435776"
-                parent="aspace_2aaa9ada139ee45fa2f014a5955b5eaa" type="folder">1</container>
+              <container id="aspace_1e0927dd77e8ace7156e48e2bf9ce7a8"
+                parent="aspace_efa5451254ab015032c9afb06510507b" type="folder">1</container>
             </did>
           </c>
         </c>
@@ -265,7 +266,7 @@
               <unittitle>Diary</unittitle>
               <unitid>MS999.001.002.00001</unitid>
               <unitdate normal="1910/1910" type="inclusive">1910</unitdate>
-              <container id="aspace_2339275c876b9ce355b24c60f4810d36"
+              <container id="aspace_857171ce5897b29aa61771a10312fe23"
                 label="Books (3123064475432131)" type="volume">1</container>
               <dao xlink:actuate="onRequest" xlink:href="http://hdl.handle.net/false/noreal"
                 xlink:show="new" xlink:title="Diary">
@@ -302,9 +303,9 @@
               boxes</extent></physdesc>
           <unitdate normal="1897/1933" type="inclusive">1897-1933</unitdate>
           <unitdate normal="1897/1910" type="bulk">bulk</unitdate>
-          <container id="aspace_2878ade2fdbfc4c8143462c6b6a05226"
+          <container id="aspace_a7abcc2478f03f9eaaba37b4c3adbd39"
             label="Mixed Materials (3167484321321321)" type="box">2</container>
-          <container id="aspace_b1ce0e92a90d9d363b4929a7346b123f"
+          <container id="aspace_505704da80c6a973fef022ee699d8b28"
             label="Mixed Materials (21546543213213546)" type="box">3</container>
         </did>
         <scopecontent id="aspace_736d9eac616251082c40f88e448fea67">
