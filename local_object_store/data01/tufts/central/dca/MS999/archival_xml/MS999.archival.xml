@@ -1,331 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
-  <eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
-    repositoryencoding="iso15511">
-    <eadid countrycode="US" url="http://hdl.handle.net/fake/false">MS999</eadid>
-    <filedesc>
-      <titlestmt>
-        <titleproper>Lorem Ipsum papers<num>MS999</num></titleproper>
-        <sponsor>Processing funded by a generous grant from NEH, 2015.</sponsor>
-      </titlestmt>
-      <publicationstmt>
-        <publisher>Digital Collections and Archives</publisher>
-        <address><addressline>35 Professors Row</addressline><addressline>Tisch Library Building</addressline><addressline>Tufts University</addressline><addressline>Medford, Massachusetts 02155</addressline><addressline>archives@tufts.edu</addressline><addressline>URL: <extptr xlink:href="http://sites.tufts.edu/dca/" xlink:show="new" xlink:title="http://sites.tufts.edu/dca/" xlink:type="simple"/></addressline></address>
-      </publicationstmt>
-    </filedesc>
-    <profiledesc>
-      <creation>This finding aid was produced using ArchivesSpace on <date>2017-02-07 08:45:46
-          -0500</date>.</creation>
-    </profiledesc>
-    <revisiondesc>
-      <change>
-        <date>2017-02-01</date>
-        <item>Required elements added.</item>
-      </change>
-    </revisiondesc>
-  </eadheader>
-  <archdesc level="collection">
-    <did>
-      <langmaterial>
-        <language langcode="eng">English</language>
-      </langmaterial>
-      <repository>
-        <corpname>Digital Collections and Archives</corpname>
-      </repository>
-      <unittitle>Lorem Ipsum papers</unittitle>
-      <origination label="creator">
-        <persname rules="dacs">Ipsum, Lorem, 1850-1933</persname>
-      </origination>
-      <unitid>MS999</unitid>
-      <physdesc altrender="part">
-        <extent altrender="materialtype spaceoccupied">585 Cubic Feet</extent>
-        <extent altrender="carrier">487 record cartons and 1 document case</extent>
-      </physdesc>
-      <physdesc altrender="part">
-        <extent altrender="materialtype spaceoccupied">197 Gigabytes</extent>
-      </physdesc>
-      <physdesc altrender="part">
-        <extent altrender="materialtype spaceoccupied">95 Cassettes</extent>
-      </physdesc>
-      <unitdate normal="1897/1933" type="inclusive">1897 -- 1933</unitdate>
-      <unitdate normal="1910/1933" type="bulk">1910 -- 1933</unitdate>
-      <abstract id="aspace_c99dc695e2710ca92119efd1ff665299">The papers of Lorem Ipsum, noted
-        scholar and salon host, consist of his personal and professional papers, including a wide
-        range of correspondence with noted thinkers, scholars, and chorus girls of the 1910s and
-        1920s.</abstract>
-      <langmaterial id="aspace_86e1893007abec9460b8b761217a18ad">Materials are in English, French,
-        and Russian.</langmaterial>
-    </did>
-    <arrangement id="aspace_0a875f80781d1b1f4607bcd766d78d04">
-      <head>Arrangement</head>
-      <p>This collection is arranged in two series.</p>
-    </arrangement>
-    <bioghist id="aspace_6416c28e0692d875166690f488d529ac">
-      <head>Biographical / Historical</head>
-      <p>Lorem Ipsum was born in Peoria, Illinois, in 1850. He attended Oberlin College, and began
-        teaching philosophy at the University of Chicago in 1893. He became renowned for his
-        philosophical salons but later in life turned to drink, excess, and show tunes. He died in
-        1933 and left his extensive collections of rare books and autographed playbills to his alma
-        mater.</p>
-    </bioghist>
-    <accessrestrict id="aspace_8951585fc249611af7df5560e85cb116">
-      <head>Conditions Governing Access</head>
-      <p>Open to research.</p>
-    </accessrestrict>
-    <userestrict id="aspace_b496aebf055687f5de154002a786ffed">
-      <head>Conditions Governing Use</head>
-      <p>Copyright has been retained by donor. Researchers are responsible for contacting copyright
-        holders.</p>
-    </userestrict>
-    <custodhist id="aspace_97b30b1ff1f8dbbf0a064e6deb568553">
-      <head>Custodial History</head>
-      <p>Although Ipsum's rare books were safely ensconced at Oberlin, upon his death his personal
-        papers were discarded by an unfeeling landlady. They were rescued by a fellow scholar and
-        maintained in a personal collection until they were donated to Tufts University in 2016.</p>
-    </custodhist>
-    <acqinfo id="aspace_3b4dbf678c54c1416d5bd41e7afcaef6">
-      <head>Immediate Source of Acquisition</head>
-      <p>Gift of Harold Lloyd III, 2016.</p>
-    </acqinfo>
-    <processinfo id="aspace_f4dfba50cbecdd81d1ea04c58c0bc506">
-      <head>Processing Information</head>
-      <p>Processed in 2016 by Samantha Redgrave.</p>
-    </processinfo>
-    <relatedmaterial id="aspace_e79c131036e69697935387191127de55">
-      <head>Related Materials</head>
-      <p>Lorem Ipsum rare book collection, Cornell University.</p>
-      <p>Lorem Ipsum faculty papers, University of Chicago.</p>
-    </relatedmaterial>
-    <scopecontent id="aspace_4434a5d8c1992a3af6eff2b856aa4a97">
-      <head>Scope and Contents</head>
-      <p>The Lorem Ipsum papers consist of his personal and professional papers. Professional papers
-        include manuscripts, speeches, drafts of journal articles, and notes. Personal papers
-        include diaries and correspondence with noted thinkers, scholars, and chorus girls of the
-        1910s and 1920s, including F. Scott and Zelda Fitzgerald, William James, and Louise
-        Brooks.</p>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd"><eadheader countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511"><eadid countrycode="US" url="http://hdl.handle.net/fake/false">MS999</eadid><filedesc><titlestmt><titleproper>Lorem Ipsum papers<num>MS999</num></titleproper><sponsor>Processing funded by a generous grant from NEH, 2015.</sponsor></titlestmt><publicationstmt><publisher>Digital Collections and Archives, Tufts University</publisher><address><addressline>35 Professors Row</addressline><addressline>Tisch Library Building</addressline><addressline>Tufts University</addressline><addressline>Medford, Massachusetts 02155</addressline><addressline>archives@tufts.edu</addressline><addressline>URL: <extptr xlink:href="http://sites.tufts.edu/dca/" xlink:show="new" xlink:title="http://sites.tufts.edu/dca/" xlink:type="simple"/></addressline></address></publicationstmt></filedesc><profiledesc><creation>This finding aid was produced using ArchivesSpace on <date>2017-02-13 16:38:04 -0500</date>.</creation></profiledesc><revisiondesc><change><date>2017-02-01</date><item>Required elements added.</item></change></revisiondesc></eadheader><archdesc level="collection">
+  <did>
+    <langmaterial>
+      <language langcode="eng">English</language>
+    </langmaterial>
+    <repository>
+      <corpname>Digital Collections and Archives, Tufts University</corpname>
+    </repository>
+    <unittitle>Lorem Ipsum papers</unittitle>
+    <origination label="creator">
+      <persname rules="dacs">Ipsum, Lorem, 1850-1933</persname>
+    </origination>
+    <unitid>MS999</unitid>
+    <physdesc altrender="part">
+      <extent altrender="materialtype spaceoccupied">585 Cubic Feet</extent>
+      <extent altrender="carrier">487 record cartons and 1 document case</extent>
+    </physdesc>
+    <physdesc altrender="part">
+      <extent altrender="materialtype spaceoccupied">197 Gigabytes</extent>
+    </physdesc>
+    <physdesc altrender="part">
+      <extent altrender="materialtype spaceoccupied">95 Cassettes</extent>
+    </physdesc>
+    <unitdate normal="1897/1933" type="inclusive">1897 -- 1933</unitdate>
+    <unitdate normal="1910/1933" type="bulk">1910 -- 1933</unitdate>
+    <abstract id="aspace_c99dc695e2710ca92119efd1ff665299">The papers of Lorem Ipsum, noted scholar and salon host, consist of his personal and professional papers, including a wide range of correspondence with noted thinkers, scholars, and chorus girls of the 1910s and 1920s.</abstract>
+    <langmaterial id="aspace_86e1893007abec9460b8b761217a18ad">Materials are in English, French, and Russian.</langmaterial>
+  </did>
+  <arrangement id="aspace_0a875f80781d1b1f4607bcd766d78d04">
+    <head>Arrangement</head>
+<p>This collection is arranged in two series.</p>  </arrangement>
+  <bioghist id="aspace_6416c28e0692d875166690f488d529ac">
+    <head>Biographical / Historical</head>
+<p>Lorem Ipsum was born in Peoria, Illinois, in 1850. He attended Oberlin College, and began teaching philosophy at the University of Chicago in 1893. He became renowned for his philosophical salons but later in life turned to drink, excess, and show tunes. He died in 1933 and left his extensive collections of rare books and autographed playbills to his alma mater.</p>  </bioghist>
+  <accessrestrict id="aspace_8951585fc249611af7df5560e85cb116">
+    <head>Conditions Governing Access</head>
+<p>Open to research.</p>  </accessrestrict>
+  <userestrict id="aspace_b496aebf055687f5de154002a786ffed">
+    <head>Conditions Governing Use</head>
+<p>Copyright has been retained by donor. Researchers are responsible for contacting copyright holders.</p>  </userestrict>
+  <custodhist id="aspace_97b30b1ff1f8dbbf0a064e6deb568553">
+    <head>Custodial History</head>
+<p>Although Ipsum's rare books were safely ensconced at Oberlin, upon his death his personal papers were discarded by an unfeeling landlady. They were rescued by a fellow scholar and maintained in a personal collection until they were donated to Tufts University in 2016.</p>  </custodhist>
+  <acqinfo id="aspace_3b4dbf678c54c1416d5bd41e7afcaef6">
+    <head>Immediate Source of Acquisition</head>
+<p>Gift of Harold Lloyd III, 2016.</p>  </acqinfo>
+  <processinfo id="aspace_f4dfba50cbecdd81d1ea04c58c0bc506">
+    <head>Processing Information</head>
+<p>Processed in 2016 by Samantha Redgrave.</p>  </processinfo>
+  <relatedmaterial id="aspace_e79c131036e69697935387191127de55">
+    <head>Related Materials</head>
+<p>Lorem Ipsum rare book collection, Cornell University.</p><p>Lorem Ipsum faculty papers, University of Chicago.</p>  </relatedmaterial>
+  <scopecontent id="aspace_4434a5d8c1992a3af6eff2b856aa4a97">
+    <head>Scope and Contents</head>
+<p>The Lorem Ipsum papers consist of his personal and professional papers. Professional papers include manuscripts, speeches, drafts of journal articles, and notes. Personal papers include diaries and correspondence with noted thinkers, scholars, and chorus girls of the 1910s and 1920s, including F. Scott and Zelda Fitzgerald, William James, and Louise Brooks.</p>
 
-      <p>Diaries cover the years 1910-1933 with a suspicious gap in 1922.</p>
-      <p>This is just a test.</p>
-    </scopecontent>
-    <accruals id="aspace_f1427389ff539cf34ea93dab9f3c04ec">
-      <head>Accruals</head>
-      <p>No further accruals are expected.</p>
-    </accruals>
-    <otherfindaid id="aspace_484d256127b2ecb1c8f95324fd235d43">
-      <head>Other Finding Aids</head>
-      <p>A detailed item level list with transcriptions of diaries and letters is available in the
-        repository.</p>
-    </otherfindaid>
-    <originalsloc id="aspace_979bc596fbd2cc1973b0e4078ecdc72e">
-      <head>Existence and Location of Originals</head>
-      <p>Some letters in the correspondence series are photocopies; originals reside with the
-        original authors.</p>
-    </originalsloc>
-    <appraisal id="aspace_91b991eb262e176cac71c589ec12eec9">
-      <head>Appraisal</head>
-      <p>Duplicate materials were discaded during processing, as was Mr. Ipsum's rather careworn
-        feather boa.</p>
-    </appraisal>
-    <phystech id="aspace_a77891a3db2fcd3e5262f9da23580ee6">
-      <head>Physical Characteristics and Technical Requirements</head>
-      <p>This collection has no technical requirements for access.</p>
-    </phystech>
-    <altformavail id="aspace_8f112d1eef2beb864e27667dbcdce940">
-      <head>Existence and Location of Copies</head>
-      <p>This collection is also available on microfilm.</p>
-    </altformavail>
-    <prefercite id="aspace_23b861bc6d0bdd25d6cbe7f241cc9b82">
-      <head>Preferred Citation</head>
-      <p>Lorem Ipsum papers, 1897-1933. Tufts University. Digital Collections and Archives. Medford,
-        MA.</p>
-    </prefercite>
-    <separatedmaterial id="aspace_e82b86d1f2d7c6a0a6b16e16b7a0b311">
-      <head>Separated Materials</head>
-      <p>Taxidermy originally in this collection has been transferred to the natural history
-        museum.</p>
-    </separatedmaterial>
-    <controlaccess>
-      <subject source="local">University of Chicago</subject>
-      <subject source="local">Adolescence</subject>
-      <subject source="local">Advertising</subject>
-      <title source="local">Medford (Mass.)</title>
-    </controlaccess>
-    <dsc>
-      <c id="aspace_1ba86c68818ab59b72d6fd01b6c15017" level="series">
-        <did>
-          <unittitle>Personal papers</unittitle>
-          <unitid>MS999.001</unitid>
-          <physdesc altrender="part"><extent altrender="materialtype spaceoccupied">68 Cubic
-              Feet</extent><extent altrender="carrier">56 record cartons and 2 document
-              cases</extent></physdesc>
-          <physdesc altrender="part"><extent altrender="materialtype spaceoccupied">22
-              Volumes</extent></physdesc>
-          <unitdate normal="1900/1933" type="inclusive">1900-1933</unitdate>
-          <unitdate normal="1910/1933" type="bulk">bulk</unitdate>
-          <langmaterial id="aspace_28c82aa921f2669cb89f0ca5b631c757">Materials in this series are in
-            English and French.</langmaterial>
-        </did>
-        <scopecontent id="aspace_079a1e5e7add050c8f53ef8447f4c85d">
-          <head>Scope and Contents</head>
-          <p>Personal papers consist largely of correspondence and diaries.</p>
-        </scopecontent>
-        <arrangement id="aspace_8e8380e549a262adfa87020fc3a691fa">
-          <head>Arrangement</head>
-          <p>This series is organized in two subseries.</p>
-        </arrangement>
-        <accessrestrict id="aspace_ad753147910b3fb047b65bf4c696db40">
-          <head>Conditions Governing Access</head>
-          <p>Open for research.</p>
-        </accessrestrict>
-        <userestrict id="aspace_77662e4f32d455a8595e88a595cca183">
-          <head>Conditions Governing Use</head>
-          <p>Copyright retained by donor.</p>
-        </userestrict>
-        <controlaccess>
-          <subject source="local">Letters (correspondence)</subject>
-          <genreform source="aat">Diaries</genreform>
-        </controlaccess>
-        <c id="aspace_5fc68062788bbf01180b4812d1d5d5cf" level="subseries">
-          <did>
-            <unittitle>Correspondence</unittitle>
-            <unitid>MS999.001.001</unitid>
-            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">38 Cubic
-                Feet</extent><extent altrender="carrier">22 boxes </extent></physdesc>
-            <unitdate normal="1900/1933" type="inclusive">1900-1933</unitdate>
-            <unitdate normal="1910/1933" type="bulk">bulk</unitdate>
-            <langmaterial id="aspace_3f687f5b1722c2bf1adb95cd5a50fa2e">Correspondence is mainly in
-              English, with some material in French.</langmaterial>
-          </did>
-          <scopecontent id="aspace_805d69837b521c6d18d33737fd9c4cff">
-            <head>Scope and Contents</head>
-            <p>Correspondence with many leading lights of the day, including H. L. Mencken, F. Scott
-              and Zelda Fitzgerald, William James, and Louise Brooks, among others.</p>
-          </scopecontent>
-          <accessrestrict id="aspace_eb9ff8f634c7e4428d9952b3ce259266">
-            <head>Conditions Governing Access</head>
-            <p>Open for research.</p>
-          </accessrestrict>
-          <userestrict id="aspace_66b8b4fcf3c2c4aee3e69a8952b52e93">
-            <head>Conditions Governing Use</head>
-            <p>Copyright retained by donor.</p>
-          </userestrict>
-          <arrangement id="aspace_4c2339f622e86d4b63b347e05b6bda4f">
-            <head>Arrangement</head>
-            <p>Correspondence is arranged alphabetically.</p>
-          </arrangement>
-          <controlaccess>
-            <subject source="local">Letters (correspondence)</subject>
-            <subject source="local">Theater--History--20th century.</subject>
-            <persname rules="dacs">Fitzgerald, Zelda</persname>
-          </controlaccess>
-          <c id="aspace_75c6557abec1fd397c58789eb1479faf" level="file">
-            <did>
-              <unittitle>Fitzgerald, Zelda</unittitle>
-              <unitid>MS999.001.001.00001</unitid>
-              <unitdate normal="1910/1923" type="inclusive">1910-1923</unitdate>
-              <container id="aspace_efa5451254ab015032c9afb06510507b" label="Text (31236554645131)"
-                type="box">1</container>
-              <container id="aspace_1e0927dd77e8ace7156e48e2bf9ce7a8"
-                parent="aspace_efa5451254ab015032c9afb06510507b" type="folder">1</container>
-            </did>
-          </c>
-        </c>
-        <c id="aspace_a5cc6f98c5b1135632685e48a0681fe3" level="subseries">
-          <did>
-            <unittitle>Diaries</unittitle>
-            <unitid>MS999.001.002</unitid>
-            <physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">23
-                Volumes</extent></physdesc>
-            <unitdate normal="1910/1933" type="inclusive">1910-1933</unitdate>
-            <langmaterial id="aspace_bd58c6cb65786b02390e2064e4956d8e">Diaries are mostly in Russian
-              with some English.</langmaterial>
-          </did>
-          <arrangement id="aspace_0f614d809faa4e2653898d2193c42dae">
-            <head>Arrangement</head>
-            <p>Diaries are arranged chronologically.</p>
-          </arrangement>
-          <accessrestrict id="aspace_a6e846d09e822df7aa08cd4659ba9b95">
-            <head>Conditions Governing Access</head>
-            <p>Open for research.</p>
-          </accessrestrict>
-          <userestrict id="aspace_c78d96409183497e1d8cc58a8265adc7">
-            <head>Conditions Governing Use</head>
-            <p>Copyright has been retained by donor.</p>
-          </userestrict>
-          <scopecontent id="aspace_b806fe19f520b79a02c874a5f21d48af">
-            <head>Scope and Contents</head>
-            <p>Diaries are salacious and gossipy.</p>
-          </scopecontent>
-          <controlaccess>
-            <genreform source="aat">Diaries</genreform>
-          </controlaccess>
-          <c id="aspace_f8e4ec00c067f74288da3e7a59421114" level="item">
-            <did>
-              <unittitle>Diary</unittitle>
-              <unitid>MS999.001.002.00001</unitid>
-              <unitdate normal="1910/1910" type="inclusive">1910</unitdate>
-              <container id="aspace_857171ce5897b29aa61771a10312fe23"
-                label="Books (3123064475432131)" type="volume">1</container>
-              <dao xlink:actuate="onRequest" xlink:href="http://hdl.handle.net/false/noreal"
-                xlink:show="new" xlink:title="Diary">
-                <daodesc>
-                  <p>Diary: 1910-</p>
-                </daodesc>
-              </dao>
-            </did>
-            <accessrestrict id="aspace_9e23b97e0ebdffa8a8a0b662df44ece3">
-              <head>Conditions Governing Access</head>
-              <p>Open for research.</p>
-            </accessrestrict>
-            <userestrict id="aspace_110343a943a1a030d56e68400914c3c9">
-              <head>Conditions Governing Use</head>
-              <p>Copyright retained by donor.</p>
-            </userestrict>
-            <scopecontent id="aspace_79b0e9dbdd27084492d4dda584a8b032">
-              <head>Scope and Contents</head>
-              <p>Includes a detailed account of attending Nijinksky's performance of Giselle.</p>
-            </scopecontent>
-            <controlaccess>
-              <title source="local"> Experimental theater -- Massachusetts -- Boston --
-                Sources</title>
-            </controlaccess>
-          </c>
-        </c>
-      </c>
-      <c id="aspace_73958582e4d3b0ba4903864f50b6f9a9" level="series">
-        <did>
-          <unittitle>Professional papers</unittitle>
-          <unitid>MS999.002</unitid>
-          <physdesc altrender="part"><extent altrender="materialtype spaceoccupied">56 Cubic
-              Feet</extent><extent altrender="carrier">40 record cartons and 4 oversize
-              boxes</extent></physdesc>
-          <unitdate normal="1897/1933" type="inclusive">1897-1933</unitdate>
-          <unitdate normal="1897/1910" type="bulk">bulk</unitdate>
-          <container id="aspace_a7abcc2478f03f9eaaba37b4c3adbd39"
-            label="Mixed Materials (3167484321321321)" type="box">2</container>
-          <container id="aspace_505704da80c6a973fef022ee699d8b28"
-            label="Mixed Materials (21546543213213546)" type="box">3</container>
-        </did>
-        <scopecontent id="aspace_736d9eac616251082c40f88e448fea67">
-          <head>Scope and Contents</head>
-          <p>Professional papers consists of manuscripts, speeches, notes, and student papers.</p>
+<p>Diaries cover the years 1910-1933 with a suspicious gap in 1922.</p><p>This is just a test.</p>  </scopecontent>
+  <accruals id="aspace_f1427389ff539cf34ea93dab9f3c04ec">
+    <head>Accruals</head>
+<p>No further accruals are expected.</p>  </accruals>
+  <otherfindaid id="aspace_484d256127b2ecb1c8f95324fd235d43">
+    <head>Other Finding Aids</head>
+<p>A detailed item level list with transcriptions of diaries and letters is available in the repository.</p>  </otherfindaid>
+  <originalsloc id="aspace_979bc596fbd2cc1973b0e4078ecdc72e">
+    <head>Existence and Location of Originals</head>
+<p>Some letters in the correspondence series are photocopies; originals reside with the original authors.</p>  </originalsloc>
+  <appraisal id="aspace_91b991eb262e176cac71c589ec12eec9">
+    <head>Appraisal</head>
+<p>Duplicate materials were discaded during processing, as was Mr. Ipsum's rather careworn feather boa.</p>  </appraisal>
+  <phystech id="aspace_a77891a3db2fcd3e5262f9da23580ee6">
+    <head>Physical Characteristics and Technical Requirements</head>
+<p>This collection has no technical requirements for access.</p>  </phystech>
+  <altformavail id="aspace_8f112d1eef2beb864e27667dbcdce940">
+    <head>Existence and Location of Copies</head>
+<p>This collection is also available on microfilm.</p>  </altformavail>
+  <prefercite id="aspace_23b861bc6d0bdd25d6cbe7f241cc9b82">
+    <head>Preferred Citation</head>
+<p>Lorem Ipsum papers, 1897-1933. Tufts University. Digital Collections and Archives. Medford, MA.</p>  </prefercite>
+  <separatedmaterial id="aspace_e82b86d1f2d7c6a0a6b16e16b7a0b311">
+    <head>Separated Materials</head>
+<p>Taxidermy originally in this collection has been transferred to the natural history museum.</p>  </separatedmaterial>
+  <controlaccess>
+    <subject source="local">University of Chicago</subject>
+    <subject source="local">Adolescence</subject>
+    <subject source="local">Advertising</subject>
+    <title source="local">Medford (Mass.)</title>
+  </controlaccess>
+  <dsc><c id="aspace_1ba86c68818ab59b72d6fd01b6c15017" level="series"><did><unittitle>Personal papers</unittitle><unitid>MS999.001</unitid><physdesc altrender="part"><extent altrender="materialtype spaceoccupied">68 Cubic Feet</extent><extent altrender="carrier">56 record cartons and 2 document cases</extent></physdesc><physdesc altrender="part"><extent altrender="materialtype spaceoccupied">22 Volumes</extent></physdesc><unitdate normal="1900/1933" type="inclusive">1900 -- 1933</unitdate><unitdate normal="1910/1933" type="bulk">1910 -- 1933 </unitdate><langmaterial id="aspace_28c82aa921f2669cb89f0ca5b631c757">Materials in this series are in English and French.</langmaterial><abstract id="aspace_9461fa36385d528ddbf2c63bad979850">This series contains the good stuff.</abstract></did><scopecontent id="aspace_079a1e5e7add050c8f53ef8447f4c85d"><head>Scope and Contents</head><p>Personal papers consist largely of correspondence and diaries.</p></scopecontent><arrangement id="aspace_8e8380e549a262adfa87020fc3a691fa"><head>Arrangement</head><p>This series is organized in two subseries.</p></arrangement><accessrestrict id="aspace_ad753147910b3fb047b65bf4c696db40"><head>Conditions Governing Access</head><p>Open for research.</p></accessrestrict><userestrict id="aspace_77662e4f32d455a8595e88a595cca183"><head>Conditions Governing Use</head><p>Copyright retained by donor.</p></userestrict><acqinfo id="aspace_21cae6a1f6691ebba76f27fbcee962bf"><head>Immediate Source of Acquisition</head><p>Gift of Harold Lloyd III, 2016.</p></acqinfo><phystech id="aspace_3e4b9843d9fa7d1d585cfc0f0c809ebe"><head>Physical Characteristics and Technical Requirements</head><p>This series has no technical requirements for access.</p></phystech><altformavail id="aspace_9da7e138223419930bda52c99ba39a44"><head>Existence and Location of Copies</head><p>This series is also available on graven tablets.</p></altformavail><prefercite id="aspace_b83da0be9ab9b03afd97fc8fe7478895"><head>Preferred Citation</head><p>Personal papers, Lorem Ipsum papers, 1897-1933. Tufts University. Digital Collections and Archives. Medford, MA.</p></prefercite><separatedmaterial id="aspace_d7015e9f9faad5136d03f893a7ce4db0"><head>Separated Materials</head><p>Silk stockings found in this series have been transferred to the Textile Museum.</p></separatedmaterial><processinfo id="aspace_724755a747cca31ee48e3a712262db0f"><head>Processing Information</head><p>Evidence suggests that the original processor of this collection may have actually ingested the contents of an envelope marked "Illegal Fungi," which we have been otherwise unable to locate.</p></processinfo><custodhist id="aspace_d8fd8ae9b5b584f44abfcc2db643c8d9"><head>Custodial History</head><p>Upon his death, Ipsum's personal papers were discarded by an unfeeling landlady. They were rescued by a fellow scholar and maintained in a personal collection until they were donated to Tufts University in 2016.</p></custodhist><accruals id="aspace_1af4c1707ae7b9410182824a79a60ac4"><head>Accruals</head><p>No further accruals are expected.</p></accruals><appraisal id="aspace_1ed78b6aa941c062b3cff457ca51a7aa"><head>Appraisal</head><p>Duplicate materials were discaded during processing, as was Mr. Ipsum's rather careworn feather boa.</p></appraisal><relatedmaterial id="aspace_00fb342d84c8e411fcbe6032ae2a0540"><head>Related Materials</head><p>Lorem Ipsum rare book collection, Cornell University.</p><p>Lorem Ipsum faculty papers, University of Chicago.</p></relatedmaterial><originalsloc id="aspace_007521b68af5ff1809263dbb18e970a1"><head>Existence and Location of Originals</head><p>Some letters in the correspondence series are photocopies; originals reside with the original authors.</p></originalsloc><bioghist id="aspace_228c4cd2c2a2ffcc5c888cc416ff64a1"><head>Biographical / Historical</head><p>There is no separate biog/hist for this series.</p></bioghist><otherfindaid id="aspace_c912a801da8e8e6c5504d34b2fa0989b"><head>Other Finding Aids</head><p>A detailed item level list with transcriptions of diaries and letters is available in the repository.</p></otherfindaid><controlaccess><subject source="local">Letters (correspondence)</subject><genreform source="aat">Diaries</genreform></controlaccess><c id="aspace_5fc68062788bbf01180b4812d1d5d5cf" level="subseries"><did><unittitle>Correspondence</unittitle><unitid>MS999.001.001</unitid><physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">38 Cubic Feet</extent><extent altrender="carrier">22 boxes </extent></physdesc><unitdate normal="1900/1933" type="inclusive">1900 -- 1933</unitdate><unitdate normal="1910/1933" type="bulk">bulk</unitdate><langmaterial id="aspace_3f687f5b1722c2bf1adb95cd5a50fa2e">Correspondence is mainly in English, with some material in French.</langmaterial></did><scopecontent id="aspace_805d69837b521c6d18d33737fd9c4cff"><head>Scope and Contents</head><p>Correspondence with many leading lights of the day, including H. L. Mencken, F. Scott and Zelda Fitzgerald, William James, and Louise Brooks, among others.</p></scopecontent><accessrestrict id="aspace_eb9ff8f634c7e4428d9952b3ce259266"><head>Conditions Governing Access</head><p>Open for research.</p></accessrestrict><userestrict id="aspace_66b8b4fcf3c2c4aee3e69a8952b52e93"><head>Conditions Governing Use</head><p>Copyright retained by donor.</p></userestrict><arrangement id="aspace_4c2339f622e86d4b63b347e05b6bda4f"><head>Arrangement</head><p>Correspondence is arranged alphabetically.</p></arrangement><controlaccess><subject source="local">Letters (correspondence)</subject><subject source="local">Theater--History--20th century.</subject><persname rules="dacs">Fitzgerald, Zelda</persname></controlaccess><c id="aspace_75c6557abec1fd397c58789eb1479faf" level="file"><did><unittitle>Fitzgerald, Zelda</unittitle><unitid>MS999.001.001.00001</unitid><unitdate normal="1910/1923" type="inclusive">1910-1923</unitdate><container id="aspace_5a03dfbc752e8a17b4dc6803c32fb7c3" label="Text (31236554645131)" type="box">1</container><container id="aspace_d0ab45779de7a96f7379b09a6209e5f8" parent="aspace_5a03dfbc752e8a17b4dc6803c32fb7c3" type="folder">1</container></did></c></c><c id="aspace_a5cc6f98c5b1135632685e48a0681fe3" level="subseries"><did><unittitle>Diaries</unittitle><unitid>MS999.001.002</unitid><physdesc altrender="whole"><extent altrender="materialtype spaceoccupied">23 Volumes</extent></physdesc><unitdate normal="1910/1933" type="inclusive">1910 -- 1933</unitdate><langmaterial id="aspace_bd58c6cb65786b02390e2064e4956d8e">Diaries are mostly in Russian with some English.</langmaterial></did><arrangement id="aspace_0f614d809faa4e2653898d2193c42dae"><head>Arrangement</head><p>Diaries are arranged chronologically.</p></arrangement><accessrestrict id="aspace_a6e846d09e822df7aa08cd4659ba9b95"><head>Conditions Governing Access</head><p>Open for research.</p></accessrestrict><userestrict id="aspace_c78d96409183497e1d8cc58a8265adc7"><head>Conditions Governing Use</head><p>Copyright has been retained by donor.</p></userestrict><scopecontent id="aspace_b806fe19f520b79a02c874a5f21d48af"><head>Scope and Contents</head><p>Diaries are salacious and gossipy.</p></scopecontent><controlaccess><genreform source="aat">Diaries</genreform></controlaccess><c id="aspace_f8e4ec00c067f74288da3e7a59421114" level="item"><did><unittitle>Diary</unittitle><unitid>MS999.001.002.00001</unitid><unitdate normal="1910/1910" type="inclusive">1910</unitdate><container id="aspace_237fb766c3f32027c84bef038d7775f7" label="Books (3123064475432131)" type="volume">1</container><dao xlink:actuate="onRequest" xlink:href="http://hdl.handle.net/false/noreal" xlink:show="new" xlink:title="Diary"><daodesc><p>Diary: 1910-</p></daodesc></dao></did><accessrestrict id="aspace_9e23b97e0ebdffa8a8a0b662df44ece3"><head>Conditions Governing Access</head><p>Open for research.</p></accessrestrict><userestrict id="aspace_110343a943a1a030d56e68400914c3c9"><head>Conditions Governing Use</head><p>Copyright retained by donor.</p></userestrict><scopecontent id="aspace_79b0e9dbdd27084492d4dda584a8b032"><head>Scope and Contents</head><p>Includes a detailed account of attending Nijinksky's performance of Giselle.</p></scopecontent><controlaccess><title source="local"> Experimental theater -- Massachusetts -- Boston -- Sources</title></controlaccess></c></c></c><c id="aspace_73958582e4d3b0ba4903864f50b6f9a9" level="series"><did><unittitle>Professional papers</unittitle><unitid>MS999.002</unitid><physdesc altrender="part"><extent altrender="materialtype spaceoccupied">56 Cubic Feet</extent><extent altrender="carrier">40 record cartons and 4 oversize boxes</extent></physdesc><unitdate normal="1897/1933" type="inclusive">1897 -- 1933</unitdate><unitdate normal="1897/1910" type="bulk">bulk</unitdate><container id="aspace_7667f7162e1a12d3159750ecdc864070" label="Mixed Materials (3167484321321321)" type="box">2</container><container id="aspace_a19cef4f8e8f1c7f9a459156821c06be" label="Mixed Materials (21546543213213546)" type="box">3</container></did><scopecontent id="aspace_736d9eac616251082c40f88e448fea67"><head>Scope and Contents</head><p>Professional papers consists of manuscripts, speeches, notes, and student papers.</p>
 
-          <p>Speeches are very dull.</p>
-        </scopecontent>
-        <accessrestrict id="aspace_b8a02a29e48b1d8993a7800929973340">
-          <head>Conditions Governing Access</head>
-          <p>Student papers are restricted for 100 years.</p>
-        </accessrestrict>
-        <userestrict id="aspace_23d55f21a8bb525c0c4aabe23510ddad">
-          <head>Conditions Governing Use</head>
-          <p>Copyright retained by donor.</p>
-        </userestrict>
-        <controlaccess>
-          <subject source="local">Teacher-student relationships.</subject>
-        </controlaccess>
-      </c>
-    </dsc>
-  </archdesc>
+<p>Speeches are very dull.</p></scopecontent><accessrestrict id="aspace_b8a02a29e48b1d8993a7800929973340"><head>Conditions Governing Access</head><p>Student papers are restricted for 100 years.</p></accessrestrict><userestrict id="aspace_23d55f21a8bb525c0c4aabe23510ddad"><head>Conditions Governing Use</head><p>Copyright retained by donor.</p></userestrict><controlaccess><subject source="local">Teacher-student relationships.</subject></controlaccess></c></dsc>
+</archdesc>
 </ead>
