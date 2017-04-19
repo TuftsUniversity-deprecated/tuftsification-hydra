@@ -286,6 +286,7 @@ module Tufts
     if ead.first.nil?
       # there is no hasDescription
       ead_title = get_collection_from_pid(ead_title, pid)
+      ead_title = get_collection_from_subject_is_part_of(ead_title)
       if ead_title.nil?
         COLLECTION_ERROR_LOG.error "Could not determine Collection for : #{self.pid}"
       else
@@ -313,7 +314,7 @@ module Tufts
         #"Boston Streets": PID in tufts:UA069.005.DO.* should be merged with the facet hasDescription UA069.001.DO.MS102
 
         ead_title = get_collection_from_pid(ead_title, pid)
-
+        ead_title = get_collection_from_subject_is_part_of(ead_title)
 
       end
 
@@ -333,6 +334,18 @@ module Tufts
     # end
   end
 
+  def get_collection_from_subject_is_part_of(ead_title)
+    undergrad_scholarship = "Senior honors thesis.".freeze
+
+    subjects = self.datastreams["DCA-META"].get_values(:subject)
+    is_parts = self.datastreams["DC-DETAIL-META"].get_values(:isPartOf)
+
+    if subjects.include? undergrad_scholarship || is_parts.include? undergrad_scholarship
+      ead_title = "Undergraduate scholarship"
+    end
+
+    ead_title
+  end
 
   def get_collection_from_pid(ead_title,pid)
     if pid.starts_with? "tufts:UA005"
