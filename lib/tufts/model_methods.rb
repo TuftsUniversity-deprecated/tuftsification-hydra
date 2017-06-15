@@ -336,7 +336,7 @@ module Tufts
 
     def get_collection_from_subject_is_part_of(ead_title)
       undergrad_scholarship = "Senior honors thesis.".freeze
-      graduate_scholarship = "Tufts University electronic theses and dissertations".freeze
+      graduate_scholarship = "Tufts University electronic theses and dissertations.".freeze
 
       subjects = self.datastreams["DCA-META"].get_values(:subject)
       is_parts = self.datastreams["DC-DETAIL-META"].get_values(:isPartOf)
