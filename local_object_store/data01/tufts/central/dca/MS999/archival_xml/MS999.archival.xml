@@ -246,10 +246,10 @@
           <p>A detailed item level list with transcriptions of diaries and letters is available in
             the repository.</p>
           <p>There is also Lorem Ipsum material to be found online. Please visit
-              <extref>https://somerandomwebsite.org/collections/IpsumLorem</extref> and/or <extptr
-              xlink:href="https://someotherrandomwebsite.org/collections/IpsumLorem"
+            <extref>https://somerandomwebsite.org/collections/LoremIpsum</extref> and/or <extptr
+              xlink:href="https://someotherrandomwebsite.org/collections/LoremIpsum"
               xlink:show="new"
-              xlink:title="The Ipsum Lorem Collection at someotherrandomwebsite.org"
+              xlink:title="The Lorem Ipsum Collection at someotherrandomwebsite.org"
               xlink:type="simple"/>.</p>
         </otherfindaid>
         <controlaccess>
@@ -369,7 +369,7 @@
             <origination label="creator"><persname source="ingest">New Yorker Magazine</persname></origination>
             <unitdate type="inclusive">1922-12-09 - 1927-03-09</unitdate>
             <dao xlink:actuate="onRequest"
-              xlink:href="https://somerandomwebsite.org/collections/IpsumLorem/NewYorkerCartoons"
+              xlink:href="https://somerandomwebsite.org/collections/LoremIpsum/NewYorkerCartoons"
               xlink:show="new" xlink:title="New Yorker Cartoons by Lorem Ipsum">
               <daodesc>
                 <p>Lorem Ipsum's New Yorker Cartoons</p>
