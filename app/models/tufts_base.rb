@@ -37,15 +37,15 @@ class TuftsBase < ActiveFedora::Base
                            :format, :extent,  :persname, :corpname, :geogname,
                            :subject, :genre, :rights, :bibliographic_citation,
                            :temporal, :funder, :resolution, :bitdepth,
-                           :colorspace, :filesize]
+                           :colorspace, :filesize, :date, :isPartOf]
   delegate_to "DCA-META", [:title], unique: true
 
   delegate_to "DC-DETAIL-META", [:alternative, :contributor, :abstract, :toc,
-                           :date, :date_copyrighted, :date_submitted,
+                           :date_copyrighted, :date_submitted,
                            :date_accepted, :date_modified, :language, :medium,
                            :provenance, :access_rights, :rights_holder,
                            :license, :replaces, :isReplacedBy, :hasFormat,
-                           :isFormatOf, :hasPart, :isPartOf, :accruralPolicy,
+                           :isFormatOf, :hasPart, :accruralPolicy,
                            :audience, :references, :spatial]
 
   delegate_to "DCA-ADMIN", [:published_at, :edited_at, :displays], unique: true

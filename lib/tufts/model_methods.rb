@@ -24,7 +24,7 @@ module Tufts
       return {
           :titles => datastream.title,
           :creators => datastream.creator,
-          :dates => datastream.date_created,
+          :dates => datastream.date,
           :descriptions => datastream.description,
           :sources => datastream.source,
           :citable_urls => datastream.identifier,
@@ -339,7 +339,7 @@ module Tufts
       graduate_scholarship = "Tufts University electronic theses and dissertations.".freeze
 
       subjects = self.datastreams["DCA-META"].get_values(:subject)
-      is_parts = self.datastreams["DC-DETAIL-META"].get_values(:isPartOf)
+      is_parts = self.datastreams["DCA-META"].get_values(:isPartOf)
 
       if ((subjects.include? undergrad_scholarship) || (is_parts.include? undergrad_scholarship))
         ead_title = "Undergraduate scholarship"
@@ -367,7 +367,7 @@ module Tufts
     end
 
     def index_pub_date(solr_doc)
-      dates = self.date_created
+      dates = self.date
 
       if dates.empty?
         dates = self.temporal
@@ -460,7 +460,7 @@ module Tufts
     #automatically based on the available data.
 
     def index_date_info(solr_doc)
-      dates = self.date_created
+      dates = self.date
 
       if dates.empty?
         dates = self.temporal

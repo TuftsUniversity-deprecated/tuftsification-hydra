@@ -13,7 +13,7 @@ module Tufts
       return {
           :titles => datastream.find_by_terms_and_value(:title),
           :creators => datastream.find_by_terms_and_value(:creator),
-          :dates => datastream.find_by_terms_and_value(:dateCreated),
+          :dates => datastream.find_by_terms_and_value(:date),
           :descriptions => datastream.find_by_terms_and_value(:description),
           :sources => datastream.find_by_terms_and_value(:source2),
           :citable_urls => datastream.find_by_terms_and_value(:identifier),
@@ -161,7 +161,7 @@ module Tufts
     def show_date
       logger.warn "[DEPRECATION] 'show_date' is deprecated please use 'Tufts::MetadataMethods.get_metadata instead"
       result =""
-      dates_array = @document_fedora.datastreams["DCA-META"].dateCreated
+      dates_array = @document_fedora.datastreams["DCA-META"].date
 
       if dates_array.first.blank?
         dates_array = @document_fedora.datastreams["DCA-META"].temporal
