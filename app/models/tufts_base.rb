@@ -45,7 +45,7 @@ class TuftsBase < ActiveFedora::Base
                            :date_accepted, :date_modified, :language, :medium,
                            :provenance, :access_rights, :rights_holder,
                            :license, :replaces, :isReplacedBy, :hasFormat,
-                           :isFormatOf, :hasPart, :accruralPolicy,
+                           :isFormatOf, :hasPart, :accrualPolicy,
                            :audience, :references, :spatial]
 
   delegate_to "DCA-ADMIN", [:published_at, :edited_at, :displays], unique: true
@@ -80,7 +80,7 @@ class TuftsBase < ActiveFedora::Base
      :date_modified, :language, :type, :format, :extent, :medium, :persname, 
      :corpname, :geogname, :subject, :genre, :provenance, :rights,
      :access_rights, :rights_holder, :license, :replaces, :isReplacedBy,
-     :hasFormat, :isFormatOf, :hasPart, :isPartOf, :accruralPolicy, :audience,
+     :hasFormat, :isFormatOf, :hasPart, :isPartOf, :accrualPolicy, :audience,
      :references, :spatial, :bibliographic_citation, :temporal, :funder,
      :resolution, :bitdepth, :colorspace, :filesize]
   end
