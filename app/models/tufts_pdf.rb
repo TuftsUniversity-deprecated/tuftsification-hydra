@@ -1,5 +1,6 @@
 class TuftsPdf < TuftsBase
   has_file_datastream 'Archival.pdf', control_group: 'E', original: true
+  has_file_datastream 'THUMBNAIL', control_group: 'E', versionable: false
 
   # @param [String] dsid Datastream id
   # @param [String] type the content type to test

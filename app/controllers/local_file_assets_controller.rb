@@ -293,6 +293,12 @@ class LocalFileAssetsController < ApplicationController
         end
       end
 
+      if (mapped_model_names.include?("info:fedora/afmodel:TuftsPdf"))
+        if @file_asset.datastreams.include?("THUMBNAIL")
+          send_file(convert_url_to_local_path(@file_asset.datastreams["THUMBNAIL"].dsLocation), :type => 'image/png', :disposition => 'inline')
+        end
+      end
+
       if (mapped_model_names.include?("info:fedora/afmodel:TuftsVideo"))
         if @file_asset.datastreams.include?("Thumbnail.png")
           send_file(convert_url_to_local_path(@file_asset.datastreams["Thumbnail.png"].dsLocation), :type => 'image/png', :disposition => 'inline')
