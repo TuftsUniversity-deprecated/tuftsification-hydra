@@ -2,21 +2,21 @@ PATH
   remote: .
   specs:
     tuftsification-hydra (0.0.3)
-      active-fedora (~> 6.4.0)
       chronic
-      rails (~> 3.2.13)
+      image_size
+      rails (~> 3.2.20)
       settingslogic
       titleize
 
 GEM
   remote: http://rubygems.org/
   specs:
-    actionmailer (3.2.13)
-      actionpack (= 3.2.13)
-      mail (~> 2.5.3)
-    actionpack (3.2.13)
-      activemodel (= 3.2.13)
-      activesupport (= 3.2.13)
+    actionmailer (3.2.22.5)
+      actionpack (= 3.2.22.5)
+      mail (~> 2.5.4)
+    actionpack (3.2.22.5)
+      activemodel (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
       builder (~> 3.0.0)
       erubis (~> 2.7.0)
       journey (~> 1.0.4)
@@ -24,140 +24,79 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    active-fedora (6.4.2)
-      activesupport (>= 3.0.0)
-      deprecation
-      mediashelf-loggable
-      nom-xml (>= 0.5.1)
-      om (~> 3.0.0)
-      rdf
-      rdf-rdfxml (~> 1.0.0)
-      rsolr
-      rubydora (~> 1.6, >= 1.6.5)
-    activemodel (3.2.13)
-      activesupport (= 3.2.13)
+    activemodel (3.2.22.5)
+      activesupport (= 3.2.22.5)
       builder (~> 3.0.0)
-    activerecord (3.2.13)
-      activemodel (= 3.2.13)
-      activesupport (= 3.2.13)
+    activerecord (3.2.22.5)
+      activemodel (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
-    activeresource (3.2.13)
-      activemodel (= 3.2.13)
-      activesupport (= 3.2.13)
-    activesupport (3.2.13)
-      i18n (= 0.6.1)
+    activeresource (3.2.22.5)
+      activemodel (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
+    activesupport (3.2.22.5)
+      i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    addressable (2.3.5)
-    arel (3.0.2)
+    arel (3.0.3)
     builder (3.0.4)
-    chronic (0.9.1)
-    daemons (1.1.9)
-    deprecation (0.0.5)
-      activesupport
-    equivalent-xml (0.3.0)
-      nokogiri (>= 1.4.3)
+    chronic (0.10.2)
+    concurrent-ruby (1.0.5)
     erubis (2.7.0)
-    fastercsv (1.5.5)
     hike (1.2.3)
-    hooks (0.3.1)
-    i18n (0.6.1)
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    image_size (1.5.0)
     journey (1.0.4)
-    jquery-rails (3.0.0)
+    jquery-rails (3.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.0)
-    mail (2.5.4)
+    json (1.8.6)
+    mail (2.5.5)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mediashelf-loggable (0.4.9)
-    mime-types (1.23)
-    mini_portile (0.5.1)
-    multi_json (1.7.6)
-    nokogiri (1.6.0)
-      mini_portile (~> 0.5.0)
-    nom-xml (0.5.1)
-      activesupport
-      i18n
-      nokogiri
-    om (3.0.1)
-      activemodel
-      activesupport
-      deprecation
-      mediashelf-loggable
-      nokogiri (>= 1.4.2)
-      solrizer (~> 3.1.0)
-    polyglot (0.3.3)
-    rack (1.4.5)
-    rack-cache (1.2)
+    mime-types (1.25.1)
+    multi_json (1.12.2)
+    polyglot (0.3.5)
+    rack (1.4.7)
+    rack-cache (1.7.1)
       rack (>= 0.4)
-    rack-ssl (1.3.3)
+    rack-ssl (1.3.4)
       rack
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
-    rails (3.2.13)
-      actionmailer (= 3.2.13)
-      actionpack (= 3.2.13)
-      activerecord (= 3.2.13)
-      activeresource (= 3.2.13)
-      activesupport (= 3.2.13)
+    rails (3.2.22.5)
+      actionmailer (= 3.2.22.5)
+      actionpack (= 3.2.22.5)
+      activerecord (= 3.2.22.5)
+      activeresource (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
       bundler (~> 1.0)
-      railties (= 3.2.13)
-    railties (3.2.13)
-      actionpack (= 3.2.13)
-      activesupport (= 3.2.13)
+      railties (= 3.2.22.5)
+    railties (3.2.22.5)
+      actionpack (= 3.2.22.5)
+      activesupport (= 3.2.22.5)
       rack-ssl (~> 1.3.2)
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.0.4)
-    rdf (1.0.7)
-      addressable (>= 2.2)
-    rdf-rdfxml (1.0.1)
-      rdf (>= 1.0)
-      rdf-xsd (>= 1.0)
-    rdf-xsd (1.0.2.1)
-      nokogiri (>= 1.5.0)
-      rdf (>= 0.3.4)
+    rake (12.3.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
-    rsolr (1.0.9)
-      builder (>= 2.1.2)
-    rubydora (1.6.5)
-      activemodel
-      activesupport
-      deprecation
-      equivalent-xml
-      fastercsv
-      hooks (~> 0.3.0)
-      mime-types
-      nokogiri
-      rest-client
     settingslogic (2.0.9)
-    solrizer (3.1.1)
-      activesupport
-      daemons
-      mediashelf-loggable (~> 0.4.7)
-      nokogiri
-      stomp
-      xml-simple
-    sprockets (2.2.2)
+    sprockets (2.2.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.7)
-    stomp (1.2.10)
-    thor (0.18.1)
+    sqlite3 (1.3.13)
+    thor (0.20.0)
     tilt (1.4.1)
-    titleize (1.3.0)
-    treetop (1.4.14)
+    titleize (1.4.1)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.37)
-    xml-simple (1.1.2)
+    tzinfo (0.3.53)
 
 PLATFORMS
   ruby
