@@ -336,7 +336,7 @@
               <unitid>MS999.001.002.00001</unitid>
               <unitdate normal="1910/1910" type="inclusive">1910</unitdate>
               <container id="aspace_237fb766c3f32027c84bef038d7775f7"
-                label="Books (3123064475432131)" type="volume">1</container>
+                label="Books [3123064475432131]" type="volume">1</container>
               <dao xlink:actuate="onRequest" xlink:href="http://hdl.handle.net/false/noreal"
                 xlink:show="new" xlink:title="Diary">
                 <daodesc>
