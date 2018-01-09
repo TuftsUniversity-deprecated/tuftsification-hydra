@@ -25,7 +25,7 @@ module Tufts
           :rights => datastream.find_by_terms_and_value(:rights),
           :subjects => subjects,
           :temporals => datastream.find_by_terms_and_value(:temporal),
-          :is_parts_of => datastream.find_by_terms_and_value(:isPartOf)
+          :is_parts_of => datastream.find_by_terms_and_value(:isPartOf) || []
       }
     end
 
