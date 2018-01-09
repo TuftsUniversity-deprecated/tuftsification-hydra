@@ -37,7 +37,7 @@ module Tufts
           :access_rights => detailed_datastream.access_rights,
           :subjects => subjects,
           :temporals => datastream.temporal,
-	 			  :is_parts_of => datastream.find_by_terms_and_value(:isPartOf) || []
+	 			  :is_parts_of => datastream.isPartOf
       }
     end
 
