@@ -388,6 +388,20 @@ module Tufts
           date = date.split[1..10].join(' ')
         end
 
+				if  /^Circa \d{4}–\d{4}$/ =~ date
+          earliest, latest = date.split('--').flat_map(&:to_i)
+          date = earliest
+        end
+
+				if  /^\d{4}--\d{4}$/ =~ date
+          earliest, latest = date.split('--').flat_map(&:to_i)
+          date = earliest
+        end
+
+				if  /^\d{4}-\d{4}$/ =~ date
+          earliest, latest = date.split('-').flat_map(&:to_i)
+          date = earliest
+        end
         #end handling circa dates
 
         #handle 01/01/2004 style dates
