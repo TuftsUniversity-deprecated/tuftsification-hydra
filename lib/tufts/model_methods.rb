@@ -140,7 +140,6 @@ module Tufts
               unless processing_url == "SKIP"
                 pid = fedora_object.pid.to_s
                 url = processing_url + '/tika/TikaPDFExtractionServlet?doc='+ repository_url +'/fedora/objects/' + pid + '/datastreams/Archival.pdf/content&amp;chunkList=true'
-                puts "#{url}"
                 begin
                   nokogiri_doc = Nokogiri::XML(open(url).read)
                   full_text = nokogiri_doc.xpath('//text()').text.gsub(/[^0-9A-Za-z]/, ' ')
@@ -373,7 +372,9 @@ module Tufts
       if dates.empty?
         dates = self.temporal
       end
-
+      if dates == [""]
+        dates = ['n.d.']
+      end
       unless dates.empty?
         date = dates[0]
 
@@ -382,25 +383,25 @@ module Tufts
 
         valid_date = Time.new
 
-        date = date.to_s
+        date = date.to_s.rstrip
 
         if (!date.nil? && !date[/^c/].nil?)
           date = date.split[1..10].join(' ')
         end
 
-				if  /^Circa \d{4}–\d{4}$/ =~ date
-          earliest, latest = date.split('--').flat_map(&:to_i)
-          date = earliest
+        if (/^Circa \d{4} – \d{4}$/ =~ date) || (/^Circa \d{4}–\d{4}$/ =~ date)
+          earliest, latest = date.split('–').flat_map(&:to_s)
+          date = latest
         end
 
-				if  /^\d{4}--\d{4}$/ =~ date
-          earliest, latest = date.split('--').flat_map(&:to_i)
-          date = earliest
+        if /^\d{4} -- \d{4}$/ =~ date
+          earliest, latest = date.split('--').flat_map(&:to_s)
+          date = latest
         end
 
-				if  /^\d{4}-\d{4}$/ =~ date
-          earliest, latest = date.split('-').flat_map(&:to_i)
-          date = earliest
+         if /^\d{4} - \d{4}$/ =~ date
+          earliest, latest = date.split('-').flat_map(&:to_s)
+          date = latest
         end
         #end handling circa dates
 
@@ -460,7 +461,6 @@ module Tufts
         else
           valid_date_string = valid_date.strftime("%Y")
         end
-
         Solrizer.insert_field(solr_doc, 'pub_date', valid_date_string.to_i, :stored_sortable)
       end
 
