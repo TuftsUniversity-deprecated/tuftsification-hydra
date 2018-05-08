@@ -342,7 +342,7 @@ module Tufts
       subjects = self.datastreams["DCA-META"].get_values(:subject)
       is_parts = self.datastreams["DCA-META"].get_values(:isPartOf)
 
-      if ((subjects.include? undergrad_scholarship) || (is_parts.include? undergrad_scholarship))
+      if ((subjects.select{|part| part.downcase.match(/senior honor/)}.any?) || (is_parts.select{|part| part.downcase.match(/senior honor/)}.any?))
         ead_title = "Undergraduate scholarship"
       end
 
