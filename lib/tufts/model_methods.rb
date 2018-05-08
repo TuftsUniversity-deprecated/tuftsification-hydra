@@ -335,17 +335,20 @@ module Tufts
     end
 
     def get_collection_from_subject_is_part_of(ead_title)
-      undergrad_scholarship = "Senior honors thesis.".freeze
-      graduate_scholarship = "Tufts University electronic theses and dissertations.".freeze
-
+      #undergrad_scholarship = "Senior honors thesis.".freeze
+      #graduate_scholarship = "Tufts University electronic theses and dissertations.".freeze
+      # TDLR-724
       subjects = self.datastreams["DCA-META"].get_values(:subject)
       is_parts = self.datastreams["DCA-META"].get_values(:isPartOf)
 
       if ((subjects.select{|part| part.downcase.match(/senior honor/)}.any?) || (is_parts.select{|part| part.downcase.match(/senior honor/)}.any?))
         ead_title = "Undergraduate scholarship"
       end
-
-      if (is_parts.include? graduate_scholarship)
+      #<dcterms:isPartOf>Tufts University. Graduate School of Arts and Sciences. Theses and
+      #         Dissertations.</dcterms:isPartOf>
+      #
+      #<dcterms:isPartOf>Tufts University electronic theses and dissertations.</dcterms:isPartOf>
+      if ((is_parts.select{|part| part.downcase.match(/tufts university electronic theses and dissertations/)}.any?) && (is_parts.select{|part| part.downcase.match(/graduate school of arts and sciences/)}.any?))
         ead_title = "Graduate scholarship"
       end
 
