@@ -395,16 +395,31 @@ module Tufts
         if (/^Circa \d{4} – \d{4}$/ =~ date) || (/^Circa \d{4}–\d{4}$/ =~ date)
           earliest, latest = date.split('–').flat_map(&:to_s)
           date = latest
+				  date = date.gsub(" ","")
+        end
+
+        if (/^circa \d{4} – \d{4}$/ =~ date) || (/^circa \d{4}–\d{4}$/ =~ date)
+          earliest, latest = date.split('–').flat_map(&:to_s)
+          date = latest
+				  date = date.gsub(" ","")
+        end
+
+        if (/^Circa \d{4} -- \d{4}$/ =~ date) || (/^circa \d{4}--\d{4}$/ =~ date)
+          earliest, latest = date.split('–').flat_map(&:to_s)
+          date = latest
+				  date = date.gsub(" ","")
         end
 
         if /^\d{4} -- \d{4}$/ =~ date
           earliest, latest = date.split('--').flat_map(&:to_s)
           date = latest
+				  date = date.gsub(" ","")
         end
 
          if /^\d{4} - \d{4}$/ =~ date
           earliest, latest = date.split('-').flat_map(&:to_s)
           date = latest
+				  date = date.gsub(" ","")
         end
         #end handling circa dates
 
